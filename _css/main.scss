@@ -2,19 +2,19 @@
 @import "neat";
 @import "variables";
 @import "fonts";
-@import "navbar-refill";
-@import "navbar";
 @import "header";
 @import "footer";
+@import "jumbotron";
 
 body {
 	margin: 0;
 	background-color: $white;
 }
 .page-content {
-	@include outer-container(100%);
-	> .jumbotron > .images > img {
-		@include fill-parent();
-		@include position(absolute, $header-height null null 0);
+	//@include outer-container(100%);
+	> #jumbotron > .images {
+		//@include fill-parent();
+		//max-height: 500px;
+		//@include position(absolute, $header-height null null 0);
 	}
 }

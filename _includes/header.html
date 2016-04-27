@@ -1,27 +1,4 @@
-<header class="navigation" role="banner">
-	<div class="navigation-wrapper">
-		<a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
-		{% include logo.html %}		
-		<nav class="site-nav" role="navigation">
-			<ul id="js-navigation-menu" class="navigation-menu show">
-				{% assign my_pages = site.pages | sort: 'title' %}
-			    {% for my_page in my_pages%}
-          			{% if my_page.title and my_page.no-nav == null %}
-        			<li class="nav-link"><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title | capitalize}}</a></li>
-						{% if my_page.submenu %}
-						<li id="js-navigation-more" class="nav-link more"><a href="javascript:void(0)">More</a>
-							<ul class="submenu">
-								<li><a href="javascript:void(0)">Submenu Item</a></li>
-								<li><a href="javascript:void(0)">Another Item</a></li>
-							</ul>
-						</li>
-						{% endif %}
-					{% endif %}
-				{% endfor %}
-			</ul>
-		</nav>
-	</div>
+<header class="site-header">
+{% include logo.html %}
+{% include social-links.html %}
 </header>
-<div class='site-header'>
-	{% include social-links.html %}
-</div>
