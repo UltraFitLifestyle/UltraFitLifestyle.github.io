@@ -1,9 +1,10 @@
 $(document).ready(function(){
-	intervalId = startInterval();
-	addEventHandlers(intervalId);
+	var SLIDER_INTERVAL = 4000;
+	intervalId = startInterval(SLIDER_INTERVAL);
+	addEventHandlers(intervalId, SLIDER_INTERVAL);
 });
 
-function addEventHandlers(intervalId){
+function addEventHandlers(intervalId, SLIDER_INTERVAL){
 	$('.arrow-next').click(function(e) {
 		e.preventDefault();
 		slideToNext();
@@ -12,18 +13,7 @@ function addEventHandlers(intervalId){
 
 	$('.arrow-prev').click(function(e) {
 		e.preventDefault();
-		var currentSlide = $('.active-slide');
-		var prevSlide = currentSlide.prev();
-
-		var currentDot = $('.active-dot');
-		var prevDot = currentDot.prev();
-
-		if(prevSlide.length === 0) {
-			prevSlide = $('.slide').last();
-			prevDot = $('.dot').last();
-		}
-		
-		fadeOutIn(currentSlide, prevSlide, currentDot, prevDot);
+		slideToPrev();
 	});
 	
 	$("#jumbotron").mouseenter(function(){
@@ -32,8 +22,12 @@ function addEventHandlers(intervalId){
 		}
  	}).mouseleave(function(){
 		if( intervalId != undefined){
-			intervalId = startInterval();
+			intervalId = startInterval(SLIDER_INTERVAL);
 		} 
+ 	});
+ 	
+ 	$('.dot').click(function() {
+ 		slideToIndex( $(this).index() );
  	});
 }
 
@@ -46,11 +40,10 @@ function fadeOutIn( $currSlide, $nextSlide, $currDot, $nextDot ) {
 }
 
 function slideToNext(){
-	var currentSlide = $('.active-slide');
-	var nextSlide = currentSlide.next();
-
-	var currentDot = $('.active-dot');
-	var nextDot = currentDot.next();
+	var currentSlide = $('.active-slide'),
+		nextSlide = currentSlide.next(),
+		currentDot = $('.active-dot'),
+		nextDot = currentDot.next();
 
 	if(nextSlide.length === 0) {
 		nextSlide = $('.slide').first();
@@ -59,8 +52,33 @@ function slideToNext(){
 	fadeOutIn(currentSlide, nextSlide, currentDot, nextDot);
 }
 
-function startInterval(){
+function slideToPrev(){
+	var currentSlide = $('.active-slide'),
+		prevSlide = currentSlide.prev(),
+		currentDot = $('.active-dot'),
+		prevDot = currentDot.prev();
+
+	if(prevSlide.length === 0) {
+		prevSlide = $('.slide').last();
+		prevDot = $('.dot').last();
+	}
+	
+	fadeOutIn(currentSlide, prevSlide, currentDot, prevDot);
+}
+
+function slideToIndex(index){
+	var currentSlide = $('.active-slide'),
+		currentDot = $('.active-dot'),
+		nextSlide = $('.slide:eq( ' + index + ' )'),
+		nextDot = $('.dot:eq( ' + index + ' )' );
+
+	if ( !currentSlide.is(nextSlide) ){
+		fadeOutIn(currentSlide, nextSlide, currentDot, nextDot);
+	}
+}
+
+function startInterval(lengthOfTime){
 	return intervalId = setInterval( function(){
 			slideToNext();
-		}, 1000 );
+		}, lengthOfTime);
 }
