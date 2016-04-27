@@ -123,30 +123,72 @@ p.author {
     clear: both;
     content: "";
     display: table; }
-  .site-header .site-title > .logo {
-    margin-top: 10px; }
+  .site-header .logo {
+    margin-top: 10px;
+    float: left; }
   .site-header .social-links {
-    display: inline; }
+    display: inline;
+    float: right; }
     .site-header .social-links > a {
-      margin-top: 10px;
+      float: left;
+      margin-top: 23px;
       margin-right: 1em;
       text-decoration: none; }
+      .site-header .social-links > a > .fa {
+        font-size: 20px; }
 
-.page-content > #jumbotron {
-  overflow: hidden;
-  margin: 0 auto;
+.page-content > #jumbotron > .slider {
+  position: relative;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 380px;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden; }
+  .page-content > #jumbotron > .slider::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .page-content > #jumbotron > .slider > .slide {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; }
+    .page-content > #jumbotron > .slider > .slide > .images {
+      width: 100%;
+      z-index: 1; }
+    .page-content > #jumbotron > .slider > .slide > h1 {
+      z-index: 10;
+      position: absolute;
+      top: 50px;
+      left: 50px; }
+  .page-content > #jumbotron > .slider > .active-slide {
+    display: block; }
+
+.page-content > #jumbotron > .slider-nav {
   text-align: center;
-  width: 640px;
-  height: 214px; }
-  .page-content > #jumbotron > .headings {
-    display: block;
-    width: 2560px;
-    height: 214px;
-    margin: 0;
-    padding: 0; }
-    .page-content > #jumbotron > .headings > .heading {
-      float: left;
-      list-style-type: none; }
+  margin-top: 20px; }
+  .page-content > #jumbotron > .slider-nav > .arrow-prev {
+    margin-right: 45px;
+    display: inline-block;
+    font-size: 30px; }
+  .page-content > #jumbotron > .slider-nav > .arrow-next {
+    margin-left: 45px;
+    display: inline-block;
+    font-size: 30px; }
+  .page-content > #jumbotron > .slider-nav > .slider-dots {
+    list-style: none;
+    display: inline-block;
+    padding-left: 0;
+    margin-bottom: 0; }
+    .page-content > #jumbotron > .slider-nav > .slider-dots > li {
+      color: #bbbcbc;
+      display: inline;
+      font-size: 30px;
+      margin-right: 5px; }
+      .page-content > #jumbotron > .slider-nav > .slider-dots > li.active-dot {
+        color: #363636; }
 
 body {
   margin: 0;
