@@ -11,26 +11,9 @@ $sans-serif: 'Nunito', sans-serif;
 $sans-serif-2: 'Varela Round', sans-serif;
 
 //Responsive breakpoints
-$navbar-collapse: 736px;
-$medium-screen: 640px;
 $large-screen: 1024px;
-$small-screen: 435px;
+$medium-screen: 768px;
+$small-screen: 480px;
+$xs-screen: 320px;
 
-$header-height: 175px;
-
-$refills-max-width: 95%;
-
-//Navbar variables and mixins
-$navigation-background: $base-color;
-$navigation-color: transparentize(white, 0.3);
-$navigation-color-hover: white;
-$navigation-height: 61px;
-$navigation-active-link-color: transparentize(white, 0.5);
-$navigation-submenu-padding: 1em;
-$navigation-submenu-width: 12em;
-
-@mixin navBackground {
-	//@include linear-gradient($base-color, $secondary-color);
-	//background-color: lighten($base-color, 55%);
-	@include linear-gradient(lighten($base-color, 55%), lighten($base-color, 40%));
-}
+$header-height: 66px;

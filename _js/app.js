@@ -1,17 +1,17 @@
 $(document).ready(function(){
 	var SLIDER_INTERVAL = 4000;
-	intervalId = startInterval(SLIDER_INTERVAL);
-	addEventHandlers(intervalId, SLIDER_INTERVAL);
+	//intervalId = startInterval(SLIDER_INTERVAL);
+	//addEventHandlers(intervalId, SLIDER_INTERVAL);
 });
 
 function addEventHandlers(intervalId, SLIDER_INTERVAL){
-	$('.arrow-next').click(function(e) {
+	$('#arrow-next').click(function(e) {
 		e.preventDefault();
 		slideToNext();
 	});
 
 
-	$('.arrow-prev').click(function(e) {
+	$('#arrow-prev').click(function(e) {
 		e.preventDefault();
 		slideToPrev();
 	});
