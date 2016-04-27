@@ -1,0 +1,15 @@
+.site-header {
+	@include outer-container(95%);
+	.site-title > .logo {
+		margin-top: 10px;
+		float: right;
+	}
+	.social-links {
+		display: inline;
+		float: left;
+		> a {
+				@include margin( 10px 1em null null);
+				text-decoration: none;
+		}
+	}
+}

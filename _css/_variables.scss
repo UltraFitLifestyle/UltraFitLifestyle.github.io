@@ -1,0 +1,36 @@
+//Colors and fonts
+$base-color: #662d91;
+$secondary-color: #a95493;
+$action-color: #83C5CB;
+$action-color2: #FF8680;
+$grey-dark: #1C1621;
+$grey-light: #8B878E;
+$white: #fff;
+$base-font-color: $grey-dark;
+$sans-serif: 'Nunito', sans-serif;
+$sans-serif-2: 'Varela Round', sans-serif;
+
+//Responsive breakpoints
+$navbar-collapse: 736px;
+$medium-screen: 640px;
+$large-screen: 1024px;
+$small-screen: 435px;
+
+$header-height: 175px;
+
+$refills-max-width: 95%;
+
+//Navbar variables and mixins
+$navigation-background: $base-color;
+$navigation-color: transparentize(white, 0.3);
+$navigation-color-hover: white;
+$navigation-height: 61px;
+$navigation-active-link-color: transparentize(white, 0.5);
+$navigation-submenu-padding: 1em;
+$navigation-submenu-width: 12em;
+
+@mixin navBackground {
+	//@include linear-gradient($base-color, $secondary-color);
+	//background-color: lighten($base-color, 55%);
+	@include linear-gradient(lighten($base-color, 55%), lighten($base-color, 40%));
+}
