@@ -13,21 +13,39 @@
 .page-content > #jumbotron {
 	> .slider {
 		@include position(relative);
-		@include outer-container(100%);
-		@include slider-height;
+		//@include slider-height;
+		height: 215px;
 		border-bottom: 1px solid #ddd;
 		overflow: hidden;
 		> .slide {
 			display: none;
+			//z-index: 10;
 			@include position(absolute, 0 null null 0);
 			@include fill-parent();
-			> .images {
+			> #aerial {
+				@include shift(7);
+			}
+			> .aerial.content {
+				@include position(absolute, 29px null null null);
+				@include span-columns(7);
+			}
+			> .training.content {
+				@include position(absolute, 29px null null null);
+				@include span-columns(5);
+				@include shift(6);
+			}
+			> .about.content {
+				@include position(absolute, 29px null null null);
+				@include span-columns(8);
+				@include shift(2);
+			}
+			> .contact.content {
+				@include position(absolute, 29px null null null);
+				@include span-columns(7);
+			}
+			> .stretch {
 				@include fill-parent();
 				z-index: 1;
-			}
-			> h1 {
-				z-index: 10;
-				@include position(absolute, 50px null null 50px);
 			}
 		}
 		> .active-slide {

@@ -118,7 +118,8 @@ p.author {
 .site-header {
   max-width: 95%;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  border-bottom: 1px solid #8B878E; }
   .site-header::after {
     clear: both;
     content: "";
@@ -139,39 +140,58 @@ p.author {
 
 .page-content > #jumbotron > .slider {
   position: relative;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  height: 107px;
+  height: 215px;
   border-bottom: 1px solid #ddd;
   overflow: hidden; }
-  .page-content > #jumbotron > .slider::after {
-    clear: both;
-    content: "";
-    display: table; }
-  @media screen and (min-width: 480px) {
-    .page-content > #jumbotron > .slider {
-      height: 160px; } }
-  @media screen and (min-width: 768px) {
-    .page-content > #jumbotron > .slider {
-      height: 256px; } }
-  @media screen and (min-width: 1024px) {
-    .page-content > #jumbotron > .slider {
-      height: 342px; } }
   .page-content > #jumbotron > .slider > .slide {
     display: none;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%; }
-    .page-content > #jumbotron > .slider > .slide > .images {
+    .page-content > #jumbotron > .slider > .slide > #aerial {
+      margin-left: 59.70863%; }
+    .page-content > #jumbotron > .slider > .slide > .aerial.content {
+      position: absolute;
+      top: 29px;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 57.35098%; }
+      .page-content > #jumbotron > .slider > .slide > .aerial.content:last-child {
+        margin-right: 0; }
+    .page-content > #jumbotron > .slider > .slide > .training.content {
+      position: absolute;
+      top: 29px;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 40.29137%;
+      margin-left: 51.17883%; }
+      .page-content > #jumbotron > .slider > .slide > .training.content:last-child {
+        margin-right: 0; }
+    .page-content > #jumbotron > .slider > .slide > .about.content {
+      position: absolute;
+      top: 29px;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%;
+      margin-left: 17.05961%; }
+      .page-content > #jumbotron > .slider > .slide > .about.content:last-child {
+        margin-right: 0; }
+    .page-content > #jumbotron > .slider > .slide > .contact.content {
+      position: absolute;
+      top: 29px;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 57.35098%; }
+      .page-content > #jumbotron > .slider > .slide > .contact.content:last-child {
+        margin-right: 0; }
+    .page-content > #jumbotron > .slider > .slide > .stretch {
       width: 100%;
       z-index: 1; }
-    .page-content > #jumbotron > .slider > .slide > h1 {
-      z-index: 10;
-      position: absolute;
-      top: 50px;
-      left: 50px; }
   .page-content > #jumbotron > .slider > .active-slide {
     display: block; }
 
@@ -199,6 +219,50 @@ p.author {
       .page-content > #jumbotron > .slider-nav > .slider-dots > li.active-dot {
         color: #363636; }
 
+#mc-embedded-subscribe {
+  text-shadow: 1px 1px #1C1621;
+  color: #f2f2f2;
+  background-color: #662d91;
+  background-image: -webkit-linear-gradient(#662d91, #a95493);
+  background-image: linear-gradient(#662d91, #a95493);
+  border-radius: 3px; }
+  #mc-embedded-subscribe:hover {
+    background-color: #a95493;
+    background-image: none; }
+
 body {
   margin: 0;
-  background-color: #fff; }
+  background-color: #fff;
+  color: #1C1621; }
+
+.page-content {
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto; }
+  .page-content::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+#homepage.page-content > .mindbody {
+  margin-top: 350px;
+  display: block; }
+
+#homepage.page-content > #subscribe {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-right: 0; }
+  #homepage.page-content > #subscribe:last-child {
+    margin-right: 0; }
+
+#homepage.page-content > #blog {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  border: 1px solid black;
+  min-height: 100px; }
+  #homepage.page-content > #blog:last-child {
+    margin-right: 0; }

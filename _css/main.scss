@@ -5,16 +5,32 @@
 @import "header";
 @import "footer";
 @import "jumbotron";
+@import "forms";
 
 body {
 	margin: 0;
 	background-color: $white;
+	color: $grey-dark;
 }
+
 .page-content {
-	//@include outer-container(100%);
-	> #jumbotron > .images {
-		//@include fill-parent();
-		//max-height: 500px;
-		//@include position(absolute, $header-height null null 0);
+	@include outer-container(95%);
+}
+
+#homepage.page-content {
+	> .mindbody {
+		margin-top: 350px;
+		display: block;
+	}
+	> #subscribe {
+		@include span-columns(6);
+		@include omega;
+	}
+
+	> #blog {
+		@include span-columns(6);
+		//@include shift(1);
+		border: 1px solid black;
+		min-height: 100px;
 	}
 }

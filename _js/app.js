@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	var SLIDER_INTERVAL = 4000;
+	var SLIDER_INTERVAL = 8000;
 	intervalId = startInterval(SLIDER_INTERVAL);
 	addEventHandlers(intervalId, SLIDER_INTERVAL);
 });

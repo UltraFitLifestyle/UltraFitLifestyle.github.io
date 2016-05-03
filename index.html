@@ -1,22 +1,60 @@
 ---
 layout: default
+id: homepage
 ---
 {% include jumbotron.html %}
-<h1>Live Your Ultra Fit Lifestyle</h1>
-<p>
-<a>Learn How</a>
-</p>
+<div id="subscribe">
+{% include mailchimp.html %}
+</div>
+<div id="blog">
+</div>
+{% include mindbody.html %}
 
-<h2>Train Anywhere!</h2>
-<p>With virtual fitness training you set up appointments with me, just like you would a personal trainer at a gym, but the customized, one-on-one workout session comes straight to you from the location and technology of your choice! From your smart phone, tablet or computer!
-</p>
-<p><a>Learn More</a></p>
+<!--
+<div id="posts">
+	<div id="categories">
+<ul class="tag-box inline">
+{% assign tags_list = site.categories %}  
+  {% if tags_list.first[0] == null %}
+    {% for tag in tags_list %} 
+      <li><a href="#{{ tag }}">{{ tag | capitalize }} <span>{{ site.tags[tag].size }}</span></a></li>
+    {% endfor %}
+  {% else %}
+    {% for tag in tags_list %} 
+      <li><a href="#{{ tag[0] }}">{{ tag[0] | capitalize }} <span>{{ tag[1].size }}</span></a></li>
+    {% endfor %}
+  {% endif %}
+{% assign tags_list = nil %}
+</ul>
 
-<h2>Personal Traning</h2>
-<p>Whether you are training for a marathon, wanting to lose weight or just push yourself to the next level of fitness having a personal trainer can help.</p>
-<p>Based in Pawleys Island, South Carolina I offer customized, one-on-one training.</p>
-<p><a>Start Training</a></p>
+	</div>
+	<div id="tags">
+{% for tag in site.categories %} 
+  <h2 id="{{ tag[0] }}">{{ tag[0] | capitalize }}</h2>
+  <ul class="post-list">
+    {% assign pages_list = tag[1] %}  
+    {% for post in pages_list %}
+      {% if post.title != null %}
+      {% if group == null or group == post.group %}
+      <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}<span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></a></li>
+      {% endif %}
+      {% endif %}
+    {% endfor %}
+    {% assign pages_list = nil %}
+    {% assign group = nil %}
+  </ul>
+{% endfor %}	
+	
+	</div>
+</div>
 
-<h2>Classes</h2>
-<p>Offering the ONLY aerial fitness classes on the Grand Strand! We offer unique and fun fitness classes in aerial, circus training, Pound, PiYo and early morning Dawn Patrol! You WILL sweat, increase strength and flexibility, get results, and feel energized! I offer modifiers for all levels, so come give it a try!</p>
-<p><a>Explore Classes</a></p>
+<ul>
+
+{% assign tags = site.tags | sort: tag[0] %}
+{% for tag in tags %}
+<p><a class="tag" href="/{{ tag | first | slugize }}/"> {{ tag | first }} </a></p>
+{% endfor %}
+
+{% assign tags_list2 = nil %}
+</ul>
+-->
