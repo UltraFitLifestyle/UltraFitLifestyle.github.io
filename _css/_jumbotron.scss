@@ -10,24 +10,26 @@
 			height: 342px;
 		}
 }
+
+$slide-height: 473px;
+
 .page-content > #jumbotron {
 	> .slider {
 		@include position(relative);
 		//@include slider-height;
-		height: 215px;
+		height: $slide-height;
 		border-bottom: 1px solid #ddd;
 		overflow: hidden;
 		> .slide {
 			display: none;
-			//z-index: 10;
-			@include position(absolute, 0 null null 0);
 			@include fill-parent();
-			> #aerial {
-				@include shift(7);
+			> img#aerial {
+				@include span-columns(6);
 			}
 			> .aerial.content {
-				@include position(absolute, 29px null null null);
-				@include span-columns(7);
+				@include span-columns(5);
+				@include shift(1);
+				margin-top: $slide-height / 4;
 			}
 			> .training.content {
 				@include position(absolute, 29px null null null);

@@ -140,24 +140,26 @@ p.author {
 
 .page-content > #jumbotron > .slider {
   position: relative;
-  height: 215px;
+  height: 473px;
   border-bottom: 1px solid #ddd;
   overflow: hidden; }
   .page-content > #jumbotron > .slider > .slide {
     display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%; }
-    .page-content > #jumbotron > .slider > .slide > #aerial {
-      margin-left: 59.70863%; }
-    .page-content > #jumbotron > .slider > .slide > .aerial.content {
-      position: absolute;
-      top: 29px;
+    .page-content > #jumbotron > .slider > .slide > img#aerial {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 57.35098%; }
+      width: 48.82117%; }
+      .page-content > #jumbotron > .slider > .slide > img#aerial:last-child {
+        margin-right: 0; }
+    .page-content > #jumbotron > .slider > .slide > .aerial.content {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 40.29137%;
+      margin-left: 8.5298%;
+      margin-top: 118.25px; }
       .page-content > #jumbotron > .slider > .slide > .aerial.content:last-child {
         margin-right: 0; }
     .page-content > #jumbotron > .slider > .slide > .training.content {
