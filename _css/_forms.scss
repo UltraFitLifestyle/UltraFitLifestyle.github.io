@@ -1,11 +1,11 @@
 @mixin submit-button {
 	text-shadow: 1px 1px $grey-dark;	
 	color: darken($white, 5%);
-	@include linear-gradient($base-color, $secondary-color);
+	@include linear-gradient($base-color-1, $base-color);
 	border-radius: $base-border-radius;
 	&:hover {
-		background-color: $secondary-color;
-		background-image: none;
+		color: $white;
+		@include linear-gradient($secondary-color-1, $secondary-color);
 	}
 }
 

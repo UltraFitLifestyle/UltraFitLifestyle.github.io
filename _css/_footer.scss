@@ -1,0 +1,12 @@
+footer {
+	> #subscribe {
+		@include span-columns(6);
+	}
+	> #blog {
+		@include span-columns(6);
+		@include omega;
+		> ul{
+			list-style: none;
+		}
+	}
+}

@@ -19,18 +19,16 @@ body {
 
 #homepage.page-content {
 	> .mindbody {
-		margin-top: 350px;
 		display: block;
 	}
-	> #subscribe {
-		@include span-columns(6);
-		@include omega;
-	}
+}
 
-	> #blog {
+#aerial-fitness {
+	
+	> .aerial {
 		@include span-columns(6);
-		//@include shift(1);
-		border: 1px solid black;
-		min-height: 100px;
+	}
+	> #rachel-on-silks {
+		@include span-columns(6);
 	}
 }
