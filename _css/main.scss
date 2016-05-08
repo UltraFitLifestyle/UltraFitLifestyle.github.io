@@ -6,6 +6,7 @@
 @import "footer";
 @import "jumbotron";
 @import "forms";
+@import "blog";
 
 body {
 	margin: 0;
@@ -24,11 +25,15 @@ body {
 }
 
 #aerial-fitness {
-	
 	> .aerial {
 		@include span-columns(6);
 	}
 	> #rachel-on-silks {
 		@include span-columns(6);
 	}
+}
+
+img {
+	max-width: 100%;
+	height: auto;
 }

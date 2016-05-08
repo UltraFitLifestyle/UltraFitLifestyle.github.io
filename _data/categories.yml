@@ -1,4 +1,16 @@
 - name: Fitness Journey
   slug: fitness-journey
+- name: UltraFitFinances
+  slug: ultrafitfinances
+- name: Featured
+  slug: featured
+- name: Family
+  slug: family
+- name: Success
+  slug: success
 - name: Shakeology
   slug: shakeology
+- name: Reviews
+  slug: reviews
+- name: Videos
+  slug: videos

@@ -19,7 +19,7 @@ a {
   text-decoration: none; }
 
 h1 {
-  font-family: "Radley", serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 1.9em;
   font-weight: 700;
   margin-bottom: 0.3em; }
@@ -28,74 +28,46 @@ h1 {
       font-size: 2.6em; } }
 
 h2 {
-  font-family: "Radley", serif;
+  color: #1C1621;
+  font-family: "Libre Baskerville", serif;
   font-size: 1.3em;
   font-weight: 400;
   line-height: 1.25em;
   margin-bottom: 0.9em; }
+  h2 > .post-links:hover {
+    text-decoration: underline; }
   @media screen and (min-width: 768px) {
     h2 {
       font-size: 1.5em; } }
 
-code {
-  background: #F7F7F7;
-  border-radius: 4.5px;
-  border: 1px solid #E0E0E0;
-  font-size: 0.75em;
-  font-style: normal;
-  padding: 0.1em 0.4em;
-  white-space: nowrap; }
-
-h2 code {
-  font-size: 0.65em; }
-
 h3 {
-  font-family: "Radley", serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 1.4em;
   font-style: italic;
   font-weight: 400;
   line-height: 1.3em;
   margin-bottom: 0.4em; }
 
-p.date {
-  color: rgba(28, 22, 33, 0.4);
-  font-family: "Radley", serif;
-  font-style: italic;
-  margin-bottom: 0.3em; }
-
 p {
   font-family: "Noto Sans", sans-serif;
-  letter-spacing: 1;
   line-height: 1.55em;
   margin-bottom: 1.5em; }
   p span {
-    font-family: "Radley", serif;
-    font-size: 1.2em;
-    font-style: italic; }
+    font-size: 1.2em; }
+    p span.italic {
+      font-style: italic; }
+    p span.bold {
+      font-weight: 600; }
 
-a.read-more {
-  display: inline-block;
-  font-family: "Noto Sans", sans-serif;
-  font-size: 0.8em;
-  font-weight: 700;
-  margin-left: 0.2em;
-  position: relative;
-  text-transform: uppercase; }
-  a.read-more span {
-    font-family: "Noto Sans", sans-serif;
-    font-size: 1.5em;
-    font-style: normal;
-    position: absolute;
-    right: -12px;
-    top: -1px; }
+.post > .post-content p,
+.blog p {
+  font-family: "Libre Baskerville", serif; }
 
 hr {
-  width: 3em; }
-
-p.author {
-  font-family: "Radley", serif;
-  font-size: 1.2em;
-  font-style: italic; }
+  width: 15em;
+  display: inline-block;
+  text-align: left;
+  margin-bottom: 25px; }
 
 .small {
   font-size: 0.7em; }
@@ -103,16 +75,18 @@ p.author {
 .italic {
   font-style: italic; }
 
+.bold {
+  font-weight: bold; }
+
 .underline {
-  font-style: underline; }
+  text-decoration: underline; }
 
 .centered-text, .caption {
   text-align: center; }
-  .centered-text > p, .caption > p {
-    display: inline-block; }
 
 .centered {
-  margin: 0 auto; }
+  margin-left: auto;
+  margin-right: auto; }
 
 .left {
   float: left; }
@@ -125,6 +99,12 @@ p.author {
 
 .green {
   color: green; }
+
+.inside {
+  list-style-position: inside; }
+
+.inline-block {
+  display: inline-block; }
 
 .site-header {
   max-width: 95%;
@@ -264,6 +244,148 @@ footer > #blog {
     background-image: -webkit-linear-gradient(#E0B3D5, #a95493);
     background-image: linear-gradient(#E0B3D5, #a95493); }
 
+#blog > .blog > .categories {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  background-color: #fff;
+  background-image: -webkit-linear-gradient(#fff, #f6f5f6);
+  background-image: linear-gradient(#fff, #f6f5f6);
+  border: 1px solid #f6f5f6;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px; }
+  #blog > .blog > .categories:last-child {
+    margin-right: 0; }
+  #blog > .blog > .categories:nth-child(2n) {
+    margin-right: 0; }
+  #blog > .blog > .categories:nth-child(2n+1) {
+    clear: left; }
+  #blog > .blog > .categories#fitness-journey {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    #blog > .blog > .categories#fitness-journey:last-child {
+      margin-right: 0; }
+
+.blog > .categories {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  background-color: #fff;
+  background-image: -webkit-linear-gradient(#fff, #f6f5f6);
+  background-image: linear-gradient(#fff, #f6f5f6);
+  border: 1px solid #f6f5f6;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px; }
+  .blog > .categories:last-child {
+    margin-right: 0; }
+
+.blog .category-links {
+  color: #a95493; }
+
+.blog .excerpt {
+  margin-top: 10px; }
+  .blog .excerpt > .post-title {
+    color: #1C1621;
+    text-align: center; }
+    .blog .excerpt > .post-title:hover {
+      text-decoration: underline; }
+  .blog .excerpt > .featured {
+    width: 600px;
+    height: 350px;
+    overflow: hidden;
+    text-align: center;
+    margin: 10px auto;
+    position: relative;
+    max-width: 100%; }
+    .blog .excerpt > .featured > img {
+      position: absolute;
+      margin: auto;
+      min-height: 100%;
+      min-width: 100%;
+      left: -100%;
+      right: -100%;
+      top: -100%;
+      bottom: -100%; }
+  .blog .excerpt .more {
+    color: #a95493; }
+  .blog .excerpt iframe {
+    display: block;
+    max-width: 100%; }
+  .blog .excerpt > .caption {
+    float: none;
+    text-align: left; }
+    .blog .excerpt > .caption > img {
+      display: block; }
+
+.blog .post-links {
+  display: block; }
+
+.post > .post-header {
+  padding-top: 15px; }
+  .post > .post-header .post-title {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 57.35098%;
+    margin-right: 0; }
+    .post > .post-header .post-title:last-child {
+      margin-right: 0; }
+  .post > .post-header .post-meta {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%;
+    text-align: right;
+    margin-right: 0; }
+    .post > .post-header .post-meta:last-child {
+      margin-right: 0; }
+  .post > .post-header .post-categories {
+    clear: left; }
+    .post > .post-header .post-categories > a {
+      display: block; }
+
+.post > .post-content img {
+  margin: 15px; }
+
+.post > .post-content > .featured {
+  text-align: center;
+  margin-bottom: 15px; }
+  .post > .post-content > .featured > img {
+    max-height: 500px;
+    width: auto; }
+
+.post > .post-content .caption > img {
+  max-width: 200px; }
+
+.post > .nav-links {
+  clear: both;
+  margin-top: 15px; }
+  .post > .nav-links > #next {
+    float: left; }
+  .post > .nav-links > #previous {
+    float: right; }
+
+#holiday-caption {
+  float: left;
+  clear: left;
+  text-align: center;
+  max-width: 200px;
+  margin-left: 15px; }
+
+#half-marathon-caption {
+  float: left;
+  clear: left;
+  text-align: center;
+  max-width: 230px;
+  margin-left: 40px;
+  margin-right: 40px; }
+
 body {
   margin: 0;
   background-color: #fff;
@@ -296,3 +418,7 @@ body {
   width: 48.82117%; }
   #aerial-fitness > #rachel-on-silks:last-child {
     margin-right: 0; }
+
+img {
+  max-width: 100%;
+  height: auto; }

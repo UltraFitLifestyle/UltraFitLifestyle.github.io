@@ -13,4 +13,12 @@ layout: default
     {{ content }}
   </div>
 
+	<div class="nav-links">
+	{% if page.next %}
+		<p id="next">Next post: <a href="{{page.next.url}}">{{page.next.title}}</a></p>
+	{% endif %}	
+	{% if page.previous %}
+		<p id="previous">Previous post: <a href="{{page.previous.url}}">{{page.previous.title}}</a></p>
+	{% endif %}
+	</div>
 </article>

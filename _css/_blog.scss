@@ -1,0 +1,138 @@
+@mixin categoryCards {
+	@include linear-gradient($white, lighten($grey-light, 42%) );
+	border: 1px solid lighten($grey-light, 42%);
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+#blog > .blog > .categories {
+	@include span-columns(6);
+	@include omega(2n);
+	@include categoryCards;
+	&#fitness-journey {
+		@include span-columns(12);
+	}
+}
+.blog {
+	> .categories {
+		@include span-columns(12);
+		@include categoryCards;
+	}
+	.category-links {
+		color: $secondary-color;
+	}
+	.excerpt {
+		margin-top: 10px;
+		> .post-title {
+			color: $base-font-color;
+			text-align: center;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		> .featured {
+			width: 600px;
+			height: 350px;
+			overflow: hidden;
+			text-align: center;
+			margin: 10px auto;
+			position: relative;
+			max-width: 100%;
+			> img {
+				position: absolute;
+				margin: auto;
+				min-height: 100%;
+				min-width: 100%;
+				left: -100%;
+				right: -100%;
+				top: -100%;
+				bottom: -100%;
+			}
+		}
+		.more {
+			color: $secondary-color;
+		}
+		iframe {
+			display: block;
+			max-width: 100%;
+		}
+		> .caption {
+			float: none;
+			text-align: left;	
+			> img {
+				display: block;
+			}
+		}
+	}
+	.older {
+		//margin-top: 15px;
+	}
+	.post-links {
+		display: block;
+	}
+}
+
+.post {
+	> .post-header {
+		padding-top: 15px;
+		.post-title {
+			@include span-columns(7);
+			@include omega;
+		}
+		.post-meta {
+			@include span-columns(5);
+			text-align: right;
+			@include omega;
+		}
+		.post-categories {
+			clear: left;
+			> a {
+				display: block;
+			}
+		}
+	}
+	> .post-content {
+		img {
+			margin: 15px;
+		}
+		> .featured {
+			text-align: center;
+			margin-bottom: 15px;
+			> img {
+				max-height: 500px;
+				width: auto;
+			}
+		}
+		.caption > img {
+			max-width: 200px;
+		}
+	}
+	> .nav-links {
+		clear: both;
+		margin-top: 15px;
+		> #next {
+			float: left;
+		}
+		> #previous {
+			float: right;
+		}
+	}
+}
+
+@mixin floatAndClearLeft {
+	float: left;
+	clear: left;
+	text-align: center;
+}
+#holiday-caption {
+	@include floatAndClearLeft;
+	max-width: 200px;
+	margin-left: 15px;
+}
+
+#half-marathon-caption {
+	@include floatAndClearLeft;	
+	max-width: 230px;
+	margin-left: 40px;
+	margin-right: 40px;
+}
