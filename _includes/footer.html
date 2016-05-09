@@ -1,14 +1,21 @@
-<footer>
-	<p>Download my FREE tipsheet! Just enter your information below!</p>
-	<h6>Submit Form to Download</h6>
-	<!--Social media links-->
-	<div id="recent-posts">
-	<h6>Recent Motivation</h6>
-	<!--Recent blog posts-->
+<footer>	
+	<div id="blog">
+		<h2>Recent Motivation</h2>
+		<ul>
+			{% for i in (0..2) %}
+				{% assign post = site.posts[i] %}
+				<li>
+				  <a href="{{ post.url }}">{{ post.title }}</a>
+				</li>
+				{% assign post = nil %}
+			{% endfor %}
+		</ul>
+		<p>Want more? See Rachel's <a href="{{ site.url }}/blog">full blog</a>.</p>
+	</div>
+	<div id="subscribe">
+		{% include mailchimp.html %}
+	</div>
 	
-	<p>UltraFitLifestyle by Rachel Tipton, Personal Trainer based in Pawleys Island, South Carolina</p>
-	<p>Personal Training, Virtual Training, Fitness Classes</p>
-	<p>#ultrafitlifestyle</p>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>	
 	<script src="{{ site.baseurl }}/public/all.js"></script>
 </footer>

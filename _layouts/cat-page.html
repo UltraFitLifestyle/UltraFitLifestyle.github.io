@@ -1,0 +1,19 @@
+---
+layout: default
+---
+{% assign cat-data = site.data.categories | where: "slug", page.id %}
+{% assign name = cat-data[0].name %}
+{% assign slug = cat-data[0].slug %}
+<div class="{{slug}} blog content">
+	<h1>{{name}}</h1>
+	<div id="{{slug}}" class="categories">
+		{% for post in site.categories[slug] limit:5 %}
+			{% include post-excerpt.html %}
+			<hr />
+		{% endfor %}
+		<p class="older">Older posts...</p>
+		{% for post in site.categories[slug] offset:5 %}
+			<a class="post-links" href="{{ post.url }}">{{ post.title }}</a>
+		{% endfor %}
+	</div>
+</div>

@@ -1,5 +1,6 @@
 .site-header {
 	@include outer-container(95%);
+	border-bottom: 1px solid $grey-light;
 	.logo {
 		margin-top: 10px;
 		float: left;

@@ -5,11 +5,20 @@ layout: default
 
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date_to_long_string }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+    <p class="post-categories">{% for data-category in site.data.categories %}{% for page-category in page.categories %}{% if page-category == data-category.slug %}<a href="{{site.url}}/category/{{data-category.slug}}">{{ data-category.name }}</a> {% endif %}{% endfor %}{% endfor %}</p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
     {{ content }}
   </div>
 
+	<div class="nav-links">
+	{% if page.next %}
+		<p id="next">Next post: <a href="{{page.next.url}}">{{page.next.title}}</a></p>
+	{% endif %}	
+	{% if page.previous %}
+		<p id="previous">Previous post: <a href="{{page.previous.url}}">{{page.previous.title}}</a></p>
+	{% endif %}
+	</div>
 </article>

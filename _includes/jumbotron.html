@@ -1,22 +1,19 @@
 <div id="jumbotron">
 	<div class="slider">
 		<div class="slide active-slide">
-			<img class="images" src="images/aerial-silks-2.JPG" />
-			<h1>Read Now #1</h1>
+			{% include aerial.html excerpt=true %}		
+			<img id="aerial" width="630" height="473" src="images/silk-cutout-630x473.png" />
 		</div>
 		<div class="slide">
-			<img class="images" src="images/RT-flip.jpg" />
-			<h1>Read Now #2</h1>
+			<!--<img class="stretch" src="images/RT-flip.jpg" />-->
+			{% include one-on-one.html excerpt=true %}
 		</div>
 		<div class="slide">
-			<img class="images" src="images/aerial-silks-2.JPG" />
-			<h1>Read Now #3</h1>
+			{% include about.html excerpt=true %}
 		</div>
 		<div class="slide">
-			<img class="images" src="images/RT-flip.jpg" />
-			<h1>Read Now #4</h1>
+			{% include contact.html excerpt=true %}
 		</div>
-		<!--<img class="images" width="640" height="214" src="images/aerial-silks-2.JPG" />-->
 	</div> <!--end .slider-->
 	<div class="slider-nav">
 		<a href="#" id="arrow-prev" class="arrows"><i class="fa fa-angle-left"></i></a>
