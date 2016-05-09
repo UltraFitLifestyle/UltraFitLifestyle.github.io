@@ -5,6 +5,14 @@
 	padding: 10px;
 	margin-bottom: 20px;
 }
+@mixin floatAndClearLeft {
+	float: left;
+	clear: left;
+	text-align: center;
+}
+/******************************
+* #blog is main category list page only
+******************************/
 #blog > .blog > .categories {
 	@include span-columns(6);
 	@include omega(2n);
@@ -13,6 +21,9 @@
 		@include span-columns(12);
 	}
 }
+/******************************
+* .blog is all category pages
+******************************/
 .blog {
 	> .categories {
 		@include span-columns(12);
@@ -38,7 +49,7 @@
 			margin: 10px auto;
 			position: relative;
 			max-width: 100%;
-			> img {
+			img {
 				position: absolute;
 				margin: auto;
 				min-height: 100%;
@@ -49,19 +60,22 @@
 				bottom: -100%;
 			}
 		}
+		> p {
+			display: inline;
+		}
+		> .caption {
+			float: none;
+			text-align: left;	
+			img {
+				display: block;
+			}
+		}
 		.more {
 			color: $secondary-color;
 		}
 		iframe {
 			display: block;
 			max-width: 100%;
-		}
-		> .caption {
-			float: none;
-			text-align: left;	
-			> img {
-				display: block;
-			}
 		}
 	}
 	.older {
@@ -71,7 +85,9 @@
 		display: block;
 	}
 }
-
+/******************************
+* .post is all individual posts
+******************************/
 .post {
 	> .post-header {
 		padding-top: 15px;
@@ -98,14 +114,27 @@
 		> .featured {
 			text-align: center;
 			margin-bottom: 15px;
-			> img {
+			img {
 				max-height: 500px;
 				width: auto;
 			}
 		}
-		.caption > img {
+		.caption img {
 			max-width: 200px;
 		}
+		//SPECIFIC POST STYLES HERE
+		#holiday-caption {
+			@include floatAndClearLeft;
+			max-width: 200px;
+			margin-left: 15px;
+		}
+		#half-marathon-caption {
+			@include floatAndClearLeft;	
+			max-width: 230px;
+			margin-left: 40px;
+			margin-right: 40px;
+		}
+		//END SPECIFIC STYLES
 	}
 	> .nav-links {
 		clear: both;
@@ -118,21 +147,9 @@
 		}
 	}
 }
-
-@mixin floatAndClearLeft {
-	float: left;
-	clear: left;
-	text-align: center;
-}
-#holiday-caption {
-	@include floatAndClearLeft;
-	max-width: 200px;
-	margin-left: 15px;
-}
-
-#half-marathon-caption {
-	@include floatAndClearLeft;	
-	max-width: 230px;
-	margin-left: 40px;
-	margin-right: 40px;
+//This one's special
+#resident-moms-header {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }

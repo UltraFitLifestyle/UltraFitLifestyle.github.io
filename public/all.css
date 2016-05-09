@@ -244,6 +244,9 @@ footer > #blog {
     background-image: -webkit-linear-gradient(#E0B3D5, #a95493);
     background-image: linear-gradient(#E0B3D5, #a95493); }
 
+/******************************
+* #blog is main category list page only
+******************************/
 #blog > .blog > .categories {
   float: left;
   display: block;
@@ -270,6 +273,9 @@ footer > #blog {
     #blog > .blog > .categories#fitness-journey:last-child {
       margin-right: 0; }
 
+/******************************
+* .blog is all category pages
+******************************/
 .blog > .categories {
   float: left;
   display: block;
@@ -303,7 +309,7 @@ footer > #blog {
     margin: 10px auto;
     position: relative;
     max-width: 100%; }
-    .blog .excerpt > .featured > img {
+    .blog .excerpt > .featured img {
       position: absolute;
       margin: auto;
       min-height: 100%;
@@ -312,20 +318,25 @@ footer > #blog {
       right: -100%;
       top: -100%;
       bottom: -100%; }
+  .blog .excerpt > p {
+    display: inline; }
+  .blog .excerpt > .caption {
+    float: none;
+    text-align: left; }
+    .blog .excerpt > .caption img {
+      display: block; }
   .blog .excerpt .more {
     color: #a95493; }
   .blog .excerpt iframe {
     display: block;
     max-width: 100%; }
-  .blog .excerpt > .caption {
-    float: none;
-    text-align: left; }
-    .blog .excerpt > .caption > img {
-      display: block; }
 
 .blog .post-links {
   display: block; }
 
+/******************************
+* .post is all individual posts
+******************************/
 .post > .post-header {
   padding-top: 15px; }
   .post > .post-header .post-title {
@@ -356,12 +367,27 @@ footer > #blog {
 .post > .post-content > .featured {
   text-align: center;
   margin-bottom: 15px; }
-  .post > .post-content > .featured > img {
+  .post > .post-content > .featured img {
     max-height: 500px;
     width: auto; }
 
-.post > .post-content .caption > img {
+.post > .post-content .caption img {
   max-width: 200px; }
+
+.post > .post-content #holiday-caption {
+  float: left;
+  clear: left;
+  text-align: center;
+  max-width: 200px;
+  margin-left: 15px; }
+
+.post > .post-content #half-marathon-caption {
+  float: left;
+  clear: left;
+  text-align: center;
+  max-width: 230px;
+  margin-left: 40px;
+  margin-right: 40px; }
 
 .post > .nav-links {
   clear: both;
@@ -371,20 +397,10 @@ footer > #blog {
   .post > .nav-links > #previous {
     float: right; }
 
-#holiday-caption {
-  float: left;
-  clear: left;
-  text-align: center;
-  max-width: 200px;
-  margin-left: 15px; }
-
-#half-marathon-caption {
-  float: left;
-  clear: left;
-  text-align: center;
-  max-width: 230px;
-  margin-left: 40px;
-  margin-right: 40px; }
+#resident-moms-header {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
 
 body {
   margin: 0;

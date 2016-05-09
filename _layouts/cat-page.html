@@ -8,11 +8,7 @@ layout: default
 	<h1>{{name}}</h1>
 	<div id="{{slug}}" class="categories">
 		{% for post in site.categories[slug] limit:5 %}
-			<div class="excerpt">
-				<a class="post-title" href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
-				{{ post.excerpt }}
-				<a class="more" href="{{ post.url }}">Read more...</a>
-			</div>
+			{% include post-excerpt.html %}
 			<hr />
 		{% endfor %}
 		<p class="older">Older posts...</p>
