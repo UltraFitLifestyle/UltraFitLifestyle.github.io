@@ -17,7 +17,7 @@ facebook_username:  ultrafitdancer
 youtube_channel: UCFLEr5VSdLjw_h4ejFbilyw
 instagram: ultrafitlifestyle
 linkedin: rachel-tipton-15aa4720
-permalink: /:categories/:title
+permalink: /:categories/:title.html
 excerpt_separator: </p>
 
 exclude: ["node_modules", "package.json", "gulpfile.js", "temp"]
