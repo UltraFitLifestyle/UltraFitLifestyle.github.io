@@ -8,12 +8,28 @@ layout: blog
 {% assign tags = site.tags[prettyTag] %}
 <div class="{{ page.id }} blog content">
 	<h1>Posts tagged with "{{prettyTag}}"</h1>
-	{% for post in tags limit:5 %}
-		{% include post-excerpt.html %}
-		<hr />
-	{% endfor %}
-	<p class="older">Older posts...</p>
-	{% for post in tags offset:5 %}
-		<a class="post-links" href="{{ post.url }}">{{ post.title }}</a>
-	{% endfor %}
+	<div id="{{page.id}}" class="tags">
+		{% for post in tags limit:5 %}
+			{% include post-excerpt.html %}
+			<hr />
+		{% endfor %}
+		<div class="old-posts">
+			<p class="older">Older posts with this tag...</p>
+			<div class="hidden"><ul>
+			{% for post in tags offset:5 %}
+				{% assign postYear = (post.date | date: "%Y") %}
+				{% if postYear != prevPostYear %}
+					</ul>
+					</div>
+					<div class="years">
+					<h3>{{postYear}}</h3>
+					<ul>
+				{% endif %}
+				<li><a class="post-links" href="{{ post.url }}">{{ post.title }}</a></li>
+				{% assign prevPostYear = postYear %} 
+			{% endfor %}
+			</ul>
+			</div>
+		</div>
+	</div>
 </div>
