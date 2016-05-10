@@ -65,7 +65,8 @@ p {
 
 hr {
   width: 15em;
-  display: inline-block;
+  display: block;
+  clear: both;
   text-align: left;
   margin-bottom: 25px; }
 
