@@ -130,24 +130,31 @@ hr {
       .site-header .social-links > a > .fa {
         font-size: 20px; }
 
-footer > #subscribe {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%; }
-  footer > #subscribe:last-child {
+footer {
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto; }
+  footer::after {
+    clear: both;
+    content: "";
+    display: table; }
+  footer > #subscribe {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    footer > #subscribe:last-child {
+      margin-right: 0; }
+  footer > #links {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
     margin-right: 0; }
-
-footer > #blog {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%;
-  margin-right: 0; }
-  footer > #blog:last-child {
-    margin-right: 0; }
-  footer > #blog > ul {
-    list-style: none; }
+    footer > #links:last-child {
+      margin-right: 0; }
+    footer > #links > ul {
+      list-style: none; }
 
 .page-content > #jumbotron > .slider {
   position: relative;
@@ -258,8 +265,8 @@ footer > #blog {
   background-image: linear-gradient(#fff, #f6f5f6);
   border: 1px solid #f6f5f6;
   border-radius: 5px;
-  padding: 10px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  overflow: hidden; }
   #blog > .blog > .categories:last-child {
     margin-right: 0; }
   #blog > .blog > .categories:nth-child(2n) {
@@ -273,6 +280,18 @@ footer > #blog {
     width: 100%; }
     #blog > .blog > .categories#fitness-journey:last-child {
       margin-right: 0; }
+  #blog > .blog > .categories > .cat-header {
+    background-color: #662d91;
+    text-align: center;
+    width: 100%; }
+    #blog > .blog > .categories > .cat-header > a {
+      color: #9C70BF;
+      text-shadow: 1px 1px #3B0961;
+      font-size: 20px; }
+      #blog > .blog > .categories > .cat-header > a:hover {
+        text-shadow: none; }
+  #blog > .blog > .categories > .cat-content {
+    margin: 10px; }
 
 /******************************
 * .blog is all category pages
@@ -287,8 +306,8 @@ footer > #blog {
   background-image: linear-gradient(#fff, #f6f5f6);
   border: 1px solid #f6f5f6;
   border-radius: 5px;
-  padding: 10px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  overflow: hidden; }
   .blog > .categories:last-child {
     margin-right: 0; }
 
@@ -300,8 +319,6 @@ footer > #blog {
   .blog .excerpt > .post-title {
     color: #1C1621;
     text-align: center; }
-    .blog .excerpt > .post-title:hover {
-      text-decoration: underline; }
   .blog .excerpt > .featured {
     width: 600px;
     height: 350px;

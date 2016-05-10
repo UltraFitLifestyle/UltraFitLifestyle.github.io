@@ -2,8 +2,9 @@
 	@include linear-gradient($white, lighten($grey-light, 42%) );
 	border: 1px solid lighten($grey-light, 42%);
 	border-radius: 5px;
-	padding: 10px;
+	//padding: 10px;
 	margin-bottom: 20px;
+	overflow: hidden;
 }
 @mixin floatAndClearLeft {
 	float: left;
@@ -19,6 +20,22 @@
 	@include categoryCards;
 	&#fitness-journey {
 		@include span-columns(12);
+	}
+	> .cat-header {
+		background-color: $base-color;
+		text-align: center;
+		width: 100%;
+		> a {
+			color: $base-color-1;
+			text-shadow: 1px 1px $base-color-4;
+			font-size: 20px;
+			&:hover {
+				text-shadow: none;
+			}
+		}
+	}
+	> .cat-content {
+		margin: 10px;
 	}
 }
 /******************************
@@ -37,9 +54,6 @@
 		> .post-title {
 			color: $base-font-color;
 			text-align: center;
-			&:hover {
-				text-decoration: underline;
-			}
 		}
 		> .featured {
 			width: 600px;

@@ -1,14 +1,9 @@
 <footer>	
 	<div id="links">
-		<h2>Recent Motivation</h2>
+		<h2>Schedule a consultation</h2>
 		<ul>
-			{% for i in (0..2) %}
-				{% assign post = site.posts[i] %}
-				<li>
-				  <a href="{{ post.url }}">{{ post.title }}</a>
-				</li>
-				{% assign post = nil %}
-			{% endfor %}
+			<li><a href="{{ site.url }}/contact-rachel">Contact Rachel</a></li>
+			<li><a href="{{ site.url }}/contact-rachel">Contact Rachel</a></li>
 		</ul>
 		<p>Want more? See Rachel's <a href="{{ site.url }}/blog">full blog</a>.</p>
 	</div>

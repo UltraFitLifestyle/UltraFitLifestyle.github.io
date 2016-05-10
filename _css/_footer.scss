@@ -1,8 +1,9 @@
 footer {
+	@include outer-container($content-width);
 	> #subscribe {
 		@include span-columns(6);
 	}
-	> #blog {
+	> #links {
 		@include span-columns(6);
 		@include omega;
 		> ul{

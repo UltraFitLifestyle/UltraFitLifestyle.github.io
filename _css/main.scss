@@ -15,7 +15,7 @@ body {
 }
 
 .page-content {
-	@include outer-container(95%);
+	@include outer-container($content-width);
 }
 
 #homepage.page-content {

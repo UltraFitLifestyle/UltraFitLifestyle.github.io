@@ -1,5 +1,5 @@
 .site-header {
-	@include outer-container(95%);
+	@include outer-container($content-width);
 	border-bottom: 1px solid $grey-light;
 	.logo {
 		margin-top: 10px;
