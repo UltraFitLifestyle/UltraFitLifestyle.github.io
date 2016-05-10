@@ -1,104 +1,320 @@
-- slug: 1stPhorm
-  name: 1st Phorm
-- slug: beachody
-  name: BeachBody
-- slug: CarlDaikler
-  name: Carl Daikler
-- slug: coconutoil
-  name: coconut oil
-- slug: contemporarydance
-  name: contemporary dance
-- slug: CrohnsDisease
-  name: Crohns Disease
-- slug: CrohnsFaith
-  name: CrohnsFaith
-- slug: dancerproblems
-  name: dancer problems
-- slug: DaveRamsey
-  name: Dave Ramsey
-- slug: eatingdisorders
-  name: eating disorders
-- slug: financialfreedom
-  name: financialfreedom
-- slug: fitnessresults
-  name: fitness results
-- slug: freeradicals
-  name: free radicals
-- slug: GeorgeBalanchine
-  name: George Balanchine
-- slug: getfit
-  name: get fit
-- slug: getlean
-  name: get lean
-- slug: getstarted
-  name: get started
-- slug: goalsetting
-  name: goal setting
-- slug: halfmarathon
-  name: half marathon
-- slug: healthbenefits
-  name: health benefits
-- slug: homebusiness
-  name: home business
-- slug: injuryprevention
-  name: injury prevention
-- slug: JosephPilates
-  name: Joseph Pilates
-- slug: leapoffaith
-  name: leap of faith
-- slug: LesMills
-  name: Les Mills
-- slug: LitchfieldDance
-  name: Litchfield Dance
-- slug: LitchfieldRealEstate
-  name: Litchfield Real Estate
-- slug: loseweight
-  name: lose weight
-- slug: MathaGraham
-  name: Matha Graham
-- slug: mealreplacement
-  name: meal replacement
-- slug: MyrtleBeach
-  name: Myrtle Beach
-- slug: PawleysIsland
-  name: Pawleys Island
-- slug: personaldevelopment
-  name: personal development
-- slug: pyramidscheme
-  name: pyramid scheme
-- slug: racheltipton
-  name: Rachel Tipton
-- slug: retireinspired
-  name: retire inspired
-- slug: selfcare
-  name: self care
-- slug: ShaunT
-  name: Shaun T
-- slug: skincare
-  name: skin care
-- slug: SkinnyMom
-  name: Skinny Mom
-- slug: stayathomemom
-  name: stay at home mom
-- slug: sugaraddiction
-  name: sugar addiction
-- slug: summersale
-  name: summer sale
-- slug: timemanagement
-  name: time management
-- slug: TonyHorton
-  name: Tony Horton
-- slug: ultimatereset
-  name: Ultimate Reset
-- slug: UltraFitFinances
-  name: UltraFitFinances
-- slug: UltraFitLifestyle
-  name: UltraFitLifestyle
-- slug: vanillashakeology
-  name: vanilla Shakeology
-- slug: weightloss
-  name: weight loss
-- slug: womensfitness
-  name: womens fitness
-- slug: workfromhome
-  name: work from home
+- name: '1st Phorm'
+  slug: 1st-phorm
+- name: aerial
+  slug: aerial
+- name: alcohol
+  slug: alcohol
+- name: asylum
+  slug: asylum
+- name: athlete
+  slug: athlete
+- name: autism
+  slug: autism
+- name: avocado
+  slug: avocado
+- name: awesome
+  slug: awesome
+- name: ballet
+  slug: ballet
+- name: beachbody
+  slug: beachbody
+- name: BodyGospel
+  slug: bodygospel
+- name: bootcamp
+  slug: bootcamp
+- name: BrazilButtLift
+  slug: brazilbuttlift
+- name: budget
+  slug: budget
+- name: business
+  slug: business
+- name: busy
+  slug: busy
+- name: butterfly
+  slug: butterfly
+- name: 'Carl Daikler'
+  slug: carl-daikler
+- name: challenge
+  slug: challenge
+- name: ChrisHogan360
+  slug: chrishogan360
+- name: Christmas
+  slug: christmas
+- name: cleanse
+  slug: cleanse
+- name: coaching
+  slug: coaching
+- name: CoachSummit
+  slug: coachsummit
+- name: 'coconut oil'
+  slug: coconut-oil
+- name: colitis
+  slug: colitis
+- name: 'contemporary dance'
+  slug: contemporary-dance
+- name: courage
+  slug: courage
+- name: Crohns
+  slug: crohns
+- name: 'Crohns Disease'
+  slug: crohns-disease
+- name: Crohnsfaith
+  slug: crohnsfaith
+- name: dance
+  slug: dance
+- name: dancer
+  slug: dancer
+- name: 'dancer problems'
+  slug: dancer-problems
+- name: 'Dave Ramsey'
+  slug: dave-ramsey
+- name: debt
+  slug: debt
+- name: decisions
+  slug: decisions
+- name: depression
+  slug: depression
+- name: detox
+  slug: detox
+- name: Disney
+  slug: disney
+- name: 'dream big'
+  slug: dreambig
+- name: dreams
+  slug: dreams
+- name: eat
+  slug: eat
+- name: 'eating disorders'
+  slug: eating-disorders
+- name: 'energy&endurance'
+  slug: energyendurance
+- name: excitement
+  slug: excitement
+- name: exercise
+  slug: exercise
+- name: fail
+  slug: fail
+- name: fear
+  slug: fear
+- name: finances
+  slug: finances
+- name: 'financial freedom'
+  slug: financialfreedom
+- name: fit
+  slug: fit
+- name: fitness
+  slug: fitness
+- name: 'fitness results'
+  slug: fitness-results
+- name: flu
+  slug: flu
+- name: food
+  slug: food
+- name: 'free radicals'
+  slug: free-radicals
+- name: 'George Balanchine'
+  slug: george-balanchine
+- name: 'get fit'
+  slug: get-fit
+- name: 'get lean'
+  slug: get-lean
+- name: 'get started'
+  slug: get-started
+- name: 'goal setting'
+  slug: goal-setting
+- name: goals
+  slug: goals
+- name: 'half marathon'
+  slug: half-marathon
+- name: health
+  slug: health
+- name: 'health benefits'
+  slug: health-benefits
+- name: healthy
+  slug: healthy
+- name: holidays
+  slug: holidays
+- name: 'home business'
+  slug: home-business
+- name: IBD
+  slug: ibd
+- name: illness
+  slug: illness
+- name: injury
+  slug: injury
+- name: 'injury prevention'
+  slug: injury-prevention
+- name: insanity
+  slug: insanity
+- name: inspiration
+  slug: inspiration
+- name: 'Joseph Pilates'
+  slug: joseph-pilates
+- name: 'leap of faith'
+  slug: leap-of-faith
+- name: 'Les Mills'
+  slug: les-mills
+- name: lifestyle
+  slug: lifestyle
+- name: Litchfield
+  slug: litchfield
+- name: 'Litchfield Dance'
+  slug: litchfield-dance
+- name: 'Litchfield Real Estate'
+  slug: litchfield-real-estate
+- name: 'lose weight'
+  slug: lose-weight
+- name: mango
+  slug: mango
+- name: marathon
+  slug: marathon
+- name: 'Martha Graham'
+  slug: martha-graham
+- name: MBmini
+  slug: mbmini
+- name: meal
+  slug: meal
+- name: 'meal replacement'
+  slug: meal-replacement
+- name: metamorphosis
+  slug: metamorphosis
+- name: moderation
+  slug: moderation
+- name: moms
+  slug: moms
+- name: money
+  slug: money
+- name: mood
+  slug: mood
+- name: motivation
+  slug: motivation
+- name: 'Myrtle Beach'
+  slug: myrtle-beach
+- name: Newspring
+  slug: newspring
+- name: NewYearsResolutions
+  slug: newyearsresolutions
+- name: nutrients
+  slug: nutrients
+- name: nutrition
+  slug: nutrition
+- name: obesity
+  slug: obesity
+- name: overeat
+  slug: overeat
+- name: P90X
+  slug: p90x
+- name: P90X3
+  slug: p90x3
+- name: papaya
+  slug: papaya
+- name: 'Pawleys Island'
+  slug: pawleys-island
+- name: 'personal development'
+  slug: personal-development
+- name: pilates
+  slug: pilates
+- name: PiYo
+  slug: piyo
+- name: plateau
+  slug: plateau
+- name: prizes
+  slug: prizes
+- name: productivity
+  slug: productivity
+- name: 'pyramid scheme'
+  slug: pyramid-scheme
+- name: race
+  slug: race
+- name: 'Rachel Tipton'
+  slug: rachel-tipton
+- name: recipes
+  slug: recipes
+- name: rest
+  slug: rest
+- name: 'retire inspired'
+  slug: retire-inspired
+- name: Rodan+Fields
+  slug: rodanfields
+- name: run
+  slug: run
+- name: rundisney
+  slug: rundisney
+- name: runner
+  slug: runner
+- name: running
+  slug: running
+- name: sales
+  slug: sales
+- name: SCD
+  slug: scd
+- name: 'self care'
+  slug: self-care
+- name: shake
+  slug: shake
+- name: shakeology
+  slug: shakeology
+- name: 'Shaun T'
+  slug: shaun-t
+- name: 'skin care'
+  slug: skin-care
+- name: 'Skinny Mom'
+  slug: skinny-mom
+- name: 'stay at home mom'
+  slug: stay-at-home-mom
+- name: stress
+  slug: stress
+- name: stretch
+  slug: stretch
+- name: stretching
+  slug: stretching
+- name: success
+  slug: success
+- name: 'sugar addiction'
+  slug: sugar-addiction
+- name: 'summer sale'
+  slug: summer-sale
+- name: T25
+  slug: t25
+- name: Thanksgiving
+  slug: thanksgiving
+- name: 'time management'
+  slug: time-management
+- name: tips
+  slug: tips
+- name: 'Tony Horton'
+  slug: tony-horton
+- name: train
+  slug: train
+- name: transformation
+  slug: transformation
+- name: 'TurboFire'
+  slug: turbofire
+- name: 'Ultimate Reset'
+  slug: ultimate-reset
+- name: UltraFitFinances
+  slug: ultrafitfinances
+- name: UltraFitLifestyle
+  slug: ultrafitlifestyle
+- name: 'vanilla Shakeology'
+  slug: vanilla-shakeology
+- name: vitamins
+  slug: vitamins
+- name: walnuts
+  slug: walnuts
+- name: WDWhalf
+  slug: wdwhalf
+- name: 'weight loss'
+  slug: weight-loss
+- name: wellness
+  slug: wellness
+- name: win
+  slug: win
+- name: 'womens fitness'
+  slug: womens-fitness
+- name: 'work from home'
+  slug: work-from-home
+- name: workout
+  slug: workout
+- name: yoga
+  slug: yoga

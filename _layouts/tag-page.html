@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+{% assign tag-data = site.data.tags | where: "slug", page.id %}
+{% assign prettyTag = tag-data[0].name %}
+
+{% assign tags = site.tags[prettyTag] %}
+<div class="{{ page.id }} blog content">
+	<h1>Posts tagged with "{{prettyTag}}"</h1>
+	{% for post in tags limit:5 %}
+		{% include post-excerpt.html %}
+		<hr />
+	{% endfor %}
+	<p class="older">Older posts...</p>
+	{% for post in tags offset:5 %}
+		<a class="post-links" href="{{ post.url }}">{{ post.title }}</a>
+	{% endfor %}
+</div>
