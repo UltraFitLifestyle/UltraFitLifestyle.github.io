@@ -1,0 +1,13 @@
+<div id="blog-links">
+	<h2>Recent Motivation</h2>
+	<ul>
+		{% for i in (0..1) %}
+			{% assign post = site.posts[i] %}
+			<li>
+			  <a href="{{ post.url }}">{{ post.title }}</a>
+			</li>
+			{% assign post = nil %}
+		{% endfor %}
+	</ul>
+	<p>Want more? Check out Rachel's <a href="{{ site.url }}/blog">blog</a>.</p>
+</div>

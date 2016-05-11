@@ -148,13 +148,21 @@ footer {
     clear: both;
     content: "";
     display: table; }
-  footer > #subscribe {
+  footer > #contact-links {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 48.82117%; }
-    footer > #subscribe:last-child {
+    width: 48.82117%;
+    margin-right: 0; }
+    footer > #contact-links:last-child {
       margin-right: 0; }
+    footer > #contact-links ul {
+      list-style: none;
+      padding: 0; }
+      footer > #contact-links ul > li {
+        padding-bottom: 5px; }
+        footer > #contact-links ul > li > span {
+          color: #a95493; }
   footer > #blog-links {
     float: left;
     display: block;
@@ -164,15 +172,47 @@ footer {
     footer > #blog-links:last-child {
       margin-right: 0; }
     footer > #blog-links > ul {
-      list-style: none; }
-  footer > #contact-links {
+      list-style: none;
+      padding: 0; }
+      footer > #blog-links > ul > li {
+        padding-bottom: 5px; }
+  footer > .social-links {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 48.82117%;
-    margin-right: 0; }
-    footer > #contact-links:last-child {
+    width: 100%;
+    text-align: center; }
+    footer > .social-links:last-child {
       margin-right: 0; }
+    footer > .social-links > a {
+      margin-right: 1em;
+      text-decoration: none; }
+      footer > .social-links > a:last-child {
+        margin-right: 0; }
+      footer > .social-links > a > .fa {
+        font-size: 20px; }
+  footer > #footer-bottom p {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    color: #a95493; }
+    footer > #footer-bottom p:last-child {
+      margin-right: 0; }
+    footer > #footer-bottom p:nth-child(2) {
+      margin-right: 0;
+      text-align: center; }
+    footer > #footer-bottom p:nth-child(3) {
+      text-align: right; }
+  @media screen and (max-width: 768px) {
+    footer > #contact-links, footer > #blog-links {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      text-align: center; }
+      footer > #contact-links:last-child, footer > #blog-links:last-child {
+        margin-right: 0; } }
 
 .page-content > #jumbotron > .slider {
   position: relative;

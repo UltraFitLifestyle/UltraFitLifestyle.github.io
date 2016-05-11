@@ -1,19 +1,8 @@
 <footer>
 	{% include contact-links.html %}
+	{% include blog-links.html %}
 	{% include social-links.html %}
-	<div id="blog-links">
-		<h2>Recent Motivation</h2>
-		<ul>
-			{% for i in (0..2) %}
-				{% assign post = site.posts[i] %}
-				<li>
-				  <a href="{{ post.url }}">{{ post.title }}</a>
-				</li>
-				{% assign post = nil %}
-			{% endfor %}
-		</ul>
-		<p>Want more? See Rachel's <a href="{{ site.url }}/blog">full blog</a>.</p>
-	</div>
+	{% include footer-bottom.html %}
 	
 	{% include scripts.html %}
 </footer>

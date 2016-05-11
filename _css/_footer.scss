@@ -1,17 +1,61 @@
 footer {
 	@include outer-container($content-width);
-	> #subscribe {
+	> #contact-links {
 		@include span-columns(6);
+		@include omega;
+		ul {
+			list-style: none;
+			padding:0;
+			> li {
+				padding-bottom: 5px;
+				> span {
+					color: $secondary-color;
+				}
+			}
+		}
 	}
 	> #blog-links {
 		@include span-columns(6);
 		text-align: right;
 		> ul{
 			list-style: none;
+			padding: 0;
+			> li {
+				padding-bottom: 5px;
+			}
+		}		
+	}
+	> .social-links {
+		@include span-columns(12);
+		text-align: center;
+		> a {
+			margin-right: 1em;
+			&:last-child {
+				margin-right: 0;
+			}
+			text-decoration: none;
+			> .fa {
+				font-size: 20px;
+			}
 		}
 	}
-	> #contact-links{
-		@include span-columns(6);
-		@include omega;
+	> #footer-bottom {
+		p {
+			@include span-columns(4);
+			color: $secondary-color;
+			&:nth-child(2) {
+				@include omega;
+				text-align: center;
+			}
+			&:nth-child(3) {
+				text-align: right;
+			}
+		}
+	}
+	@include media(max-width $medium-screen) {
+		> #contact-links, > #blog-links {
+			@include span-columns(12);
+			text-align: center;
+		}
 	}
 }
