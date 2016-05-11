@@ -54,9 +54,7 @@ body {
 
 #personal-training {	
 	> #rt-white {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
+		@include center-img;
 	}
 }
 
@@ -64,6 +62,22 @@ body {
 	#headshot {
 		float: left;
 		margin-right: $content-margin;
+		@include media(max-width $large-screen) {
+			width: 379px;
+			height: auto;
+		}		
+		@include media(max-width $medium-screen) {
+			width: 253px;
+		}
+		@include media(max-width $small-screen) {
+			@include center-img;
+			float: none;
+		}
+	}
+	> .about > p {
+		@include media(max-width $small-screen) {
+			clear: left;
+		}
 	}
 }
 

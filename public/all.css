@@ -915,6 +915,23 @@ body {
 #about-rachel #headshot {
   float: left;
   margin-right: 15px; }
+  @media screen and (max-width: 1024px) {
+    #about-rachel #headshot {
+      width: 379px;
+      height: auto; } }
+  @media screen and (max-width: 768px) {
+    #about-rachel #headshot {
+      width: 253px; } }
+  @media screen and (max-width: 480px) {
+    #about-rachel #headshot {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      float: none; } }
+
+@media screen and (max-width: 480px) {
+  #about-rachel > .about > p {
+    clear: left; } }
 
 img {
   max-width: 100%;
