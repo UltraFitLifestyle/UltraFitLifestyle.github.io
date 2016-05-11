@@ -851,6 +851,9 @@ body {
     clear: both;
     content: "";
     display: table; }
+  .page-content > .content {
+    margin-top: 15px;
+    margin-bottom: 15px; }
 
 #homepage.page-content > .mindbody {
   display: block; }
@@ -861,9 +864,7 @@ body {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 57.35098%;
-    margin-top: 15px;
-    margin-bottom: 15px; }
+    width: 57.35098%; }
     #aerial-fitness > .aerial:last-child {
       margin-right: 0; }
   #aerial-fitness > #rachel-on-silks {
@@ -905,6 +906,11 @@ body {
       margin-left: 0%; }
       #aerial-fitness > #rachel-on-silks:last-child {
         margin-right: 0; } }
+
+#personal-training > #rt-white {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
 
 #about-rachel #headshot {
   float: left;

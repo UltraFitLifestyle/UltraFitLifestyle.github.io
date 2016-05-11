@@ -16,6 +16,10 @@ body {
 
 .page-content {
 	@include outer-container($content-width);
+	> .content {
+		margin-top: $content-margin;
+		margin-bottom: $content-margin;	
+	}
 }
 
 #homepage.page-content {
@@ -28,8 +32,6 @@ body {
 	position: relative;
 	> .aerial {
 		@include span-columns(7);
-		margin-top: $content-margin;
-		margin-bottom: $content-margin;
 	}
 	> #rachel-on-silks {
 		@include span-columns(5);
@@ -47,6 +49,14 @@ body {
 				@include shift(0);
 			}
 		}
+	}
+}
+
+#personal-training {	
+	> #rt-white {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 
