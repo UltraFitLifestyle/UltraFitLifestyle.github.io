@@ -25,18 +25,35 @@ body {
 }
 
 #aerial-fitness {
+	position: relative;
 	> .aerial {
-		@include span-columns(6);
+		@include span-columns(7);
+		margin-top: $content-margin;
+		margin-bottom: $content-margin;
 	}
 	> #rachel-on-silks {
-		@include span-columns(6);
+		@include span-columns(5);
+	}
+	@include media(max-width $large-screen){
+		> .aerial {
+			@include span-columns(12);
+		}
+		> #rachel-on-silks {
+			@include send-to-back;
+			@include span-columns(8);
+			@include shift(2);
+			@include media(max-width $medium-screen){
+				@include span-columns(12);
+				@include shift(0);
+			}
+		}
 	}
 }
 
 #about-rachel {
 	#headshot {
 		float: left;
-		margin-right: 15px;
+		margin-right: $content-margin;
 	}
 }
 

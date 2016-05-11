@@ -32,3 +32,10 @@ $xs-screen: 320px;
 $header-height: 66px;
 
 $content-width: 95%;
+$content-margin: 15px;
+
+@mixin send-to-back {
+	@include position(absolute, 0 0 0 0);
+	opacity: 0.2;
+	z-index: -1;
+}
