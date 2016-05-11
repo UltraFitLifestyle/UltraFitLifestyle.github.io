@@ -1,5 +1,7 @@
-<footer>	
-	<div id="links">
+<footer>
+	{% include contact-links.html %}
+	{% include social-links.html %}
+	<div id="blog-links">
 		<h2>Recent Motivation</h2>
 		<ul>
 			{% for i in (0..2) %}
@@ -11,9 +13,6 @@
 			{% endfor %}
 		</ul>
 		<p>Want more? See Rachel's <a href="{{ site.url }}/blog">full blog</a>.</p>
-	</div>
-	<div id="subscribe">
-		{% include mailchimp.html %}
 	</div>
 	
 	{% include scripts.html %}

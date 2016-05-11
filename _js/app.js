@@ -79,6 +79,6 @@ function slideToIndex(index){
 
 function startInterval(lengthOfTime){
 	return intervalId = setInterval( function(){
-			slideToNext();
+			//slideToNext();
 		}, lengthOfTime);
 }

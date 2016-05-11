@@ -1,53 +1,149 @@
-@mixin slider-height{
-		height: 107px;
-		@include media(min-width $small-screen){
-			height: 160px;
-		}
-		@include media(min-width $medium-screen){
-			height: 256px;
-		}		
-		@include media(min-width $large-screen){
-			height: 342px;
-		}
+$slide-height-max: 473px;
+$slide-height-xl: 358px;
+$slide-height-large: 258px;
+
+@mixin slide-height {
+	height: $slide-height-max;	
+	@include media(max-width $xl-screen){
+		height: $slide-height-xl;
+	}
+	@include media(max-width $large-screen){
+		height: $slide-height-large;
+	}
 }
 
-$slide-height: 473px;
+@mixin excerpt-margin($divisor) {
+	margin-top: $slide-height-max / $divisor;
+	@include media(max-width $xl-screen){
+		margin-top: $slide-height-xl / $divisor / 2;
+	}
+	@include media(max-width $large-screen){
+		margin-top: $slide-height-large / $divisor / 4;
+	}	
+}
 
+@mixin send-to-back {
+	@include position(absolute, 0 0 0 0);
+	opacity: 0.2;
+	z-index: -1;
+}
 .page-content > #jumbotron {
 	> .slider {
 		@include position(relative);
-		//@include slider-height;
-		height: $slide-height;
+		@include slide-height;
 		border-bottom: 1px solid #ddd;
 		overflow: hidden;
 		> .slide {
 			display: none;
 			@include fill-parent();
+			@include position(absolute, 0 0 0 0);
+			overflow: hidden;						
 			> img#aerial {
-				@include span-columns(6);
+				@include span-columns(3);
+				@include shift(1);
+				@include media(max-width $medium-screen) {
+					@include span-columns(5);
+					@include shift(7);
+					@include send-to-back;
+				}
+				@include media(max-width $small-screen) {
+					@include span-columns(7);
+					@include shift(5);
+				}
 			}
 			> .aerial.content {
 				@include span-columns(5);
 				@include shift(1);
-				margin-top: $slide-height / 4;
+				@include excerpt-margin(4);
+				@include media(max-width $medium-screen) {
+					@include span-columns(12);
+					@include shift(0);
+				}				
+			}
+			> img#training {
+				@include fill-parent;
+				@include send-to-back;
+				@include media(max-width $small-screen) {
+					margin: auto;
+					min-height: 100%;
+					max-width: none;
+					width: 150%;
+					left: -100%;
+					right: -100%;
+					top: -100%;
+					bottom: -100%;
+				}
+				@include media(max-width $medium-screen) {
+					height: 100%;
+				}
 			}
 			> .training.content {
-				@include position(absolute, 29px null null null);
-				@include span-columns(5);
-				@include shift(6);
-			}
-			> .about.content {
-				@include position(absolute, 29px null null null);
 				@include span-columns(8);
 				@include shift(2);
+				@include excerpt-margin(4);
+				> a {
+					color: $secondary-color;
+				}
+				@include media(max-width $xl-screen) {
+					@include excerpt-margin(2);
+				}
+				@include media(max-width $medium-screen) {
+					@include excerpt-margin(2);
+					@include span-columns(12);
+					@include shift(0);
+				}				
+			}
+			> img#headshot {
+				@include span-columns(4);
+				@include media(max-width $xl-screen){
+					@include span-columns(3.75);
+				}
+				@include media(max-width $large-screen){
+					@include span-columns(3.6);
+				}
+				@include media(max-width $medium-screen){
+					display: none;
+				}				
+			}
+			> .about.content {
+				@include span-columns(8);
+				@include excerpt-margin(4);
+				@include media(max-width $medium-screen){
+					margin-top: 15px;
+					@include span-columns(12);
+				}				
+			}
+			> img#rachel {
+				@include span-columns(5);
+				@include media(max-width $xl-screen){
+					@include span-columns(4.75);
+				}
+				@include media(max-width $medium-screen){
+					@include span-columns(7);
+				}
+				@include media(max-width $small-screen){
+					@include send-to-back;
+					@include span-columns(11);
+					@include shift(1);
+				}				
 			}
 			> .contact.content {
-				@include position(absolute, 29px null null null);
 				@include span-columns(7);
-			}
-			> .stretch {
-				@include fill-parent();
-				z-index: 1;
+				@include excerpt-margin(4);
+				a {
+					color: $secondary-color;
+				}
+				@include media(max-width $xl-screen) {
+					@include excerpt-margin(2);
+				}				
+				@include media(max-width $medium-screen){
+					@include span-columns(5);
+					@include excerpt-margin(2);					
+				}
+				@include media(max-width $small-screen){
+					@include span-columns(12);
+					@include excerpt-margin(2);					
+				}
 			}
 		}
 		> .active-slide {

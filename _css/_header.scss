@@ -7,10 +7,16 @@
 	}
 	.social-links {
 		display: inline;
+		@include media(max-width $small-screen){
+			display: none;
+		}
 		float: right;
 		> a {
 			float: left;
 			@include margin( 23px 1em null null);
+			@include media(max-width $medium-screen) {
+				@include margin( 23px 0.8em null null);
+			}
 			text-decoration: none;
 			> .fa {
 				font-size: 20px;

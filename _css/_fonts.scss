@@ -34,8 +34,8 @@ h1 {
 	font-weight: 700;
 	margin-bottom: 0.3em;
 
-	@include media($medium-screen) {
-		font-size: 2.6em;
+	@include media(min-width $medium-screen + 1) {
+		font-size: 2.5em;
 	}
 }
 
@@ -50,7 +50,7 @@ h2 {
 		text-decoration: underline;
 	}
 
-	@include media($medium-screen) {
+	@include media(min-width $medium-screen + 1) {
 		font-size: 1.5em;
 	}
 }
@@ -131,6 +131,10 @@ hr {
 
 .green {
 	color: green;
+}
+
+.purple {
+	color: $base-color;
 }
 
 .inside {

@@ -3,11 +3,15 @@ footer {
 	> #subscribe {
 		@include span-columns(6);
 	}
-	> #links {
+	> #blog-links {
 		@include span-columns(6);
-		@include omega;
+		text-align: right;
 		> ul{
 			list-style: none;
 		}
+	}
+	> #contact-links{
+		@include span-columns(6);
+		@include omega;
 	}
 }
