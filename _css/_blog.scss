@@ -2,8 +2,9 @@
 	@include linear-gradient($white, lighten($grey-light, 42%) );
 	border: 1px solid lighten($grey-light, 42%);
 	border-radius: 5px;
-	padding: 10px;
+	padding: 0;
 	margin-bottom: 20px;
+	overflow: hidden;
 }
 @mixin floatAndClearLeft {
 	float: left;
@@ -20,6 +21,22 @@
 	&#fitness-journey {
 		@include span-columns(12);
 	}
+	> .cat-header {
+		background-color: $base-color;
+		text-align: center;
+		width: 100%;
+		> a {
+			color: $base-color-1;
+			text-shadow: 1px 1px $base-color-4;
+			font-size: 20px;
+			&:hover {
+				text-shadow: none;
+			}
+		}
+	}
+	> .cat-content {
+		margin: 10px;
+	}
 }
 /******************************
 * .blog is all category pages
@@ -28,6 +45,12 @@
 	> .categories {
 		@include span-columns(12);
 		@include categoryCards;
+		padding: 10px;
+	}
+	> .tags {
+		@include span-columns(12);
+		@include categoryCards;
+		padding: 10px;	
 	}
 	.category-links {
 		color: $secondary-color;
@@ -37,9 +60,6 @@
 		> .post-title {
 			color: $base-font-color;
 			text-align: center;
-			&:hover {
-				text-decoration: underline;
-			}
 		}
 		> .featured {
 			width: 600px;
@@ -78,8 +98,12 @@
 			max-width: 100%;
 		}
 	}
-	.older {
-		//margin-top: 15px;
+	.old-posts {
+		> .years {
+			@include span-columns(3);
+			height: 200px;
+			overflow-y: scroll;
+		}
 	}
 	.post-links {
 		display: block;
@@ -135,6 +159,23 @@
 			margin-right: 40px;
 		}
 		//END SPECIFIC STYLES
+	}
+	> .tags {
+		clear: both;
+		> ul {
+			list-style: none;
+			> li {
+				display: inline;
+				border: 1px solid lighten($grey-light, 30%);
+				border-radius: 5px;
+				padding: 0 4px;
+				line-height: 30px;
+				white-space: nowrap;
+				> a {
+					font-size: 0.9em;
+				}
+			}
+		}
 	}
 	> .nav-links {
 		clear: both;

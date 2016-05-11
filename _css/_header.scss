@@ -1,5 +1,5 @@
 .site-header {
-	@include outer-container(95%);
+	@include outer-container($content-width);
 	border-bottom: 1px solid $grey-light;
 	.logo {
 		margin-top: 10px;
@@ -7,10 +7,16 @@
 	}
 	.social-links {
 		display: inline;
+		@include media(max-width $small-screen){
+			display: none;
+		}
 		float: right;
 		> a {
 			float: left;
 			@include margin( 23px 1em null null);
+			@include media(max-width $medium-screen) {
+				@include margin( 23px 0.8em null null);
+			}
 			text-decoration: none;
 			> .fa {
 				font-size: 20px;

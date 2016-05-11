@@ -15,7 +15,7 @@ body {
 }
 
 .page-content {
-	@include outer-container(95%);
+	@include outer-container($content-width);
 }
 
 #homepage.page-content {
@@ -33,7 +33,18 @@ body {
 	}
 }
 
+#about-rachel {
+	#headshot {
+		float: left;
+		margin-right: 15px;
+	}
+}
+
 img {
 	max-width: 100%;
 	height: auto;
+}
+
+.hidden {
+	display: none;
 }

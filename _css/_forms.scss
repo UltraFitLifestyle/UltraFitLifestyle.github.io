@@ -1,14 +1,79 @@
 @mixin submit-button {
 	text-shadow: 1px 1px $grey-dark;	
 	color: darken($white, 5%);
-	@include linear-gradient($base-color-1, $base-color);
+	@include linear-gradient($base-color-2, $base-color);
 	border-radius: $base-border-radius;
+	font-size: 1em;
 	&:hover {
 		color: $white;
-		@include linear-gradient($secondary-color-1, $secondary-color);
+		@include linear-gradient($base-color-1, $base-color-2);
 	}
 }
 
-#mc-embedded-subscribe {
-	@include submit-button;
+#mc_embed_signup {
+	.mc-field-group {
+		@include span-columns(12);
+		> label {
+			@include span-columns(5);
+			@include omega;
+		}
+		> input#mce-EMAIL {
+			height: 2em;
+			@include span-columns(7);
+		}
+	}
+
+	input#mc-embedded-subscribe {
+		margin-top: 15px;	
+		@include submit-button;
+	}
+}
+
+#contact > .content > #contact-form {
+	@include span-columns( 4 of 12);
+	//@include shift(1);
+	line-height: 1.5em;
+	> .error {
+		color: red;
+		float: right;
+	}
+	> .fa-asterisk {
+		float: left;
+		color: $action-color;
+		font-size: 0.75em;
+	}
+	> label {
+		float: left;
+		display: inline-block;
+	}
+	> input {
+		font-size: 1em;
+		width: 100%;
+	
+		&#submit {
+			@include span-columns( 1 of 2);
+			@include submit-button;
+			-webkit-appearance: none;				
+		}
+	}
+	> textarea {
+		width: 100%;
+		font-size: 1em;
+	}
+/*	@include media( max-width $section-collapse ){
+		> #form > #contact-form {
+			@include span-columns(8 of 12);
+			@include shift(2);
+		}
+		> #info {
+			@include span-columns(12 of 12);
+			@include shift(0);
+		}	
+	}
+	@include media( max-width $small-screen ) {
+		> #form > #contact-form {
+			@include span-columns(12 of 12);
+			@include shift(0);
+		}
+	}*/
 }

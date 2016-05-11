@@ -2,17 +2,19 @@
 	<div class="slider">
 		<div class="slide active-slide">
 			{% include aerial.html excerpt=true %}		
-			<img id="aerial" width="630" height="473" src="images/silk-cutout-630x473.png" />
+			<img id="aerial" width="300" height="473" src="images/silk-cutout-300x473.png" />
 		</div>
 		<div class="slide">
-			<!--<img class="stretch" src="images/RT-flip.jpg" />-->
+			<img id="training" src="images/RT-Facebook-Image-01-white-bg.jpg" />
 			{% include one-on-one.html excerpt=true %}
 		</div>
 		<div class="slide">
-			{% include about.html excerpt=true %}
+			<img id="headshot" width="506" height="640" src="{{site.url}}/images/headshot.JPG" />		
+			{% include about.html excerpt=true %}		
 		</div>
 		<div class="slide">
 			{% include contact.html excerpt=true %}
+			<img id="rachel" width="640" height="640" src="{{site.url}}/images/fitness-profile.JPG" />
 		</div>
 	</div> <!--end .slider-->
 	<div class="slider-nav">
