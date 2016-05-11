@@ -81,6 +81,22 @@ body {
 	}
 }
 
+#contact > .content {
+	@include span-columns(12);
+	> #contact-form {
+		@include contact-form(4);
+		@include media(max-width $large-screen){
+			@include contact-form(6);
+		}
+		@include media(max-width $medium-screen){
+			@include contact-form(12);
+		}		
+	}
+	> h2.action {
+		color: $secondary-color;
+	}
+}
+
 img {
 	max-width: 100%;
 	height: auto;
