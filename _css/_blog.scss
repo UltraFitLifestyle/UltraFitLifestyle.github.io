@@ -42,9 +42,12 @@
 	}
 }
 /******************************
-* .blog is all category pages
+* .blog is all category/tag pages
 ******************************/
 .blog {
+	> h1 {
+		display: inline;
+	}
 	> .categories {
 		@include span-columns(12);
 		@include categoryCards;
@@ -104,8 +107,16 @@
 	.old-posts {
 		> .years {
 			@include span-columns(3);
-			height: 200px;
-			overflow-y: scroll;
+			> .post-list {
+				max-height: 200px;
+				overflow-y: scroll;
+				> ul {
+					color: #bbb;
+				}
+			}
+			@include media(max-width $medium-screen) {
+				@include span-columns(12);
+			}
 		}
 	}
 	.post-links {

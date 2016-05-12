@@ -68,7 +68,8 @@ hr {
   display: block;
   clear: both;
   text-align: left;
-  margin-bottom: 25px; }
+  margin-top: 15px;
+  margin-bottom: 30px; }
 
 .small {
   font-size: 0.7em; }
@@ -664,8 +665,11 @@ footer {
     margin: 10px; }
 
 /******************************
-* .blog is all category pages
+* .blog is all category/tag pages
 ******************************/
+.blog > h1 {
+  display: inline; }
+
 .blog > .categories {
   float: left;
   display: block;
@@ -742,11 +746,22 @@ footer {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 23.23176%;
-  height: 200px;
-  overflow-y: scroll; }
+  width: 23.23176%; }
   .blog .old-posts > .years:last-child {
     margin-right: 0; }
+  .blog .old-posts > .years > .post-list {
+    max-height: 200px;
+    overflow-y: scroll; }
+    .blog .old-posts > .years > .post-list > ul {
+      color: #bbb; }
+  @media screen and (max-width: 768px) {
+    .blog .old-posts > .years {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .blog .old-posts > .years:last-child {
+        margin-right: 0; } }
 
 .blog .post-links {
   display: block; }
