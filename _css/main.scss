@@ -133,6 +133,10 @@ body {
 	}	
 }
 
+#terms-of-use, #privacy-policy {
+	margin-top: $content-margin;
+	margin-bottom: $content-margin;
+}
 img {
 	max-width: 100%;
 	height: auto;

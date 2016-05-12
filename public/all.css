@@ -1066,6 +1066,10 @@ body {
         width: 304px;
         height: 171px; } }
 
+#terms-of-use, #privacy-policy {
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
 img {
   max-width: 100%;
   height: auto; }
