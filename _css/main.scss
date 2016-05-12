@@ -97,6 +97,42 @@ body {
 	}
 }
 
+#classes {
+	margin-top: $content-margin;
+	margin-bottom: $content-margin;
+	> .classes {
+		@include span-columns(12);
+	}
+	> .video {
+		margin: $content-margin auto;
+		width: 560px;
+		> iframe {
+			margin-bottom: $content-margin;
+			width: 560px;
+			height: 315px;
+		}
+	}
+	@include media(max-width $medium-screen) {
+		> .video {
+			width: 456px;
+			max-width: 100%;
+			> iframe {
+				width: 456px;
+				height: 256px;
+			}
+		}
+	}
+	@include media(max-width $small-screen) {
+		> .video {
+			width: 304px;
+			> iframe {
+				width: 304px;
+				height: 171px;
+			}
+		}
+	}	
+}
+
 img {
 	max-width: 100%;
 	height: auto;

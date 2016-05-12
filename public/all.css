@@ -1035,6 +1035,37 @@ body {
   #contact > .content > h2.action {
     color: #a95493; }
 
+#classes {
+  margin-top: 15px;
+  margin-bottom: 15px; }
+  #classes > .classes {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    #classes > .classes:last-child {
+      margin-right: 0; }
+  #classes > .video {
+    margin: 15px auto;
+    width: 560px; }
+    #classes > .video > iframe {
+      margin-bottom: 15px;
+      width: 560px;
+      height: 315px; }
+  @media screen and (max-width: 768px) {
+    #classes > .video {
+      width: 456px;
+      max-width: 100%; }
+      #classes > .video > iframe {
+        width: 456px;
+        height: 256px; } }
+  @media screen and (max-width: 480px) {
+    #classes > .video {
+      width: 304px; }
+      #classes > .video > iframe {
+        width: 304px;
+        height: 171px; } }
+
 img {
   max-width: 100%;
   height: auto; }
