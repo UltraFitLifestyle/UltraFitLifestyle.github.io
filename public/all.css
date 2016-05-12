@@ -775,7 +775,7 @@ footer {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 57.35098%;
+    width: 100%;
     margin-right: 0; }
     .post > .post-header .post-title:last-child {
       margin-right: 0; }
@@ -783,11 +783,14 @@ footer {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 40.29137%;
-    text-align: right;
+    width: 100%;
     margin-right: 0; }
     .post > .post-header .post-meta:last-child {
       margin-right: 0; }
+    .post > .post-header .post-meta > time {
+      color: #662d91; }
+    .post > .post-header .post-meta span {
+      color: #a95493; }
   .post > .post-header .post-categories {
     clear: left; }
     .post > .post-header .post-categories > a {
@@ -838,10 +841,24 @@ footer {
 .post > .nav-links {
   clear: both;
   margin-top: 15px; }
-  .post > .nav-links > #next {
-    float: left; }
-  .post > .nav-links > #previous {
-    float: right; }
+  .post > .nav-links > #next, .post > .nav-links > #previous {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+    .post > .nav-links > #next:last-child, .post > .nav-links > #previous:last-child {
+      margin-right: 0; }
+  @media screen and (max-width: 1024px) {
+    .post > .nav-links > #next, .post > .nav-links > #previous {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .post > .nav-links > #next:last-child, .post > .nav-links > #previous:last-child {
+        margin-right: 0; } }
 
 #resident-moms-header {
   display: block;

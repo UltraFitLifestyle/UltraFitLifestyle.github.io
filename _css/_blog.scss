@@ -11,6 +11,11 @@
 	clear: left;
 	text-align: center;
 }
+@mixin dotdotdot {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
 /******************************
 * #blog is main category list page only
 ******************************/
@@ -130,13 +135,18 @@
 	> .post-header {
 		padding-top: 15px;
 		.post-title {
-			@include span-columns(7);
+			@include span-columns(12);
 			@include omega;
 		}
 		.post-meta {
-			@include span-columns(5);
-			text-align: right;
+			@include span-columns(12);
 			@include omega;
+			> time {
+				color: $base-color;
+			}
+			span {
+				color: $secondary-color;
+			}
 		}
 		.post-categories {
 			clear: left;
@@ -193,12 +203,15 @@
 	}
 	> .nav-links {
 		clear: both;
-		margin-top: 15px;
-		> #next {
-			float: left;
+		margin-top: $content-margin;
+		> #next, > #previous {
+			@include span-columns(6);
+			@include dotdotdot;
 		}
-		> #previous {
-			float: right;
+		@include media(max-width $large-screen){
+			> #next, > #previous {
+				@include span-columns(12);
+			}
 		}
 	}
 }
