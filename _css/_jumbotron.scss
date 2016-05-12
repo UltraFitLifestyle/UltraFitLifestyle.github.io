@@ -22,11 +22,6 @@ $slide-height-large: 258px;
 	}	
 }
 
-@mixin send-to-back {
-	@include position(absolute, 0 0 0 0);
-	opacity: 0.2;
-	z-index: -1;
-}
 .page-content > #jumbotron {
 	> .slider {
 		@include position(relative);

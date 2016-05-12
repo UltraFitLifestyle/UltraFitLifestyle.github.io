@@ -89,7 +89,8 @@ hr {
 	display: block;
 	clear: both;
 	text-align: left;
-	margin-bottom: 25px;
+	margin-top: $content-margin;
+	margin-bottom: $content-margin*2;
 }
 
 .small {

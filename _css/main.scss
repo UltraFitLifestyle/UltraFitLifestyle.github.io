@@ -16,6 +16,10 @@ body {
 
 .page-content {
 	@include outer-container($content-width);
+	> .content {
+		margin-top: $content-margin;
+		margin-bottom: $content-margin;	
+	}
 }
 
 #homepage.page-content {
@@ -25,21 +29,114 @@ body {
 }
 
 #aerial-fitness {
+	position: relative;
 	> .aerial {
-		@include span-columns(6);
+		@include span-columns(7);
 	}
 	> #rachel-on-silks {
-		@include span-columns(6);
+		@include span-columns(5);
+	}
+	@include media(max-width $large-screen){
+		> .aerial {
+			@include span-columns(12);
+		}
+		> #rachel-on-silks {
+			@include send-to-back;
+			@include span-columns(8);
+			@include shift(2);
+			@include media(max-width $medium-screen){
+				@include span-columns(12);
+				@include shift(0);
+			}
+		}
+	}
+}
+
+#personal-training {	
+	> #rt-white {
+		@include center-img;
 	}
 }
 
 #about-rachel {
 	#headshot {
 		float: left;
-		margin-right: 15px;
+		margin-right: $content-margin;
+		@include media(max-width $large-screen) {
+			width: 379px;
+			height: auto;
+		}		
+		@include media(max-width $medium-screen) {
+			width: 253px;
+		}
+		@include media(max-width $small-screen) {
+			@include center-img;
+			float: none;
+		}
+	}
+	> .about > p {
+		@include media(max-width $small-screen) {
+			clear: left;
+		}
 	}
 }
 
+#contact > .content {
+	@include span-columns(12);
+	> #contact-form {
+		@include contact-form(4);
+		@include media(max-width $large-screen){
+			@include contact-form(6);
+		}
+		@include media(max-width $medium-screen){
+			@include contact-form(12);
+		}		
+	}
+	> h2.action {
+		color: $secondary-color;
+	}
+}
+
+#classes {
+	margin-top: $content-margin;
+	margin-bottom: $content-margin;
+	> .classes {
+		@include span-columns(12);
+	}
+	> .video {
+		margin: $content-margin auto;
+		width: 560px;
+		> iframe {
+			margin-bottom: $content-margin;
+			width: 560px;
+			height: 315px;
+		}
+	}
+	@include media(max-width $medium-screen) {
+		> .video {
+			width: 456px;
+			max-width: 100%;
+			> iframe {
+				width: 456px;
+				height: 256px;
+			}
+		}
+	}
+	@include media(max-width $small-screen) {
+		> .video {
+			width: 304px;
+			> iframe {
+				width: 304px;
+				height: 171px;
+			}
+		}
+	}	
+}
+
+#terms-of-use, #privacy-policy {
+	margin-top: $content-margin;
+	margin-bottom: $content-margin;
+}
 img {
 	max-width: 100%;
 	height: auto;

@@ -30,10 +30,11 @@ function validateForm(){
 		$email.before('<span class="error">This is how I reply to you</span>');
 	}
 }
+
 $(document).ready(function() {
 	var suffix = decodeURIComponent(window.location.search.substring(1));
 	var value = suffix.split("=");
 	if( value[0] === 'thank-you' ) {
-		$('#tagline').after('<h2 class="action">I\'ll be in touch with you shortly!</h2>');
+		$('#contact h1').after('<h2 class="action">I\'ll be in touch with you shortly!</h2>');
 	}
 });

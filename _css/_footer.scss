@@ -25,9 +25,18 @@ footer {
 			}
 		}		
 	}
+	> #subscribe{
+		@include span-columns(5);
+		@include shift(1);
+		@include media(max-width $large-screen){
+			@include span-columns(6);
+			@include shift(0);
+		}	
+	}
 	> .social-links {
 		@include span-columns(12);
 		text-align: center;
+		margin-top: $content-margin;
 		> a {
 			margin-right: 1em;
 			&:last-child {
@@ -40,20 +49,28 @@ footer {
 		}
 	}
 	> #footer-bottom {
-		p {
-			@include span-columns(4);
-			color: $secondary-color;
-			&:nth-child(2) {
-				@include omega;
-				text-align: center;
+		> #text {
+			@include row;
+			p {
+				@include span-columns(4);
+				color: $secondary-color;
+				&:nth-child(2) {
+					@include omega;
+					text-align: center;
+				}
+				&:nth-child(3) {
+					text-align: right;
+				}
 			}
-			&:nth-child(3) {
-				text-align: right;
-			}
+		}
+		> #legal {
+			@include row;
+			@include span-columns(12);
+			text-align: center;
 		}
 	}
 	@include media(max-width $medium-screen) {
-		> #contact-links, > #blog-links {
+		> #contact-links, > #blog-links, > #subscribe {
 			@include span-columns(12);
 			text-align: center;
 		}

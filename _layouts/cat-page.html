@@ -5,7 +5,7 @@ layout: blog
 {% assign name = cat-data[0].name %}
 {% assign slug = cat-data[0].slug %}
 <div class="{{slug}} blog content">
-	<h1>{{name}}</h1>
+	<span><a href="{{ site.url }}/blog">Rachel's Motivation</a> > </span><h1>{{name}}</h1>
 	<div id="{{slug}}" class="categories">
 		{% for post in site.categories[slug] limit:5 %}
 			{% include post-excerpt.html %}
@@ -13,14 +13,16 @@ layout: blog
 		{% endfor %}
 		<div class="old-posts">
 			<p class="older">Older posts in this category...</p>
-			<div class="hidden"><ul>
+			<div class="hidden"><div class="hidden"><ul>
 			{% for post in site.categories[slug] offset:5 %}
 				{% assign postYear = (post.date | date: "%Y") %}
 				{% if postYear != prevPostYear %}
 					</ul>
 					</div>
+					</div>
 					<div class="years">
 					<h3>{{postYear}}</h3>
+					<div class="post-list">
 					<ul>
 				{% endif %}
 				<li><a class="post-links" href="{{ post.url }}">{{ post.title }}</a></li>

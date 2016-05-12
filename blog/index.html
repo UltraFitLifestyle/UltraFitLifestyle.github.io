@@ -14,7 +14,7 @@ id: blog
 				{% include post-excerpt.html %}
 			{% endfor %}
 			<hr />
-			<p class="older">Older posts...</p>
+			<p class="older">Older posts in {{category.name}}...</p>
 			{% for post in site.categories[category.slug] limit:4 offset:1 %}
 				<a class="post-links" href="{{ post.url }}">{{ post.title }}</a>
 			{% endfor %}

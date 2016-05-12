@@ -10,28 +10,8 @@
 	}
 }
 
-#mc_embed_signup {
-	.mc-field-group {
-		@include span-columns(12);
-		> label {
-			@include span-columns(5);
-			@include omega;
-		}
-		> input#mce-EMAIL {
-			height: 2em;
-			@include span-columns(7);
-		}
-	}
-
-	input#mc-embedded-subscribe {
-		margin-top: 15px;	
-		@include submit-button;
-	}
-}
-
-#contact > .content > #contact-form {
-	@include span-columns( 4 of 12);
-	//@include shift(1);
+@mixin contact-form($span) {
+	@include span-columns($span of 12);
 	line-height: 1.5em;
 	> .error {
 		color: red;
@@ -49,9 +29,9 @@
 	> input {
 		font-size: 1em;
 		width: 100%;
-	
+
 		&#submit {
-			@include span-columns( 1 of 2);
+			@include span-columns( ($span/2) of $span);
 			@include submit-button;
 			-webkit-appearance: none;				
 		}
@@ -60,20 +40,30 @@
 		width: 100%;
 		font-size: 1em;
 	}
-/*	@include media( max-width $section-collapse ){
-		> #form > #contact-form {
-			@include span-columns(8 of 12);
-			@include shift(2);
+}
+#mc_embed_signup {
+	.mc-field-group {
+		@include span-columns(12);
+		> label {
+			@include span-columns(3);
+			@include omega;
 		}
-		> #info {
-			@include span-columns(12 of 12);
-			@include shift(0);
-		}	
+		> input#mce-EMAIL {
+			@include span-columns(9);
+			height: 2em;
+		}
+		@include media(max-width $medium-screen){
+			> label {
+				display: none;
+			}
+			> input#mce-EMAIL {
+				@include span-columns(6);
+				@include shift(3);
+			}
+		}
 	}
-	@include media( max-width $small-screen ) {
-		> #form > #contact-form {
-			@include span-columns(12 of 12);
-			@include shift(0);
-		}
-	}*/
+	input#mc-embedded-subscribe {
+		margin-top: 15px;	
+		@include submit-button;
+	}
 }
