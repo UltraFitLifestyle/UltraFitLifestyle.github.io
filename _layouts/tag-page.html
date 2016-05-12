@@ -7,7 +7,7 @@ layout: blog
 
 {% assign tags = site.tags[prettyTag] %}
 <div class="{{ page.id }} blog content">
-	<span><a href="{{ site.url }}/blog">Blog</a> > </span><h1>Posts tagged with "{{prettyTag}}"</h1>
+	<span><a href="{{ site.url }}/blog">Rachel's Motivation</a> > </span><h1>Posts tagged with "{{prettyTag}}"</h1>
 	<div id="{{page.id}}" class="tags">
 		{% for post in tags limit:5 %}
 			{% include post-excerpt.html %}

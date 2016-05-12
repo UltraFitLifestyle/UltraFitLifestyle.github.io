@@ -776,9 +776,12 @@ footer {
     display: block;
     margin-right: 2.35765%;
     width: 100%;
-    margin-right: 0; }
+    margin-right: 0;
+    margin-bottom: 15px; }
     .post > .post-header .post-title:last-child {
       margin-right: 0; }
+    .post > .post-header .post-title > h1 {
+      display: inline; }
   .post > .post-header .post-meta {
     float: left;
     display: block;

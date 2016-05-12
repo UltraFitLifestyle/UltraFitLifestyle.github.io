@@ -137,6 +137,10 @@
 		.post-title {
 			@include span-columns(12);
 			@include omega;
+			margin-bottom: $content-margin;
+			> h1 {
+				display: inline;
+			}
 		}
 		.post-meta {
 			@include span-columns(12);
