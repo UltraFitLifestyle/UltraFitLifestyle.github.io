@@ -17,6 +17,9 @@
 #blog > .blog > .categories {
 	@include span-columns(6);
 	@include omega(2n);
+	@include media(max-width $large-screen){
+		@include span-columns(12);
+	}	
 	@include categoryCards;
 	&#fitness-journey {
 		@include span-columns(12);

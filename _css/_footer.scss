@@ -25,9 +25,18 @@ footer {
 			}
 		}		
 	}
+	> #subscribe{
+		@include span-columns(5);
+		@include shift(1);
+		@include media(max-width $large-screen){
+			@include span-columns(6);
+			@include shift(0);
+		}	
+	}
 	> .social-links {
 		@include span-columns(12);
 		text-align: center;
+		margin-top: $content-margin;
 		> a {
 			margin-right: 1em;
 			&:last-child {
@@ -61,7 +70,7 @@ footer {
 		}
 	}
 	@include media(max-width $medium-screen) {
-		> #contact-links, > #blog-links {
+		> #contact-links, > #blog-links, > #subscribe {
 			@include span-columns(12);
 			text-align: center;
 		}

@@ -45,15 +45,23 @@
 	.mc-field-group {
 		@include span-columns(12);
 		> label {
-			@include span-columns(5);
+			@include span-columns(3);
 			@include omega;
 		}
 		> input#mce-EMAIL {
+			@include span-columns(9);
 			height: 2em;
-			@include span-columns(7);
+		}
+		@include media(max-width $medium-screen){
+			> label {
+				display: none;
+			}
+			> input#mce-EMAIL {
+				@include span-columns(6);
+				@include shift(3);
+			}
 		}
 	}
-
 	input#mc-embedded-subscribe {
 		margin-top: 15px;	
 		@include submit-button;

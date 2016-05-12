@@ -176,12 +176,30 @@ footer {
       padding: 0; }
       footer > #blog-links > ul > li {
         padding-bottom: 5px; }
+  footer > #subscribe {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%;
+    margin-left: 8.5298%; }
+    footer > #subscribe:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 1024px) {
+      footer > #subscribe {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%;
+        margin-left: 0%; }
+        footer > #subscribe:last-child {
+          margin-right: 0; } }
   footer > .social-links {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    margin-top: 15px; }
     footer > .social-links:last-child {
       margin-right: 0; }
     footer > .social-links > a {
@@ -224,13 +242,13 @@ footer {
     footer > #footer-bottom > #legal:last-child {
       margin-right: 0; }
   @media screen and (max-width: 768px) {
-    footer > #contact-links, footer > #blog-links {
+    footer > #contact-links, footer > #blog-links, footer > #subscribe {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 100%;
       text-align: center; }
-      footer > #contact-links:last-child, footer > #blog-links:last-child {
+      footer > #contact-links:last-child, footer > #blog-links:last-child, footer > #subscribe:last-child {
         margin-right: 0; } }
 
 .page-content > #jumbotron > .slider {
@@ -556,18 +574,29 @@ footer {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 40.29137%;
+    width: 23.23176%;
     margin-right: 0; }
     #mc_embed_signup .mc-field-group > label:last-child {
       margin-right: 0; }
   #mc_embed_signup .mc-field-group > input#mce-EMAIL {
-    height: 2em;
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 57.35098%; }
+    width: 74.41059%;
+    height: 2em; }
     #mc_embed_signup .mc-field-group > input#mce-EMAIL:last-child {
       margin-right: 0; }
+  @media screen and (max-width: 768px) {
+    #mc_embed_signup .mc-field-group > label {
+      display: none; }
+    #mc_embed_signup .mc-field-group > input#mce-EMAIL {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      margin-left: 25.58941%; }
+      #mc_embed_signup .mc-field-group > input#mce-EMAIL:last-child {
+        margin-right: 0; } }
 
 #mc_embed_signup input#mc-embedded-subscribe {
   margin-top: 15px;
@@ -606,6 +635,14 @@ footer {
     margin-right: 0; }
   #blog > .blog > .categories:nth-child(2n+1) {
     clear: left; }
+  @media screen and (max-width: 1024px) {
+    #blog > .blog > .categories {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      #blog > .blog > .categories:last-child {
+        margin-right: 0; } }
   #blog > .blog > .categories#fitness-journey {
     float: left;
     display: block;
