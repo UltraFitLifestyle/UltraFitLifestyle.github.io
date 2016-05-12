@@ -800,7 +800,8 @@ footer {
       display: block; }
 
 .post > .post-content img {
-  margin: 15px; }
+  margin-top: 15px;
+  margin-bottom: 15px; }
 
 .post > .post-content > .featured {
   text-align: center;
