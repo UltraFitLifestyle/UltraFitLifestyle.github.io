@@ -11,74 +11,16 @@ email: info@ultrafitlifestyle.com
 description: > # this means to ignore newlines until "baseurl:"
   Personalized, one-on-one fitness training in person, virtually and through group classes specializing in combining strength, flexibility and agility to help people meet their fitness goals. Based in Pawleys Island, South Carolina.
 baseurl: "" # the subpath of your site, e.g. /blog
-#url: "http://192.168.1.130:4000" # the base hostname & protocol for your site
-url: http://localhost:4000
+url: "http://ultrafitlifestyle.github.io" # the base hostname & protocol for your site
 twitter_username: ultrafitdancer
 facebook_username:  ultrafitdancer
 youtube_channel: UCFLEr5VSdLjw_h4ejFbilyw
 instagram: ultrafitlifestyle
 linkedin: rachel-tipton-15aa4720
-permalink: /:categories/:title.html
+permalink: /:categories/:title/
 excerpt_separator: </p>
 
 exclude: ["node_modules", "package.json", "gulpfile.js", "temp"]
 
 # Build settings
 markdown: kramdown
-
-# Prose settings
-prose:
-  siteurl: 'http://ultrafitlifestyle.github.io'
-  relativeLinks: 'https://github.com/UltraFitLifestyle/UltraFitLifestyle.github.io/blob/master/links.jsonp'
-  media: 'images'
-  ignore:
-    - _config.yml
-    - /_layouts
-    - /_includes
-    - /_data
-    - /_js
-    - /public
-  metadata:
-    _posts:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "post"
-      - name: "title"
-        field:
-          element: "text"
-          label: "Post title"
-      - name: "author"
-        field:
-          element: "hidden"
-          value: "Rachel-Tipton"
-      - name: "category"
-        field:
-          element: "multiselect"
-          label: "Category"
-          placeholder: "Choose Tags"
-          options:
-            - name: "Apples"
-              value: "apples"
-            - name: "Bananas"
-              value: "bananas"          
-      - name: "tags"
-        field:
-          element: "multiselect"
-          label: "Add Tags"
-          placeholder: "Choose Tags"
-          options:
-            - name: "Apples"
-              value: "apples"
-            - name: "Bananas"
-              value: "bananas"
-    _posts/static:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "page"
-      - name: "permalink"
-        field:
-          element: "text"
-          label: "Permalink"
-          value: ""
