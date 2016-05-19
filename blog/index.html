@@ -5,6 +5,7 @@ id: blog
 <div class="blog content">
 	<h1>Rachel's Motivation</h1>
 	{% for category in site.data.categories %}
+	{% if category.slug != 'shakeology' and category.slug != 'videos' and category.slug != 'reviews' %}
 	<div id="{{category.slug}}" class="categories">
 		<div class="cat-header">
 			<a href="{{site.url}}/category/{{category.slug}}" class="category-links">{{category.name}}</a>
@@ -21,5 +22,6 @@ id: blog
 			<a class="category-links" href="{{site.url}}/category/{{category.slug}}">More</a>
 		</div>
 	</div>
+	{% endif %}
 	{% endfor %}
 </div>
