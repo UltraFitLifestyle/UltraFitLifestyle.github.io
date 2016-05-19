@@ -4,3 +4,5 @@ _site
 node_modules
 temp
 .DS_Store
+.env
+Gemfile*
