@@ -32,6 +32,9 @@ body {
 	position: relative;
 	> .aerial {
 		@include span-columns(7);
+		> h1 {
+			display: inline;
+		}
 	}
 	> #rachel-on-silks {
 		@include span-columns(5);
@@ -52,7 +55,12 @@ body {
 	}
 }
 
-#personal-training {	
+#personal-training {
+	> .content {
+		> h1 {
+			display: inline;
+		}
+	}
 	> #rt-white {
 		@include center-img;
 	}
@@ -102,6 +110,12 @@ body {
 	margin-bottom: $content-margin;
 	> .classes {
 		@include span-columns(12);
+		> ul {
+			list-style: none;
+		}
+		.bold {
+			font-weight: 600;
+		}
 	}
 	> .video {
 		margin: $content-margin auto;

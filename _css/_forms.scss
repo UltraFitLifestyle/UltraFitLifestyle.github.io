@@ -42,6 +42,16 @@
 	}
 }
 #mc_embed_signup {
+	h2 {
+		margin-bottom: 5px;
+	}
+	p {
+		margin-bottom:5px;
+		line-height: 0;
+	}
+	.fa {
+		color: $secondary-color;
+	}
 	.mc-field-group {
 		@include span-columns(12);
 		> label {
@@ -52,6 +62,12 @@
 			@include span-columns(9);
 			height: 2em;
 		}
+		> input {
+			@include placeholder {
+				//display none
+				color: $white;
+			}
+		}
 		@include media(max-width $medium-screen){
 			> label {
 				display: none;
@@ -60,6 +76,12 @@
 				@include span-columns(6);
 				@include shift(3);
 			}
+			> input {
+				@include placeholder {
+					//display none
+					color: initial;
+				}
+			}			
 		}
 	}
 	input#mc-embedded-subscribe {

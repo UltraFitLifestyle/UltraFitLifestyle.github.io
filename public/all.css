@@ -105,11 +105,17 @@ hr {
 .purple {
   color: #662d91; }
 
+.purple2 {
+  color: #a95493; }
+
 .inside {
   list-style-position: inside; }
 
 .inline-block {
   display: inline-block; }
+
+.inline {
+  display: inline; }
 
 .site-header {
   max-width: 95%;
@@ -564,6 +570,16 @@ footer {
       .page-content > #jumbotron > .slider-nav > .slider-dots > li.active-dot {
         color: #363636; }
 
+#mc_embed_signup h2 {
+  margin-bottom: 5px; }
+
+#mc_embed_signup p {
+  margin-bottom: 5px;
+  line-height: 0; }
+
+#mc_embed_signup .fa {
+  color: #a95493; }
+
 #mc_embed_signup .mc-field-group {
   float: left;
   display: block;
@@ -587,6 +603,14 @@ footer {
     height: 2em; }
     #mc_embed_signup .mc-field-group > input#mce-EMAIL:last-child {
       margin-right: 0; }
+  #mc_embed_signup .mc-field-group > input::-webkit-input-placeholder {
+    color: #fff; }
+  #mc_embed_signup .mc-field-group > input::-moz-placeholder {
+    color: #fff; }
+  #mc_embed_signup .mc-field-group > input:-moz-placeholder {
+    color: #fff; }
+  #mc_embed_signup .mc-field-group > input:-ms-input-placeholder {
+    color: #fff; }
   @media screen and (max-width: 768px) {
     #mc_embed_signup .mc-field-group > label {
       display: none; }
@@ -597,7 +621,15 @@ footer {
       width: 48.82117%;
       margin-left: 25.58941%; }
       #mc_embed_signup .mc-field-group > input#mce-EMAIL:last-child {
-        margin-right: 0; } }
+        margin-right: 0; }
+    #mc_embed_signup .mc-field-group > input::-webkit-input-placeholder {
+      color: initial; }
+    #mc_embed_signup .mc-field-group > input::-moz-placeholder {
+      color: initial; }
+    #mc_embed_signup .mc-field-group > input:-moz-placeholder {
+      color: initial; }
+    #mc_embed_signup .mc-field-group > input:-ms-input-placeholder {
+      color: initial; } }
 
 #mc_embed_signup input#mc-embedded-subscribe {
   margin-top: 15px;
@@ -898,6 +930,8 @@ body {
     width: 57.35098%; }
     #aerial-fitness-in-south-carolina > .aerial:last-child {
       margin-right: 0; }
+    #aerial-fitness-in-south-carolina > .aerial > h1 {
+      display: inline; }
   #aerial-fitness-in-south-carolina > #rachel-on-silks {
     float: left;
     display: block;
@@ -937,6 +971,9 @@ body {
       margin-left: 0%; }
       #aerial-fitness-in-south-carolina > #rachel-on-silks:last-child {
         margin-right: 0; } }
+
+#personal-training > .content > h1 {
+  display: inline; }
 
 #personal-training > #rt-white {
   display: block;
@@ -1118,6 +1155,10 @@ body {
     width: 100%; }
     #classes > .classes:last-child {
       margin-right: 0; }
+    #classes > .classes > ul {
+      list-style: none; }
+    #classes > .classes .bold {
+      font-weight: 600; }
   #classes > .video {
     margin: 15px auto;
     width: 560px; }
