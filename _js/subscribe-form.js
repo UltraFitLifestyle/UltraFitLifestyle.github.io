@@ -1,31 +1,41 @@
+var isSubscribed = false;
 $(document).ready(function(){
-console.log("entered file");
+	var cstring = "subscribed",
+		domainName = "ultrafitlifestyle.github.io",
+		path = "/";
+		
 	if( navigator.cookieEnabled ) {
-		var cstring = "subscribed",
-			cname = getCookie(cstring),
-			cvalue = "false",
-			isSubscribed,
-			domainName = "ultrafitlifestyle.github.io",
-			path = "/";
-			
-		if(cname != "" ){
-			//Cookie is set
-console.log("cookie is set");
-			isSubscribed = getCookie(cstring);
-console.log(isSubscribed);
-		} else {
-			//No cookie
-console.log("cookie is not set");			
-			setCookie(cstring, "false", 365, domainName, path);
-			isSubscribed = getCookie(cstring);			
-console.log(isSubscribed);			
-		}
-	} else {
-console.log("Cookies not enabled");
+		checkCookie(cstring, domainName, path);
 	}
+	
+	$('#hide-forever, .mc-embedded-subscribe').on('click', function(){
+		setCookie(cstring, "true", 365, domainName, path);
+	});
+	
+	$("#modal-1").on("change", function() {
+		if ($(this).is(":checked")) {
+			$("body").addClass("modal-open");
+		} else {
+			$("body").removeClass("modal-open");
+		}
+	});
+	$(".modal-fade-screen").on("click", function(event) {
+		if( event.target.className === "modal-fade-screen" ) {
+			uncheck();
+		}
+	});
+	$(".modal-inner").on("click", function(event) {
+		if( event.target.className === "modal-close" ) {
+			uncheck();
+		}
+	});
+	$(window).scroll(function() {
+		if($(window).scrollTop() + $(window).height() == $(document).height()) {
+			setTimeout(showModal(), 300);
+		}
+	});	
 });
 
-document.cookie = "subscribed=false; expires=Thu, 18 Dec 2013 12:00:00 UTC; path=/";
 
 function setCookie(cname, cvalue, exdays, domainName, pathName) {
     var d = new Date();
@@ -40,28 +50,41 @@ function getCookie(cname) {
     var name = cname + "=";
     var ca = document.cookie.split(';');
     for(var i = 0; i <ca.length; i++) {
-        var c = ca[i];
-console.log("entered for loop: " + c);        
+        var c = ca[i];  
         while (c.charAt(0)==' ') {
             c = c.substring(1);
-console.log("entered while loop: " + c);            
         }
         if (c.indexOf(name) == 0) {
-console.log("FOUND COOKIE: " + c);        
             return c.substring(name.length,c.length);
         }
     }
     return "";
 }
 
-function checkCookie() {
-    var username=getCookie("username");
-    if (username!="") {
-        alert("Welcome again " + username);
-    } else {
-        username = prompt("Please enter your name:", "");
-        if (username != "" && username != null) {
-            setCookie("username", username, 365);
-        }
-    }
+function checkCookie(cstring, domainName, path){
+	var cname = getCookie(cstring),
+		cvalue = "false";
+		
+	if(cname != "" ){
+		//Cookie is set
+		isSubscribed = Boolean(getCookie(cstring));
+		if( isSubscribed ){
+			//Update cookie
+			setCookie(cstring, "true", 365, domainName, path);
+		}
+	} else {
+		//No cookie found, set one
+		setCookie(cstring, "false", 365, domainName, path);
+	}
+}
+
+function showModal(){
+	if(!isSubscribed){
+		$("#modal-1").trigger("click");
+		isSubscribed = true;
+	}
+}
+
+function uncheck() {
+	$(".modal-state:checked").prop("checked", false).change();
 }
