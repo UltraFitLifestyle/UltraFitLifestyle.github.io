@@ -32,6 +32,9 @@ body {
 	position: relative;
 	> .aerial {
 		@include span-columns(7);
+		> h1 {
+			display: inline;
+		}
 	}
 	> #rachel-on-silks {
 		@include span-columns(5);
@@ -52,7 +55,12 @@ body {
 	}
 }
 
-#personal-training {	
+#personal-training {
+	> .content {
+		> h1 {
+			display: inline;
+		}
+	}
 	> #rt-white {
 		@include center-img;
 	}
@@ -102,6 +110,12 @@ body {
 	margin-bottom: $content-margin;
 	> .classes {
 		@include span-columns(12);
+		> ul {
+			list-style: none;
+		}
+		.bold {
+			font-weight: 600;
+		}
 	}
 	> .video {
 		margin: $content-margin auto;
@@ -132,7 +146,34 @@ body {
 		}
 	}	
 }
-
+#kickstart-program > .content {
+	>h1 {
+		text-align: center;
+	}
+	> .row {
+		@include row;
+		margin-top: $content-margin;
+		> .half {
+			@include span-columns(6);
+		}
+	}
+	> hr {
+		margin-bottom: $content-margin;
+	}
+	@include media(max-width $large-screen){
+		#fitness-kickstart {
+			margin-top: 15%;
+		}
+	}
+	@include media(max-width $medium-screen){
+		#fitness-kickstart {
+			margin-top: 0;
+		}
+		> .row > .half {
+			@include span-columns(12);
+		} 
+	}	
+}
 #terms-of-use, #privacy-policy {
 	margin-top: $content-margin;
 	margin-bottom: $content-margin;

@@ -138,10 +138,18 @@ hr {
 	color: $base-color;
 }
 
+.purple2 {
+	color: $secondary-color;
+}
+
 .inside {
 	list-style-position: inside;
 }
 
 .inline-block {
 	display: inline-block;
+}
+
+.inline {
+	display: inline;
 }

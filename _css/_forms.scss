@@ -42,6 +42,16 @@
 	}
 }
 #mc_embed_signup {
+	h2 {
+		margin-bottom: 5px;
+	}
+	p {
+		margin-bottom:5px;
+		line-height: 0;
+	}
+	.fa {
+		color: $secondary-color;
+	}
 	.mc-field-group {
 		@include span-columns(12);
 		> label {
@@ -52,6 +62,12 @@
 			@include span-columns(9);
 			height: 2em;
 		}
+		> input {
+			@include placeholder {
+				//display none
+				color: $white;
+			}
+		}
 		@include media(max-width $medium-screen){
 			> label {
 				display: none;
@@ -60,10 +76,65 @@
 				@include span-columns(6);
 				@include shift(3);
 			}
+			> input {
+				@include placeholder {
+					color: initial;
+				}
+			}			
 		}
 	}
 	input#mc-embedded-subscribe {
 		margin-top: 15px;	
 		@include submit-button;
 	}
+}
+
+.accountability-form {
+	@include span-columns(12);
+	line-height: 1.5em;
+	> .error {
+		color: red;
+		margin-left: $content-margin;
+	}
+	> .fa-asterisk {
+		float: left;
+		color: $action-color;
+		font-size: 0.75em;
+	}
+	> label {
+		float: left;
+		clear: left;
+		display: block;
+	}
+	> input {
+		font-size: 1em;
+		clear: left;
+		@include span-columns(4);
+
+		&#submit {
+			@include span-columns(2);
+			@include submit-button;
+			-webkit-appearance: none;				
+		}
+	}
+	> textarea {
+		width: 100%;
+		font-size: 1em;
+	}
+	@include media(max-width $medium-screen){
+		> input {
+			@include span-columns(6);
+			&#submit {
+				@include span-columns(3);
+			}
+		}
+	}
+	@include media(max-width $small-screen){
+		> input {
+			@include span-columns(12);
+			&#submit {
+				@include span-columns(12);
+			}
+		}
+	}	
 }
