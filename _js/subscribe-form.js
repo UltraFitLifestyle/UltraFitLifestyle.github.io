@@ -10,6 +10,7 @@ $(document).ready(function(){
 	
 	$('#hide-forever, .mc-embedded-subscribe').on('click', function(){
 		setCookie(cstring, "true", 365, domainName, path);
+		isSubscribed = true;
 	});
 	
 	$("#modal-1").on("change", function() {
@@ -68,6 +69,7 @@ function checkCookie(cstring, domainName, path){
 	if(cname == "true" ){
 		//Update cookie
 		setCookie(cstring, "true", 365, domainName, path);
+		isSubscribed = true;
 	} else {
 		//No cookie or false cookie found, set/update it
 		setCookie(cstring, "false", 365, domainName, path);
