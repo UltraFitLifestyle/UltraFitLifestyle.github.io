@@ -1,4 +1,5 @@
-var isSubscribed = false;
+var isSubscribed = false,
+	shownOnce = false;
 $(document).ready(function(){
 	var cstring = "subscribed",
 		domainName = "ultrafitlifestyle.github.io",
@@ -9,7 +10,6 @@ $(document).ready(function(){
 	}
 	
 	$('#hide-forever, .mc-embedded-subscribe').on('click', function(){
-	console.log('setting cookie 1');
 		setCookie(cstring, "true", 365, domainName, path);
 	});
 	
@@ -71,7 +71,6 @@ function checkCookie(cstring, domainName, path){
 		isSubscribed = Boolean(getCookie(cstring));
 		if( isSubscribed ){
 			//Update cookie
-			console.log('setting cookie 2');
 			setCookie(cstring, "true", 365, domainName, path);
 		}
 	} else {
@@ -81,9 +80,9 @@ function checkCookie(cstring, domainName, path){
 }
 
 function showModal(){
-	if(!isSubscribed){
+	if(!isSubscribed && !shownOnce){
 		$("#modal-1").trigger("click");
-		isSubscribed = true;
+		shownOnce = true;
 	}
 }
 
