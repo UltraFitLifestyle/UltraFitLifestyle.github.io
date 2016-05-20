@@ -628,68 +628,68 @@ footer {
       .page-content > #jumbotron > .slider-nav > .slider-dots > li.active-dot {
         color: #363636; }
 
-#mc_embed_signup h2 {
+.mc_embed_signup h2 {
   margin-bottom: 5px; }
 
-#mc_embed_signup p {
+.mc_embed_signup p {
   margin-bottom: 5px;
   line-height: 0; }
 
-#mc_embed_signup .fa {
+.mc_embed_signup .fa {
   color: #a95493; }
 
-#mc_embed_signup .mc-field-group {
+.mc_embed_signup .mc-field-group {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 100%; }
-  #mc_embed_signup .mc-field-group:last-child {
+  .mc_embed_signup .mc-field-group:last-child {
     margin-right: 0; }
-  #mc_embed_signup .mc-field-group > label {
+  .mc_embed_signup .mc-field-group > label {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 23.23176%;
     margin-right: 0; }
-    #mc_embed_signup .mc-field-group > label:last-child {
+    .mc_embed_signup .mc-field-group > label:last-child {
       margin-right: 0; }
-  #mc_embed_signup .mc-field-group > input#mce-EMAIL {
+  .mc_embed_signup .mc-field-group > input.mce-EMAIL {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 74.41059%;
     height: 2em; }
-    #mc_embed_signup .mc-field-group > input#mce-EMAIL:last-child {
+    .mc_embed_signup .mc-field-group > input.mce-EMAIL:last-child {
       margin-right: 0; }
-  #mc_embed_signup .mc-field-group > input::-webkit-input-placeholder {
+  .mc_embed_signup .mc-field-group > input::-webkit-input-placeholder {
     color: #fff; }
-  #mc_embed_signup .mc-field-group > input::-moz-placeholder {
+  .mc_embed_signup .mc-field-group > input::-moz-placeholder {
     color: #fff; }
-  #mc_embed_signup .mc-field-group > input:-moz-placeholder {
+  .mc_embed_signup .mc-field-group > input:-moz-placeholder {
     color: #fff; }
-  #mc_embed_signup .mc-field-group > input:-ms-input-placeholder {
+  .mc_embed_signup .mc-field-group > input:-ms-input-placeholder {
     color: #fff; }
   @media screen and (max-width: 768px) {
-    #mc_embed_signup .mc-field-group > label {
+    .mc_embed_signup .mc-field-group > label {
       display: none; }
-    #mc_embed_signup .mc-field-group > input#mce-EMAIL {
+    .mc_embed_signup .mc-field-group > input.mce-EMAIL {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 48.82117%;
       margin-left: 25.58941%; }
-      #mc_embed_signup .mc-field-group > input#mce-EMAIL:last-child {
+      .mc_embed_signup .mc-field-group > input.mce-EMAIL:last-child {
         margin-right: 0; }
-    #mc_embed_signup .mc-field-group > input::-webkit-input-placeholder {
+    .mc_embed_signup .mc-field-group > input::-webkit-input-placeholder {
       color: initial; }
-    #mc_embed_signup .mc-field-group > input::-moz-placeholder {
+    .mc_embed_signup .mc-field-group > input::-moz-placeholder {
       color: initial; }
-    #mc_embed_signup .mc-field-group > input:-moz-placeholder {
+    .mc_embed_signup .mc-field-group > input:-moz-placeholder {
       color: initial; }
-    #mc_embed_signup .mc-field-group > input:-ms-input-placeholder {
+    .mc_embed_signup .mc-field-group > input:-ms-input-placeholder {
       color: initial; } }
 
-#mc_embed_signup input#mc-embedded-subscribe {
+.mc_embed_signup input.mc-embedded-subscribe {
   margin-top: 15px;
   text-shadow: 1px 1px #1C1621;
   color: #f2f2f2;
@@ -698,7 +698,7 @@ footer {
   background-image: linear-gradient(#7A46A2, #662d91);
   border-radius: 3px;
   font-size: 1em; }
-  #mc_embed_signup input#mc-embedded-subscribe:hover {
+  .mc_embed_signup input.mc-embedded-subscribe:hover {
     color: #fff;
     background-color: #9C70BF;
     background-image: -webkit-linear-gradient(#9C70BF, #7A46A2);
@@ -785,6 +785,16 @@ footer {
         width: 100%; }
         .accountability-form > input#submit:last-child {
           margin-right: 0; } }
+
+.modal-inner > .mc_embed_signup {
+  margin-bottom: 15px; }
+  .modal-inner > .mc_embed_signup input.mce-EMAIL {
+    margin-left: 0%; }
+
+.modal-inner .free {
+  margin-bottom: 0;
+  text-align: center;
+  color: #a95493; }
 
 /******************************
 * #blog is main category list page only
@@ -1040,6 +1050,113 @@ footer {
   display: block;
   margin-left: auto;
   margin-right: auto; }
+
+.modal-state {
+  display: none; }
+
+.modal-fade-screen {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  opacity: 0;
+  padding-top: 0.6em;
+  text-align: left;
+  transition: opacity 0.25s ease;
+  visibility: hidden;
+  z-index: 99999999999; }
+  @media screen and (min-width: 768px) {
+    .modal-fade-screen {
+      padding-top: 10em; } }
+  .modal-fade-screen .modal-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    cursor: pointer; }
+
+#x-button {
+  position: absolute;
+  top: 1.5em;
+  right: 1.5em;
+  height: 1.5em;
+  width: 1.5em;
+  background: #fff;
+  cursor: pointer; }
+  #x-button::after, #x-button::before {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    bottom: 0;
+    left: 50%;
+    height: 1.5em;
+    width: 0.15em;
+    background: #DDD;
+    content: "";
+    display: block;
+    margin: -3px 0 0 -1px;
+    transform: rotate(45deg); }
+  #x-button:hover::after, #x-button:hover::before {
+    background: #c4c4c4; }
+  #x-button::before {
+    transform: rotate(-45deg); }
+
+#hide-forever {
+  cursor: pointer; }
+
+.modal-inner {
+  background: #fff;
+  border-radius: 3px;
+  margin: auto;
+  margin-top: 0;
+  max-height: 95%;
+  overflow: auto;
+  padding: 1.5em;
+  position: relative;
+  transition: opacity 0.25s ease;
+  width: 95%; }
+  @media screen and (min-width: 768px) {
+    .modal-inner {
+      max-height: 70%;
+      padding: 3em;
+      width: 60%; } }
+  @media screen and (min-width: 1024px) {
+    .modal-inner {
+      width: 50%; } }
+  .modal-inner h1 {
+    color: #1C1621;
+    text-align: left;
+    text-transform: capitalize; }
+  .modal-inner p {
+    color: #1C1621;
+    line-height: 1.5em; }
+  .modal-inner .modal-intro {
+    margin-bottom: 1em; }
+  .modal-inner .modal-content {
+    color: #1C1621; }
+    @media screen and (min-width: 768px) {
+      .modal-inner .modal-content {
+        columns: 2 8em; } }
+  .modal-inner a.cta {
+    color: #fff;
+    display: inline-block;
+    margin-right: 0.5em;
+    margin-top: 1em; }
+    .modal-inner a.cta:last-child {
+      padding: 0 2em; }
+
+.modal-state:checked + .modal-fade-screen {
+  opacity: 1;
+  visibility: visible; }
+
+.modal-state:checked + .modal-fade-screen .modal-inner {
+  top: 0.5em; }
+
+.modal-open {
+  overflow: hidden; }
 
 body {
   margin: 0;

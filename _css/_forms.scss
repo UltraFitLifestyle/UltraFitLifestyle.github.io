@@ -41,7 +41,8 @@
 		font-size: 1em;
 	}
 }
-#mc_embed_signup {
+
+.mc_embed_signup {
 	h2 {
 		margin-bottom: 5px;
 	}
@@ -58,7 +59,7 @@
 			@include span-columns(3);
 			@include omega;
 		}
-		> input#mce-EMAIL {
+		> input.mce-EMAIL {
 			@include span-columns(9);
 			height: 2em;
 		}
@@ -72,7 +73,7 @@
 			> label {
 				display: none;
 			}
-			> input#mce-EMAIL {
+			> input.mce-EMAIL {
 				@include span-columns(6);
 				@include shift(3);
 			}
@@ -83,7 +84,7 @@
 			}			
 		}
 	}
-	input#mc-embedded-subscribe {
+	input.mc-embedded-subscribe {
 		margin-top: 15px;	
 		@include submit-button;
 	}
@@ -137,4 +138,17 @@
 			}
 		}
 	}	
+}
+.modal-inner {
+	> .mc_embed_signup {
+	margin-bottom: $content-margin;
+		input.mce-EMAIL {
+			@include shift(0);
+		}
+	}
+	.free {
+		margin-bottom: 0;
+		text-align: center;
+		color: $secondary-color;
+	}
 }
