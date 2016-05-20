@@ -141,7 +141,14 @@
 }
 .modal-inner {
 	> .mc_embed_signup {
-	margin-bottom: $content-margin;
+		margin-top: $content-margin;
+		margin-bottom: $content-margin;
+		@include media(max-width $medium-screen){
+			input, input.mce-EMAIL {
+				@include span-columns(12);
+				margin-bottom: $content-margin;
+			}
+		}
 		input.mce-EMAIL {
 			@include shift(0);
 		}

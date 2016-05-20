@@ -91,13 +91,11 @@ $slide-height-large: 258px;
 					@include shift(0);
 				}				
 			}
-			> .kickstart.content {
+			> #register {
 				@include position(absolute, null 25% $content-margin 25%);
 				@include button(shiny, $action-color);
-				> a {
-					color: $white;
-					text-shadow: none;
-				}
+				color: $white;
+				text-shadow: none;
 				@include media(max-width $large-screen) {
 					@include position(absolute, null 35% $content-margin/2 35%);
 				}
