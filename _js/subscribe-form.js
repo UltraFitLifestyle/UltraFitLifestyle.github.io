@@ -31,7 +31,7 @@ $(document).ready(function(){
 		}
 	});
 	$(window).scroll(function() {
-		if($(window).scrollTop() + $(window).height() == $(document).height()) {
+		if($(window).scrollTop() + $(window).height() >= $(document).height()) {
 			setTimeout(showModal(), 300);
 		}
 	});	
