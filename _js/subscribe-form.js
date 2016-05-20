@@ -1,5 +1,4 @@
-var isSubscribed = false,
-	shownOnce = false;
+var isSubscribed = false;
 $(document).ready(function(){
 	var cstring = "subscribed",
 		domainName = "ultrafitlifestyle.github.io",
@@ -66,23 +65,19 @@ function checkCookie(cstring, domainName, path){
 	var cname = getCookie(cstring),
 		cvalue = "false";
 		
-	if(cname != "" ){
-		//Cookie is set
-		isSubscribed = Boolean(getCookie(cstring));
-		if( isSubscribed ){
-			//Update cookie
-			setCookie(cstring, "true", 365, domainName, path);
-		}
+	if(cname == "true" ){
+		//Update cookie
+		setCookie(cstring, "true", 365, domainName, path);
 	} else {
-		//No cookie found, set one
+		//No cookie or false cookie found, set/update it
 		setCookie(cstring, "false", 365, domainName, path);
 	}
 }
 
 function showModal(){
-	if(!isSubscribed && !shownOnce){
+	if(!isSubscribed){
 		$("#modal-1").trigger("click");
-		shownOnce = true;
+		isSubscribed = true;
 	}
 }
 
