@@ -9,6 +9,7 @@ $(document).ready(function(){
 	}
 	
 	$('#hide-forever, .mc-embedded-subscribe').on('click', function(){
+	console.log('setting cookie 1');
 		setCookie(cstring, "true", 365, domainName, path);
 	});
 	
@@ -70,6 +71,7 @@ function checkCookie(cstring, domainName, path){
 		isSubscribed = Boolean(getCookie(cstring));
 		if( isSubscribed ){
 			//Update cookie
+			console.log('setting cookie 2');
 			setCookie(cstring, "true", 365, domainName, path);
 		}
 	} else {
