@@ -22,6 +22,23 @@ $slide-height-large: 258px;
 	}	
 }
 
+@mixin full-background {
+	@include fill-parent;
+	@include send-to-back;
+	@include media(max-width $small-screen) {
+		margin: auto;
+		min-height: 100%;
+		max-width: none;
+		width: 150%;
+		left: -100%;
+		right: -100%;
+		top: -100%;
+		bottom: -100%;
+	}
+	@include media(max-width $medium-screen) {
+		height: 100%;
+	}
+}
 .page-content > #jumbotron {
 	> .slider {
 		@include position(relative);
@@ -56,21 +73,7 @@ $slide-height-large: 258px;
 				}				
 			}
 			> img#training {
-				@include fill-parent;
-				@include send-to-back;
-				@include media(max-width $small-screen) {
-					margin: auto;
-					min-height: 100%;
-					max-width: none;
-					width: 150%;
-					left: -100%;
-					right: -100%;
-					top: -100%;
-					bottom: -100%;
-				}
-				@include media(max-width $medium-screen) {
-					height: 100%;
-				}
+				@include full-background;
 			}
 			> .training.content {
 				@include span-columns(8);
@@ -87,6 +90,35 @@ $slide-height-large: 258px;
 					@include span-columns(12);
 					@include shift(0);
 				}				
+			}
+			> .kickstart.content {
+				@include position(absolute, null 25% $content-margin 25%);
+				@include button(shiny, $action-color);
+				> a {
+					color: $white;
+					text-shadow: none;
+				}
+				@include media(max-width $large-screen) {
+					@include position(absolute, null 35% $content-margin/2 35%);
+				}
+				@include media(max-width $medium-screen) {
+					@include position(absolute, null 25% $content-margin/2 25%);
+				}				
+			}
+			
+			> img#kickstart {
+				height: 100%;
+				width: auto;
+				@include send-to-back;
+				opacity: 1;
+				margin-left: auto;
+				margin-right: auto;
+				@include media(max-width $small-screen) {
+
+				}
+				@include media(max-width $medium-screen) {
+
+				}
 			}
 			> img#headshot {
 				@include span-columns(4);

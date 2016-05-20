@@ -1,0 +1,24 @@
+<div class="accountability content">
+	<h1>Day {{page.day}} Accountability Form</h1>
+	<form id="day-{{page.day}}" class="accountability-form" action="javascript:validateForm('accountability', {{page.day}} )" method="post">
+		<label for='name'>Your name</label><i class="fa fa-asterisk"></i>
+		<input id="name-input" type='text' name='name' required />
+		<label>Did you complete the workout all the way through?</label>
+
+		<label for="completed">
+			<input type="radio" name="completed" id="yes-input" value="Yes" checked> Yes
+		</label>
+
+		<label for="completed">
+			<input type="radio" name="completed" id="no-input" value="No"> No
+		</label>  
+
+		<label for='love'>What did you love?</label>
+		<textarea id="love-input" rows="6" name='love'></textarea>
+	
+		<label for='hate'>What did you hate?</label>
+		<textarea id="hate-input" rows="6" name='hate'></textarea>
+	
+		<input id='submit' type='submit' value='Submit' />
+	</form>
+</div>
