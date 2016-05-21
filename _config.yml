@@ -28,7 +28,7 @@ markdown: kramdown
 # Prose settings
 prose:
   siteurl: 'http://ultrafitlifestyle.github.io'
-  relativeLinks: 'https://raw.githubusercontent.com/UltraFitLifestyle/UltraFitLifestyle.github.io/master/links.jsonp'
+  relativeLinks: 'http://UltraFitLifestyle.github.io/links.jsonp'
   media: 'images'
   ignore:
     - _config.yml
