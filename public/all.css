@@ -90,6 +90,11 @@ hr {
   margin-left: auto;
   margin-right: auto; }
 
+.centered-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
 .left {
   float: left; }
 
@@ -248,6 +253,8 @@ footer {
       display: table; }
     footer > #footer-bottom > #legal:last-child {
       margin-right: 0; }
+    footer > #footer-bottom > #legal > p {
+      margin-bottom: 0; }
   @media screen and (max-width: 768px) {
     footer > #contact-links, footer > #blog-links, footer > #subscribe {
       float: left;
@@ -1481,6 +1488,11 @@ body {
     width: 100%; }
     #kickstart-program > .content > .row > .half:last-child {
       margin-right: 0; } }
+
+#thank-you > .content > ul {
+  list-style: none;
+  text-align: center;
+  padding: 0; }
 
 #terms-of-use, #privacy-policy {
   margin-top: 15px;

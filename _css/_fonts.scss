@@ -118,6 +118,10 @@ hr {
 	margin-right: auto;
 }
 
+.centered-img {
+	@include center-img;
+}
+
 .left {
 	float: left;
 }
