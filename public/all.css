@@ -122,6 +122,9 @@ hr {
 .inline {
   display: inline; }
 
+iframe {
+  max-width: 100%; }
+
 .site-header {
   max-width: 95%;
   margin-left: auto;
@@ -1003,7 +1006,8 @@ footer {
 
 .post > .post-content > .featured {
   text-align: center;
-  margin-bottom: 15px; }
+  margin-left: 15px;
+  margin-right: 15px; }
   .post > .post-content > .featured img {
     max-height: 500px;
     width: auto; }
@@ -1016,7 +1020,8 @@ footer {
   clear: left;
   text-align: center;
   max-width: 200px;
-  margin-left: 15px; }
+  margin-left: 15px;
+  margin-right: 15px; }
 
 .post > .post-content #half-marathon-caption {
   float: left;
@@ -1053,12 +1058,15 @@ footer {
     text-overflow: ellipsis; }
     .post > .nav-links > #next:last-child, .post > .nav-links > #previous:last-child {
       margin-right: 0; }
+  .post > .nav-links > #previous {
+    text-align: right; }
   @media screen and (max-width: 1024px) {
     .post > .nav-links > #next, .post > .nav-links > #previous {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 100%; }
+      width: 100%;
+      text-align: left; }
       .post > .nav-links > #next:last-child, .post > .nav-links > #previous:last-child {
         margin-right: 0; } }
 

@@ -166,7 +166,8 @@
 		}
 		> .featured {
 			text-align: center;
-			margin-bottom: $content-margin;
+			margin-left: $content-margin;
+			margin-right: $content-margin;
 			img {
 				max-height: 500px;
 				width: auto;
@@ -180,6 +181,7 @@
 			@include floatAndClearLeft;
 			max-width: 200px;
 			margin-left: $content-margin;
+			margin-right: $content-margin;
 		}
 		#half-marathon-caption {
 			@include floatAndClearLeft;	
@@ -213,9 +215,13 @@
 			@include span-columns(6);
 			@include dotdotdot;
 		}
+		> #previous {
+			text-align: right;
+		}		
 		@include media(max-width $large-screen){
 			> #next, > #previous {
 				@include span-columns(12);
+				text-align: left;
 			}
 		}
 	}
