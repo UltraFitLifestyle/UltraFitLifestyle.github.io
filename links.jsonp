@@ -1,13 +1,13 @@
 callback([
 
   {
-    "text": "About",
+    "text": "About Rachel",
     "href": "/about-rachel/"
   } ,
 
   {
     "text": "Aerial Fitness",
-    "href": "/aerial-fitness/"
+    "href": "/aerial-fitness-in-south-carolina/"
   } ,
 
   {
@@ -16,8 +16,32 @@ callback([
   } ,
 
   {
-    "text": "Untitled",
-    "href": "/starter/blog/2013/06/16/hello-again/"
-  } 
+    "text": "Classes",
+    "href": "/classes/"
+  } ,
+  
+  {
+    "text": "Contact Rachel",
+    "href": "/contact-rachel/"
+  },
+  
+  {
+    "text": "Make an Appointment",
+    "href": "/make-an-appointment/"
+  },  
 
+  {
+    "text": "Personal Training",
+    "href": "/personal-training/"
+  },
+  
+  {
+    "text": "5 Day Kickstart Program",
+    "href": "/product/5-day-kickstart-program"
+  },
+  
+  {
+    "text": "Testimonials",
+    "href": "/testimonials/"
+  }
 ])
