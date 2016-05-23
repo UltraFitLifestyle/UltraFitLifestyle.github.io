@@ -1512,3 +1512,6 @@ img {
 
 .hidden {
   display: none; }
+
+#disqus_thread {
+  clear: both; }

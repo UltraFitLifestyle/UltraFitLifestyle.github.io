@@ -19,8 +19,9 @@ instagram: ultrafitlifestyle
 linkedin: rachel-tipton-15aa4720
 permalink: /:categories/:title/
 excerpt_separator: </p>
+repository: https://github.com/UltraFitLifestyle/UltraFitLifestyle.github.io.git
 
-exclude: ["node_modules", "package.json", "gulpfile.js", "temp"]
+exclude: ["node_modules", "package.json", "gulpfile.js", "temp", "Gemfile", "Gemfile.lock"]
 
 # Build settings
 markdown: kramdown
