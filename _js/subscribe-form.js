@@ -1,7 +1,7 @@
 var isSubscribed = false;
 $(document).ready(function(){
 	var cstring = "subscribed",
-		domainName = "www.racheltipton.com",
+		domainName = "racheltipton.com",
 		path = "/";
 		
 	if( navigator.cookieEnabled ) {
