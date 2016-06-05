@@ -268,374 +268,381 @@ footer {
       footer > #contact-links:last-child, footer > #blog-links:last-child, footer > #subscribe:last-child {
         margin-right: 0; } }
 
-.page-content > #jumbotron > .slider {
-  position: relative;
-  height: 473px;
-  border-bottom: 1px solid #ddd;
-  overflow: hidden; }
-  @media screen and (max-width: 1360px) {
-    .page-content > #jumbotron > .slider {
-      height: 358px; } }
-  @media screen and (max-width: 1024px) {
-    .page-content > #jumbotron > .slider {
-      height: 258px; } }
-  .page-content > #jumbotron > .slider > .slide {
-    display: none;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+.page-content > #jumbotron {
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto; }
+  .page-content > #jumbotron::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .page-content > #jumbotron > .slider {
+    position: relative;
+    height: 473px;
     overflow: hidden; }
-    .page-content > #jumbotron > .slider > .slide > img#aerial {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 23.23176%;
-      margin-left: 8.5298%; }
-      .page-content > #jumbotron > .slider > .slide > img#aerial:last-child {
-        margin-right: 0; }
-      @media screen and (max-width: 768px) {
-        .page-content > #jumbotron > .slider > .slide > img#aerial {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 40.29137%;
-          margin-left: 59.70863%;
-          position: absolute;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          left: 0;
-          opacity: 0.2;
-          z-index: -1; }
-          .page-content > #jumbotron > .slider > .slide > img#aerial:last-child {
-            margin-right: 0; } }
-      @media screen and (max-width: 480px) {
-        .page-content > #jumbotron > .slider > .slide > img#aerial {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 57.35098%;
-          margin-left: 42.64902%; }
-          .page-content > #jumbotron > .slider > .slide > img#aerial:last-child {
-            margin-right: 0; } }
-    .page-content > #jumbotron > .slider > .slide > .aerial.content {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 40.29137%;
-      margin-left: 8.5298%;
-      margin-top: 118.25px; }
-      .page-content > #jumbotron > .slider > .slide > .aerial.content:last-child {
-        margin-right: 0; }
-      @media screen and (max-width: 1360px) {
-        .page-content > #jumbotron > .slider > .slide > .aerial.content {
-          margin-top: 44.75px; } }
-      @media screen and (max-width: 1024px) {
-        .page-content > #jumbotron > .slider > .slide > .aerial.content {
-          margin-top: 16.125px; } }
-      @media screen and (max-width: 768px) {
-        .page-content > #jumbotron > .slider > .slide > .aerial.content {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 100%;
-          margin-left: 0%; }
-          .page-content > #jumbotron > .slider > .slide > .aerial.content:last-child {
-            margin-right: 0; } }
-    .page-content > #jumbotron > .slider > .slide > img#training {
+    @media screen and (max-width: 1360px) {
+      .page-content > #jumbotron > .slider {
+        height: 358px; } }
+    @media screen and (max-width: 1024px) {
+      .page-content > #jumbotron > .slider {
+        height: 258px; } }
+    .page-content > #jumbotron > .slider > .slide {
+      display: none;
       width: 100%;
       position: absolute;
       top: 0;
       right: 0;
       bottom: 0;
       left: 0;
-      opacity: 0.2;
-      z-index: -1; }
-      @media screen and (max-width: 480px) {
-        .page-content > #jumbotron > .slider > .slide > img#training {
-          margin: auto;
-          min-height: 100%;
-          max-width: none;
-          width: 150%;
-          left: -100%;
-          right: -100%;
-          top: -100%;
-          bottom: -100%; } }
-      @media screen and (max-width: 768px) {
-        .page-content > #jumbotron > .slider > .slide > img#training {
-          height: 100%; } }
-    .page-content > #jumbotron > .slider > .slide > .training.content {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 65.88078%;
-      margin-left: 17.05961%;
-      margin-top: 118.25px; }
-      .page-content > #jumbotron > .slider > .slide > .training.content:last-child {
-        margin-right: 0; }
-      @media screen and (max-width: 1360px) {
-        .page-content > #jumbotron > .slider > .slide > .training.content {
-          margin-top: 44.75px; } }
-      @media screen and (max-width: 1024px) {
-        .page-content > #jumbotron > .slider > .slide > .training.content {
-          margin-top: 16.125px; } }
-      .page-content > #jumbotron > .slider > .slide > .training.content > a {
-        color: #a95493; }
-      @media screen and (max-width: 1360px) {
-        .page-content > #jumbotron > .slider > .slide > .training.content {
-          margin-top: 236.5px; } }
+      overflow: hidden; }
+      .page-content > #jumbotron > .slider > .slide > img#aerial {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 23.23176%;
+        margin-left: 8.5298%; }
+        .page-content > #jumbotron > .slider > .slide > img#aerial:last-child {
+          margin-right: 0; }
+        @media screen and (max-width: 768px) {
+          .page-content > #jumbotron > .slider > .slide > img#aerial {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 40.29137%;
+            margin-left: 59.70863%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity: 0.2;
+            z-index: -1; }
+            .page-content > #jumbotron > .slider > .slide > img#aerial:last-child {
+              margin-right: 0; } }
+        @media screen and (max-width: 480px) {
+          .page-content > #jumbotron > .slider > .slide > img#aerial {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 57.35098%;
+            margin-left: 42.64902%; }
+            .page-content > #jumbotron > .slider > .slide > img#aerial:last-child {
+              margin-right: 0; } }
+      .page-content > #jumbotron > .slider > .slide > .aerial.content {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 40.29137%;
+        margin-left: 8.5298%;
+        margin-top: 118.25px; }
+        .page-content > #jumbotron > .slider > .slide > .aerial.content:last-child {
+          margin-right: 0; }
+        @media screen and (max-width: 1360px) {
+          .page-content > #jumbotron > .slider > .slide > .aerial.content {
+            margin-top: 44.75px; } }
+        @media screen and (max-width: 1024px) {
+          .page-content > #jumbotron > .slider > .slide > .aerial.content {
+            margin-top: 16.125px; } }
+        @media screen and (max-width: 768px) {
+          .page-content > #jumbotron > .slider > .slide > .aerial.content {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 100%;
+            margin-left: 0%; }
+            .page-content > #jumbotron > .slider > .slide > .aerial.content:last-child {
+              margin-right: 0; } }
+      .page-content > #jumbotron > .slider > .slide > img#training {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0.2;
+        z-index: -1; }
+        @media screen and (max-width: 480px) {
+          .page-content > #jumbotron > .slider > .slide > img#training {
+            margin: auto;
+            min-height: 100%;
+            max-width: none;
+            width: 150%;
+            left: -100%;
+            right: -100%;
+            top: -100%;
+            bottom: -100%; } }
+        @media screen and (max-width: 768px) {
+          .page-content > #jumbotron > .slider > .slide > img#training {
+            height: 100%; } }
+      .page-content > #jumbotron > .slider > .slide > .training.content {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 65.88078%;
+        margin-left: 17.05961%;
+        margin-top: 118.25px; }
+        .page-content > #jumbotron > .slider > .slide > .training.content:last-child {
+          margin-right: 0; }
+        @media screen and (max-width: 1360px) {
+          .page-content > #jumbotron > .slider > .slide > .training.content {
+            margin-top: 44.75px; } }
+        @media screen and (max-width: 1024px) {
+          .page-content > #jumbotron > .slider > .slide > .training.content {
+            margin-top: 16.125px; } }
+        .page-content > #jumbotron > .slider > .slide > .training.content > a {
+          color: #a95493; }
+        @media screen and (max-width: 1360px) {
+          .page-content > #jumbotron > .slider > .slide > .training.content {
+            margin-top: 236.5px; } }
   @media screen and (max-width: 1360px) and (max-width: 1360px) {
     .page-content > #jumbotron > .slider > .slide > .training.content {
       margin-top: 89.5px; } }
   @media screen and (max-width: 1360px) and (max-width: 1024px) {
     .page-content > #jumbotron > .slider > .slide > .training.content {
       margin-top: 32.25px; } }
-      @media screen and (max-width: 768px) {
-        .page-content > #jumbotron > .slider > .slide > .training.content {
-          margin-top: 236.5px;
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 100%;
-          margin-left: 0%; } }
+        @media screen and (max-width: 768px) {
+          .page-content > #jumbotron > .slider > .slide > .training.content {
+            margin-top: 236.5px;
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 100%;
+            margin-left: 0%; } }
   @media screen and (max-width: 768px) and (max-width: 1360px) {
     .page-content > #jumbotron > .slider > .slide > .training.content {
       margin-top: 89.5px; } }
   @media screen and (max-width: 768px) and (max-width: 1024px) {
     .page-content > #jumbotron > .slider > .slide > .training.content {
       margin-top: 32.25px; } }
-      @media screen and (max-width: 768px) {
-          .page-content > #jumbotron > .slider > .slide > .training.content:last-child {
-            margin-right: 0; } }
-    .page-content > #jumbotron > .slider > .slide > #register {
-      position: absolute;
-      right: 25%;
-      bottom: 15px;
-      left: 25%;
-      background-color: #83C5CB;
-      background-image: -webkit-linear-gradient(top, #83C5CB 0%, #4b93aa 50%, #2d7a9b 50%, #347f9d 100%);
-      background-image: linear-gradient(to bottom,#83C5CB 0%, #4b93aa 50%, #2d7a9b 50%, #347f9d 100%);
-      border: 1px solid #0e567a;
-      border-bottom: 1px solid #054651;
-      border-radius: 5px;
-      box-shadow: inset 0 1px 0 0 #a8e2d7;
-      color: #333333;
-      display: inline-block;
-      font-size: inherit;
-      font-weight: bold;
-      padding: 7px 18px;
-      text-align: center;
-      text-decoration: none;
-      text-shadow: 0 -1px 1px #8ad2d9;
-      color: #fff;
-      text-shadow: none; }
-      .page-content > #jumbotron > .slider > .slide > #register:hover:not(:disabled) {
-        background-color: #76b6b9;
-        background-image: -webkit-linear-gradient(top, #76b6b9 0%, #418798 50%, #267089 50%, #2d758c 100%);
-        background-image: linear-gradient(to bottom,#76b6b9 0%, #418798 50%, #267089 50%, #2d758c 100%);
-        cursor: pointer; }
-      .page-content > #jumbotron > .slider > .slide > #register:active:not(:disabled), .page-content > #jumbotron > .slider > .slide > #register:focus:not(:disabled) {
-        box-shadow: inset 0 0 20px 0 #145151; }
-      .page-content > #jumbotron > .slider > .slide > #register:disabled {
-        cursor: not-allowed;
-        opacity: 0.5; }
-      @media screen and (max-width: 1024px) {
-        .page-content > #jumbotron > .slider > .slide > #register {
-          position: absolute;
-          right: 35%;
-          bottom: 7.5px;
-          left: 35%; } }
-      @media screen and (max-width: 768px) {
-        .page-content > #jumbotron > .slider > .slide > #register {
-          position: absolute;
-          right: 25%;
-          bottom: 7.5px;
-          left: 25%; } }
-    .page-content > #jumbotron > .slider > .slide > img#kickstart {
-      height: 100%;
-      width: auto;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      opacity: 0.2;
-      z-index: -1;
-      opacity: 1;
-      margin-left: auto;
-      margin-right: auto; }
-    .page-content > #jumbotron > .slider > .slide > img#headshot {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 31.76157%; }
-      .page-content > #jumbotron > .slider > .slide > img#headshot:last-child {
-        margin-right: 0; }
-      @media screen and (max-width: 1360px) {
-        .page-content > #jumbotron > .slider > .slide > img#headshot {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 29.62911%; }
-          .page-content > #jumbotron > .slider > .slide > img#headshot:last-child {
-            margin-right: 0; } }
-      @media screen and (max-width: 1024px) {
-        .page-content > #jumbotron > .slider > .slide > img#headshot {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 28.34964%; }
-          .page-content > #jumbotron > .slider > .slide > img#headshot:last-child {
-            margin-right: 0; } }
-      @media screen and (max-width: 768px) {
-        .page-content > #jumbotron > .slider > .slide > img#headshot {
-          display: none; } }
-    .page-content > #jumbotron > .slider > .slide > .about.content {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 65.88078%;
-      margin-top: 118.25px; }
-      .page-content > #jumbotron > .slider > .slide > .about.content:last-child {
-        margin-right: 0; }
-      @media screen and (max-width: 1360px) {
-        .page-content > #jumbotron > .slider > .slide > .about.content {
-          margin-top: 44.75px; } }
-      @media screen and (max-width: 1024px) {
-        .page-content > #jumbotron > .slider > .slide > .about.content {
-          margin-top: 16.125px; } }
-      @media screen and (max-width: 768px) {
-        .page-content > #jumbotron > .slider > .slide > .about.content {
-          margin-top: 15px;
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 100%; }
-          .page-content > #jumbotron > .slider > .slide > .about.content:last-child {
-            margin-right: 0; } }
-    .page-content > #jumbotron > .slider > .slide > img#rachel {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 40.29137%; }
-      .page-content > #jumbotron > .slider > .slide > img#rachel:last-child {
-        margin-right: 0; }
-      @media screen and (max-width: 1360px) {
-        .page-content > #jumbotron > .slider > .slide > img#rachel {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 38.15892%; }
-          .page-content > #jumbotron > .slider > .slide > img#rachel:last-child {
-            margin-right: 0; } }
-      @media screen and (max-width: 768px) {
-        .page-content > #jumbotron > .slider > .slide > img#rachel {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 57.35098%; }
-          .page-content > #jumbotron > .slider > .slide > img#rachel:last-child {
-            margin-right: 0; } }
-      @media screen and (max-width: 480px) {
-        .page-content > #jumbotron > .slider > .slide > img#rachel {
-          position: absolute;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          left: 0;
-          opacity: 0.2;
-          z-index: -1;
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 91.4702%;
-          margin-left: 8.5298%; }
-          .page-content > #jumbotron > .slider > .slide > img#rachel:last-child {
-            margin-right: 0; } }
-    .page-content > #jumbotron > .slider > .slide > .contact.content {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 57.35098%;
-      margin-top: 118.25px; }
-      .page-content > #jumbotron > .slider > .slide > .contact.content:last-child {
-        margin-right: 0; }
-      @media screen and (max-width: 1360px) {
-        .page-content > #jumbotron > .slider > .slide > .contact.content {
-          margin-top: 44.75px; } }
-      @media screen and (max-width: 1024px) {
-        .page-content > #jumbotron > .slider > .slide > .contact.content {
-          margin-top: 16.125px; } }
-      .page-content > #jumbotron > .slider > .slide > .contact.content a {
-        color: #a95493; }
-      @media screen and (max-width: 1360px) {
-        .page-content > #jumbotron > .slider > .slide > .contact.content {
-          margin-top: 236.5px; } }
+        @media screen and (max-width: 768px) {
+            .page-content > #jumbotron > .slider > .slide > .training.content:last-child {
+              margin-right: 0; } }
+      .page-content > #jumbotron > .slider > .slide > #register {
+        position: absolute;
+        right: 25%;
+        bottom: 15px;
+        left: 25%;
+        background-color: #83C5CB;
+        background-image: -webkit-linear-gradient(top, #83C5CB 0%, #4b93aa 50%, #2d7a9b 50%, #347f9d 100%);
+        background-image: linear-gradient(to bottom,#83C5CB 0%, #4b93aa 50%, #2d7a9b 50%, #347f9d 100%);
+        border: 1px solid #0e567a;
+        border-bottom: 1px solid #054651;
+        border-radius: 5px;
+        box-shadow: inset 0 1px 0 0 #a8e2d7;
+        color: #333333;
+        display: inline-block;
+        font-size: inherit;
+        font-weight: bold;
+        padding: 7px 18px;
+        text-align: center;
+        text-decoration: none;
+        text-shadow: 0 -1px 1px #8ad2d9;
+        color: #fff;
+        text-shadow: none; }
+        .page-content > #jumbotron > .slider > .slide > #register:hover:not(:disabled) {
+          background-color: #76b6b9;
+          background-image: -webkit-linear-gradient(top, #76b6b9 0%, #418798 50%, #267089 50%, #2d758c 100%);
+          background-image: linear-gradient(to bottom,#76b6b9 0%, #418798 50%, #267089 50%, #2d758c 100%);
+          cursor: pointer; }
+        .page-content > #jumbotron > .slider > .slide > #register:active:not(:disabled), .page-content > #jumbotron > .slider > .slide > #register:focus:not(:disabled) {
+          box-shadow: inset 0 0 20px 0 #145151; }
+        .page-content > #jumbotron > .slider > .slide > #register:disabled {
+          cursor: not-allowed;
+          opacity: 0.5; }
+        @media screen and (max-width: 1024px) {
+          .page-content > #jumbotron > .slider > .slide > #register {
+            position: absolute;
+            right: 35%;
+            bottom: 7.5px;
+            left: 35%; } }
+        @media screen and (max-width: 768px) {
+          .page-content > #jumbotron > .slider > .slide > #register {
+            position: absolute;
+            right: 25%;
+            bottom: 7.5px;
+            left: 25%; } }
+      .page-content > #jumbotron > .slider > .slide > img#kickstart {
+        height: 100%;
+        width: auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0.2;
+        z-index: -1;
+        opacity: 1;
+        margin-left: auto;
+        margin-right: auto; }
+      .page-content > #jumbotron > .slider > .slide > img#headshot {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 31.76157%; }
+        .page-content > #jumbotron > .slider > .slide > img#headshot:last-child {
+          margin-right: 0; }
+        @media screen and (max-width: 1360px) {
+          .page-content > #jumbotron > .slider > .slide > img#headshot {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 29.62911%; }
+            .page-content > #jumbotron > .slider > .slide > img#headshot:last-child {
+              margin-right: 0; } }
+        @media screen and (max-width: 1024px) {
+          .page-content > #jumbotron > .slider > .slide > img#headshot {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 28.34964%; }
+            .page-content > #jumbotron > .slider > .slide > img#headshot:last-child {
+              margin-right: 0; } }
+        @media screen and (max-width: 768px) {
+          .page-content > #jumbotron > .slider > .slide > img#headshot {
+            display: none; } }
+      .page-content > #jumbotron > .slider > .slide > .about.content {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 65.88078%;
+        margin-top: 118.25px; }
+        .page-content > #jumbotron > .slider > .slide > .about.content:last-child {
+          margin-right: 0; }
+        @media screen and (max-width: 1360px) {
+          .page-content > #jumbotron > .slider > .slide > .about.content {
+            margin-top: 44.75px; } }
+        @media screen and (max-width: 1024px) {
+          .page-content > #jumbotron > .slider > .slide > .about.content {
+            margin-top: 16.125px; } }
+        @media screen and (max-width: 768px) {
+          .page-content > #jumbotron > .slider > .slide > .about.content {
+            margin-top: 15px;
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 100%; }
+            .page-content > #jumbotron > .slider > .slide > .about.content:last-child {
+              margin-right: 0; } }
+      .page-content > #jumbotron > .slider > .slide > img#rachel {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 40.29137%; }
+        .page-content > #jumbotron > .slider > .slide > img#rachel:last-child {
+          margin-right: 0; }
+        @media screen and (max-width: 1360px) {
+          .page-content > #jumbotron > .slider > .slide > img#rachel {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 38.15892%; }
+            .page-content > #jumbotron > .slider > .slide > img#rachel:last-child {
+              margin-right: 0; } }
+        @media screen and (max-width: 768px) {
+          .page-content > #jumbotron > .slider > .slide > img#rachel {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 57.35098%; }
+            .page-content > #jumbotron > .slider > .slide > img#rachel:last-child {
+              margin-right: 0; } }
+        @media screen and (max-width: 480px) {
+          .page-content > #jumbotron > .slider > .slide > img#rachel {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity: 0.2;
+            z-index: -1;
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 91.4702%;
+            margin-left: 8.5298%; }
+            .page-content > #jumbotron > .slider > .slide > img#rachel:last-child {
+              margin-right: 0; } }
+      .page-content > #jumbotron > .slider > .slide > .contact.content {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 57.35098%;
+        margin-top: 118.25px; }
+        .page-content > #jumbotron > .slider > .slide > .contact.content:last-child {
+          margin-right: 0; }
+        @media screen and (max-width: 1360px) {
+          .page-content > #jumbotron > .slider > .slide > .contact.content {
+            margin-top: 44.75px; } }
+        @media screen and (max-width: 1024px) {
+          .page-content > #jumbotron > .slider > .slide > .contact.content {
+            margin-top: 16.125px; } }
+        .page-content > #jumbotron > .slider > .slide > .contact.content a {
+          color: #a95493; }
+        @media screen and (max-width: 1360px) {
+          .page-content > #jumbotron > .slider > .slide > .contact.content {
+            margin-top: 236.5px; } }
   @media screen and (max-width: 1360px) and (max-width: 1360px) {
     .page-content > #jumbotron > .slider > .slide > .contact.content {
       margin-top: 89.5px; } }
   @media screen and (max-width: 1360px) and (max-width: 1024px) {
     .page-content > #jumbotron > .slider > .slide > .contact.content {
       margin-top: 32.25px; } }
-      @media screen and (max-width: 768px) {
-        .page-content > #jumbotron > .slider > .slide > .contact.content {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 40.29137%;
-          margin-top: 236.5px; }
-          .page-content > #jumbotron > .slider > .slide > .contact.content:last-child {
-            margin-right: 0; } }
+        @media screen and (max-width: 768px) {
+          .page-content > #jumbotron > .slider > .slide > .contact.content {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 40.29137%;
+            margin-top: 236.5px; }
+            .page-content > #jumbotron > .slider > .slide > .contact.content:last-child {
+              margin-right: 0; } }
   @media screen and (max-width: 768px) and (max-width: 1360px) {
     .page-content > #jumbotron > .slider > .slide > .contact.content {
       margin-top: 89.5px; } }
   @media screen and (max-width: 768px) and (max-width: 1024px) {
     .page-content > #jumbotron > .slider > .slide > .contact.content {
       margin-top: 32.25px; } }
-      @media screen and (max-width: 480px) {
-        .page-content > #jumbotron > .slider > .slide > .contact.content {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 100%;
-          margin-top: 236.5px; }
-          .page-content > #jumbotron > .slider > .slide > .contact.content:last-child {
-            margin-right: 0; } }
+        @media screen and (max-width: 480px) {
+          .page-content > #jumbotron > .slider > .slide > .contact.content {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 100%;
+            margin-top: 236.5px; }
+            .page-content > #jumbotron > .slider > .slide > .contact.content:last-child {
+              margin-right: 0; } }
   @media screen and (max-width: 480px) and (max-width: 1360px) {
     .page-content > #jumbotron > .slider > .slide > .contact.content {
       margin-top: 89.5px; } }
   @media screen and (max-width: 480px) and (max-width: 1024px) {
     .page-content > #jumbotron > .slider > .slide > .contact.content {
       margin-top: 32.25px; } }
-  .page-content > #jumbotron > .slider > .active-slide {
-    display: block; }
-
-.page-content > #jumbotron > .slider-nav {
-  text-align: center; }
-  .page-content > #jumbotron > .slider-nav > .arrows {
-    display: inline-block;
-    font-size: 24px;
-    vertical-align: top; }
-    .page-content > #jumbotron > .slider-nav > .arrows#arrow-prev {
-      margin-right: 5px; }
-    .page-content > #jumbotron > .slider-nav > .arrows#arrow-next {
-      margin-left: 5px; }
-  .page-content > #jumbotron > .slider-nav > .slider-dots {
-    list-style: none;
-    display: inline-block;
-    padding-left: 0;
-    margin-bottom: 0;
-    margin-top: 6px; }
-    .page-content > #jumbotron > .slider-nav > .slider-dots > li {
-      color: #bbbcbc;
-      display: inline;
-      font-size: 16px;
-      margin-right: 5px; }
-      .page-content > #jumbotron > .slider-nav > .slider-dots > li.active-dot {
-        color: #363636; }
+    .page-content > #jumbotron > .slider > .active-slide {
+      display: block; }
+  .page-content > #jumbotron > .slider-nav {
+    text-align: center; }
+    .page-content > #jumbotron > .slider-nav > .arrows {
+      display: inline-block;
+      font-size: 24px;
+      vertical-align: top;
+      color: #8B878E; }
+      .page-content > #jumbotron > .slider-nav > .arrows#arrow-prev {
+        margin-right: 5px; }
+      .page-content > #jumbotron > .slider-nav > .arrows#arrow-next {
+        margin-left: 5px; }
+    .page-content > #jumbotron > .slider-nav > .slider-dots {
+      list-style: none;
+      display: inline-block;
+      padding-left: 0;
+      margin-bottom: 0;
+      margin-top: 6px; }
+      .page-content > #jumbotron > .slider-nav > .slider-dots > li {
+        color: #1C1621;
+        display: inline;
+        font-size: 16px;
+        margin-right: 5px; }
+        .page-content > #jumbotron > .slider-nav > .slider-dots > li.active-dot {
+          color: #8B878E; }
 
 .mc_embed_signup h2 {
   margin-bottom: 5px; }
@@ -1187,20 +1194,163 @@ body {
   background-color: #fff;
   color: #1C1621; }
 
-.page-content {
+.page-content:not(#homepage) {
   max-width: 95%;
   margin-left: auto;
   margin-right: auto; }
-  .page-content::after {
+  .page-content:not(#homepage)::after {
     clear: both;
     content: "";
     display: table; }
-  .page-content > .content {
+  .page-content:not(#homepage) > .content {
     margin-top: 15px;
     margin-bottom: 15px; }
 
-#homepage.page-content > .mindbody {
-  display: block; }
+#homepage.page-content > #call-to-action-container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #662d91;
+  height: 175px;
+  margin-top: -33px;
+  margin-bottom: 15px; }
+  #homepage.page-content > #call-to-action-container::after {
+    clear: both;
+    content: "";
+    display: table; }
+  #homepage.page-content > #call-to-action-container > h3 {
+    font-style: initial;
+    color: #9C70BF;
+    margin-bottom: 0;
+    margin-top: 70px;
+    text-align: center;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+    margin-right: 0; }
+    #homepage.page-content > #call-to-action-container > h3:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 1360px) {
+      #homepage.page-content > #call-to-action-container > h3 {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 82.94039%;
+        margin-right: 0; }
+        #homepage.page-content > #call-to-action-container > h3:last-child {
+          margin-right: 0; } }
+    @media screen and (max-width: 1024px) {
+      #homepage.page-content > #call-to-action-container > h3 {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        margin-top: 40px; }
+        #homepage.page-content > #call-to-action-container > h3:last-child {
+          margin-right: 0; } }
+    #homepage.page-content > #call-to-action-container > h3 > a {
+      color: #fff;
+      cursor: pointer; }
+      #homepage.page-content > #call-to-action-container > h3 > a:hover {
+        text-decoration: underline; }
+    @media screen and (max-width: 768px) {
+      #homepage.page-content > #call-to-action-container > h3 > .break {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 0.8em; } }
+    @media screen and (max-width: 1024px) {
+      #homepage.page-content > #call-to-action-container > h3 > .fa {
+        display: none; } }
+    #homepage.page-content > #call-to-action-container > h3 > .fa:nth-child(3) {
+      color: #50197A; }
+    #homepage.page-content > #call-to-action-container > h3 > .fa:nth-child(4) {
+      color: #7A46A2;
+      font-size: 1.4em; }
+    #homepage.page-content > #call-to-action-container > h3 > .fa:nth-child(5) {
+      color: #9C70BF;
+      font-size: 1.8em; }
+  #homepage.page-content > #call-to-action-container > .register-button {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    #homepage.page-content > #call-to-action-container > .register-button:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 1360px) {
+      #homepage.page-content > #call-to-action-container > .register-button {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 14.70196%; }
+        #homepage.page-content > #call-to-action-container > .register-button:last-child {
+          margin-right: 0; } }
+    @media screen and (max-width: 1024px) {
+      #homepage.page-content > #call-to-action-container > .register-button {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%; }
+        #homepage.page-content > #call-to-action-container > .register-button:last-child {
+          margin-right: 0; } }
+    #homepage.page-content > #call-to-action-container > .register-button > a > button {
+      float: left;
+      display: block;
+      margin-right: 16.03631%;
+      width: 100%;
+      margin-top: 60px;
+      color: #fff; }
+      #homepage.page-content > #call-to-action-container > .register-button > a > button:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 1024px) {
+        #homepage.page-content > #call-to-action-container > .register-button > a > button {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 48.82117%;
+          margin-left: 25.58941%;
+          margin-top: 15px; }
+          #homepage.page-content > #call-to-action-container > .register-button > a > button:last-child {
+            margin-right: 0; } }
+      @media screen and (max-width: 480px) {
+        #homepage.page-content > #call-to-action-container > .register-button > a > button {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 65.88078%;
+          margin-left: 17.05961%; }
+          #homepage.page-content > #call-to-action-container > .register-button > a > button:last-child {
+            margin-right: 0; } }
+    #homepage.page-content > #call-to-action-container > .register-button > p {
+      color: #fff;
+      font-family: "Libre Baskerville", serif;
+      font-style: italic;
+      text-align: center;
+      float: left;
+      display: block;
+      margin-right: 16.03631%;
+      width: 100%; }
+      #homepage.page-content > #call-to-action-container > .register-button > p:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 1024px) {
+        #homepage.page-content > #call-to-action-container > .register-button > p {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 48.82117%;
+          margin-left: 25.58941%; }
+          #homepage.page-content > #call-to-action-container > .register-button > p:last-child {
+            margin-right: 0; } }
+      @media screen and (max-width: 480px) {
+        #homepage.page-content > #call-to-action-container > .register-button > p {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 65.88078%;
+          margin-left: 17.05961%; }
+          #homepage.page-content > #call-to-action-container > .register-button > p:last-child {
+            margin-right: 0; } }
 
 #aerial-fitness-in-south-carolina {
   position: relative; }
@@ -1436,8 +1586,12 @@ body {
     width: 100%; }
     #classes > .classes:last-child {
       margin-right: 0; }
+    #classes > .classes > .register {
+      margin-bottom: 15px; }
     #classes > .classes > ul {
       list-style: none; }
+      #classes > .classes > ul > li > .register {
+        margin-top: 15px; }
     #classes > .classes .bold {
       font-weight: 600; }
   #classes > .video {
@@ -1515,3 +1669,33 @@ img {
 
 #disqus_thread {
   clear: both; }
+
+.register {
+  background-color: #83C5CB;
+  background-image: -webkit-linear-gradient(top, #83C5CB 0%, #4b93aa 50%, #2d7a9b 50%, #347f9d 100%);
+  background-image: linear-gradient(to bottom,#83C5CB 0%, #4b93aa 50%, #2d7a9b 50%, #347f9d 100%);
+  border: 1px solid #0e567a;
+  border-bottom: 1px solid #054651;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 0 0 #a8e2d7;
+  color: #333333;
+  display: inline-block;
+  font-size: inherit;
+  font-weight: bold;
+  padding: 7px 18px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 -1px 1px #8ad2d9;
+  text-shadow: none; }
+  .register:hover:not(:disabled) {
+    background-color: #76b6b9;
+    background-image: -webkit-linear-gradient(top, #76b6b9 0%, #418798 50%, #267089 50%, #2d758c 100%);
+    background-image: linear-gradient(to bottom,#76b6b9 0%, #418798 50%, #267089 50%, #2d758c 100%);
+    cursor: pointer; }
+  .register:active:not(:disabled), .register:focus:not(:disabled) {
+    box-shadow: inset 0 0 20px 0 #145151; }
+  .register:disabled {
+    cursor: not-allowed;
+    opacity: 0.5; }
+  .register > a {
+    color: white; }
