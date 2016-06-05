@@ -40,10 +40,10 @@ $slide-height-large: 258px;
 	}
 }
 .page-content > #jumbotron {
+	@include outer-container($content-width);
 	> .slider {
 		@include position(relative);
 		@include slide-height;
-		border-bottom: 1px solid #ddd;
 		overflow: hidden;
 		> .slide {
 			display: none;
@@ -181,6 +181,7 @@ $slide-height-large: 258px;
 			display: inline-block;
 			font-size: 24px;
 			vertical-align: top;
+			color: $grey-light;
 			&#arrow-prev {
 				margin-right: 5px;
 			}
@@ -196,12 +197,12 @@ $slide-height-large: 258px;
 			margin-bottom: 0;
 			margin-top: 6px;
 			> li {
-				color: #bbbcbc;
+				color: $grey-dark;
 				display: inline;
 				font-size: 16px;
 				margin-right: 5px;
 				&.active-dot {
-					color: #363636;				
+					color: $grey-light;
 				}
 			}
 		}

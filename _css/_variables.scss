@@ -46,3 +46,18 @@ $content-margin: 15px;
 	margin-left: auto;
 	margin-right: auto;
 }
+
+@mixin action-text {
+	color: $white;
+	font-family: $serif;
+	font-style: italic;
+	text-align: center;
+}
+
+@mixin register-now {
+	@include button(shiny, $action-color);
+	text-shadow: none;
+	> a {
+		color: white;
+	}
+}

@@ -15,7 +15,7 @@ body {
 	color: $grey-dark;
 }
 
-.page-content {
+.page-content:not(#homepage) {
 	@include outer-container($content-width);
 	> .content {
 		margin-top: $content-margin;
@@ -24,8 +24,95 @@ body {
 }
 
 #homepage.page-content {
-	> .mindbody {
-		display: block;
+	> #call-to-action-container {
+		@include outer-container(100%);
+		background-color: $base-color;
+		height: 175px;
+		margin-top: -33px;
+		margin-bottom: $content-margin;
+		> h3 {
+			font-style: initial;
+			color: $base-color-1;
+			margin-bottom: 0;
+			margin-top: 70px;
+			text-align: center;
+			@include span-columns(8 of 12);
+			@include omega;
+			@include media(max-width $xl-screen){
+				@include span-columns(10 of 12);
+				@include omega;
+			}
+			@include media(max-width $large-screen){
+				@include span-columns(12 of 12);
+				margin-top: 40px;
+			}
+			> a {
+				color: $white;
+				cursor: pointer;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+			> .break {
+				@include media(max-width $medium-screen) {
+					display: block;
+					margin-left: auto;
+					margin-right: auto;
+					font-size: 0.8em;
+				}
+			}
+			> .fa {
+				@include media(max-width $large-screen){
+					display: none;
+				}
+				&:nth-child(3){
+					color: $base-color-3;
+				}
+				&:nth-child(4){
+					color: $base-color-2;
+					font-size: 1.4em;
+				}
+				&:nth-child(5){		
+					color: $base-color-1;
+					font-size: 1.8em;
+				}
+			}
+		}
+		> .register-button {
+			@include span-columns(4 of 12);
+			@include media(max-width $xl-screen){
+				@include span-columns(2 of 12);
+			}
+			@include media(max-width $large-screen){
+				@include span-columns(12 of 12);
+			}
+			> a > button {
+				@include span-columns(2 of 2);
+				margin-top: 60px;
+				color: $white;
+				@include media(max-width $large-screen){
+					@include span-columns(6 of 12);
+					@include shift(3);
+					margin-top: 15px;
+				}
+				@include media(max-width $small-screen){
+					@include span-columns(8 of 12);
+					@include shift(2);
+				}
+			}
+			> p {			
+				@include action-text;
+				@include span-columns(2 of 2);	
+				@include media(max-width $large-screen){
+					@include span-columns(6 of 12);
+					@include shift(3);
+				}
+				@include media(max-width $small-screen){
+					@include span-columns(8 of 12);
+					@include shift(2);
+				}
+			}
+		}
 	}
 }
 
@@ -111,8 +198,14 @@ body {
 	margin-bottom: $content-margin;
 	> .classes {
 		@include span-columns(12);
+		> .register {
+			margin-bottom: $content-margin;
+		}		
 		> ul {
 			list-style: none;
+			> li > .register {
+				margin-top: $content-margin;
+			}
 		}
 		.bold {
 			font-weight: 600;
@@ -197,4 +290,8 @@ img {
 
 #disqus_thread {
 	clear: both;
+}
+
+.register {
+	@include register-now;
 }
