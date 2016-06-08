@@ -268,6 +268,60 @@ body {
 		} 
 	}	
 }
+#golf-conditioning > .content {
+	> h1 {
+		display: inline-block;
+		margin-bottom: $content-margin;
+	}
+	> #golfer {
+		@include center-img;
+	}
+	> #golf-results {
+		background-color: $base-color;
+		padding: $content-margin;
+		padding-bottom: 0;
+		margin-bottom: $content-margin;
+		h2, p {
+			color: $white;
+		}
+		> .row {
+			@include row();
+			> .left {
+				@include span-columns(4);
+			}
+			> .right {
+				@include span-columns(7);
+				@include shift(1);
+			}
+			@include media(max-width $medium-screen){
+				> .left {
+					@include span-columns(12);
+				}
+				> .right {
+					@include span-columns(12);
+					@include shift(0);
+				}			
+			}			
+		}
+	}
+	> #info {
+		@include span-columns(12);
+		text-align: center;
+	}
+	> img {
+		@include center-img;
+	}
+	@include media(max-width $medium-screen){
+		> .left {
+			@include span-columns(12);
+		}
+		> .right {
+			@include span-columns(12);
+			@include shift(0);
+		}			
+	}
+}
+
 #thank-you > .content {
 	> ul {
 		list-style: none;
