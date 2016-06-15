@@ -139,6 +139,46 @@
 		}
 	}	
 }
+#intake-form {
+	> .row {
+		@include row();
+		@include span-columns(10);
+		@include shift(1);
+		margin-bottom: $content-margin;
+		> .question{
+			@include span-columns(12);
+			@include omega;
+		}
+		> .radio {
+			@include span-columns(2);
+			margin: $content-margin 0;
+		}
+		> .details {
+			@include span-columns(12);
+			clear: left;
+		}
+	}
+	@include media(max-width $medium-screen) {
+		> .row {
+			@include span-columns(12);
+			@include shift(0);
+			> .radio {
+				@include span-columns(4);
+			}
+		}
+	}
+	> .special{
+		float: left;
+	}
+	#submit {
+		@include span-columns(2);
+		@include shift(1);
+		@include submit-button;
+		margin-top: $content-margin;
+		margin-bottom: $content-margin * 2;
+		-webkit-appearance: none;				
+	}	
+}
 .modal-inner {
 	> .mc_embed_signup {
 		margin-top: $content-margin;
