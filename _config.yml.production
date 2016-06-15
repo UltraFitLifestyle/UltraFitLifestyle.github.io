@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Rachel Tipton – Ultra Fit Lifestyle
+title: Rachel Tipton - Ultra Fit Lifestyle
 email: info@ultrafitlifestyle.com
 description: > # this means to ignore newlines until "baseurl:"
   Personalized, one-on-one fitness training in person, virtually and through group classes specializing in combining strength, flexibility and agility to help people meet their fitness goals. Based in Pawleys Island, South Carolina.
@@ -25,3 +25,379 @@ exclude: ["node_modules", "package.json", "gulpfile.js", "temp", "Gemfile", "Gem
 
 # Build settings
 markdown: kramdown
+
+# Prose settings
+prose:
+  siteurl: 'http://ultrafitlifestyle.github.io'
+  relativeLinks: 'http://UltraFitLifestyle.github.io/links.jsonp'
+  media: 'images'
+  ignore:
+    - _config.yml
+    - /_css
+    - /_data
+    - /_layouts
+    - /_js
+    - /public
+    - feed.xml
+    - gulpfile.js
+    - package.json
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Post title"
+      - name: "author"
+        field:
+          element: "hidden"
+          value: "Rachel-Tipton"
+      - name: "category"
+        field:
+          element: "multiselect"
+          label: "Category"
+          placeholder: "Choose a category"
+          options:
+            - name: Fitness Journey
+              value: fitness-journey
+            - name: UltraFitFinances
+              value: ultrafitfinances
+            - name: Featured
+              value: featured
+            - name: Family
+              value: family
+            - name: Success
+              value: success
+            - name: Shakeology
+              value: shakeology
+          alterable: true
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
+          options:
+            - name: '1st Phorm'
+              value: 1st-phorm
+            - name: aerial
+              value: aerial
+            - name: alcohol
+              value: alcohol
+            - name: asylum
+              value: asylum
+            - name: athlete
+              value: athlete
+            - name: autism
+              value: autism
+            - name: avocado
+              value: avocado
+            - name: awesome
+              value: awesome
+            - name: ballet
+              value: ballet
+            - name: beachbody
+              value: beachbody
+            - name: BodyGospel
+              value: bodygospel
+            - name: bootcamp
+              value: bootcamp
+            - name: BrazilButtLift
+              value: brazilbuttlift
+            - name: budget
+              value: budget
+            - name: business
+              value: business
+            - name: busy
+              value: busy
+            - name: butterfly
+              value: butterfly
+            - name: 'Carl Daikler'
+              value: carl-daikler
+            - name: challenge
+              value: challenge
+            - name: ChrisHogan360
+              value: chrishogan360
+            - name: Christmas
+              value: christmas
+            - name: cleanse
+              value: cleanse
+            - name: coaching
+              value: coaching
+            - name: CoachSummit
+              value: coachsummit
+            - name: 'coconut oil'
+              value: coconut-oil
+            - name: colitis
+              value: colitis
+            - name: 'contemporary dance'
+              value: contemporary-dance
+            - name: courage
+              value: courage
+            - name: Crohns
+              value: crohns
+            - name: 'Crohns Disease'
+              value: crohns-disease
+            - name: Crohnsfaith
+              value: crohnsfaith
+            - name: dance
+              value: dance
+            - name: dancer
+              value: dancer
+            - name: 'dancer problems'
+              value: dancer-problems
+            - name: 'Dave Ramsey'
+              value: dave-ramsey
+            - name: debt
+              value: debt
+            - name: decisions
+              value: decisions
+            - name: depression
+              value: depression
+            - name: detox
+              value: detox
+            - name: Disney
+              value: disney
+            - name: 'dream big'
+              value: dreambig
+            - name: dreams
+              value: dreams
+            - name: eat
+              value: eat
+            - name: 'eating disorders'
+              value: eating-disorders
+            - name: 'energy&endurance'
+              value: energyendurance
+            - name: excitement
+              value: excitement
+            - name: exercise
+              value: exercise
+            - name: fail
+              value: fail
+            - name: fear
+              value: fear
+            - name: finances
+              value: finances
+            - name: 'financial freedom'
+              value: financialfreedom
+            - name: fit
+              value: fit
+            - name: fitness
+              value: fitness
+            - name: 'fitness results'
+              value: fitness-results
+            - name: flu
+              value: flu
+            - name: food
+              value: food
+            - name: 'free radicals'
+              value: free-radicals
+            - name: 'George Balanchine'
+              value: george-balanchine
+            - name: 'get fit'
+              value: get-fit
+            - name: 'get lean'
+              value: get-lean
+            - name: 'get started'
+              value: get-started
+            - name: 'goal setting'
+              value: goal-setting
+            - name: goals
+              value: goals
+            - name: 'half marathon'
+              value: half-marathon
+            - name: health
+              value: health
+            - name: 'health benefits'
+              value: health-benefits
+            - name: healthy
+              value: healthy
+            - name: holidays
+              value: holidays
+            - name: 'home business'
+              value: home-business
+            - name: IBD
+              value: ibd
+            - name: illness
+              value: illness
+            - name: injury
+              value: injury
+            - name: 'injury prevention'
+              value: injury-prevention
+            - name: insanity
+              value: insanity
+            - name: inspiration
+              value: inspiration
+            - name: 'Joseph Pilates'
+              value: joseph-pilates
+            - name: 'leap of faith'
+              value: leap-of-faith
+            - name: 'Les Mills'
+              value: les-mills
+            - name: lifestyle
+              value: lifestyle
+            - name: Litchfield
+              value: litchfield
+            - name: 'Litchfield Dance'
+              value: litchfield-dance
+            - name: 'Litchfield Real Estate'
+              value: litchfield-real-estate
+            - name: 'lose weight'
+              value: lose-weight
+            - name: mango
+              value: mango
+            - name: marathon
+              value: marathon
+            - name: 'Martha Graham'
+              value: martha-graham
+            - name: MBmini
+              value: mbmini
+            - name: meal
+              value: meal
+            - name: 'meal replacement'
+              value: meal-replacement
+            - name: metamorphosis
+              value: metamorphosis
+            - name: moderation
+              value: moderation
+            - name: moms
+              value: moms
+            - name: money
+              value: money
+            - name: mood
+              value: mood
+            - name: motivation
+              value: motivation
+            - name: 'Myrtle Beach'
+              value: myrtle-beach
+            - name: Newspring
+              value: newspring
+            - name: NewYearsResolutions
+              value: newyearsresolutions
+            - name: nutrients
+              value: nutrients
+            - name: nutrition
+              value: nutrition
+            - name: obesity
+              value: obesity
+            - name: overeat
+              value: overeat
+            - name: P90X
+              value: p90x
+            - name: P90X3
+              value: p90x3
+            - name: papaya
+              value: papaya
+            - name: 'Pawleys Island'
+              value: pawleys-island
+            - name: 'personal development'
+              value: personal-development
+            - name: pilates
+              value: pilates
+            - name: PiYo
+              value: piyo
+            - name: plateau
+              value: plateau
+            - name: prizes
+              value: prizes
+            - name: productivity
+              value: productivity
+            - name: 'pyramid scheme'
+              value: pyramid-scheme
+            - name: race
+              value: race
+            - name: 'Rachel Tipton'
+              value: rachel-tipton
+            - name: recipes
+              value: recipes
+            - name: rest
+              value: rest
+            - name: 'retire inspired'
+              value: retire-inspired
+            - name: Rodan+Fields
+              value: rodanfields
+            - name: run
+              value: run
+            - name: rundisney
+              value: rundisney
+            - name: runner
+              value: runner
+            - name: running
+              value: running
+            - name: sales
+              value: sales
+            - name: SCD
+              value: scd
+            - name: 'self care'
+              value: self-care
+            - name: shake
+              value: shake
+            - name: shakeology
+              value: shakeology
+            - name: 'Shaun T'
+              value: shaun-t
+            - name: 'skin care'
+              value: skin-care
+            - name: 'Skinny Mom'
+              value: skinny-mom
+            - name: 'stay at home mom'
+              value: stay-at-home-mom
+            - name: stress
+              value: stress
+            - name: stretch
+              value: stretch
+            - name: stretching
+              value: stretching
+            - name: success
+              value: success
+            - name: 'sugar addiction'
+              value: sugar-addiction
+            - name: 'summer sale'
+              value: summer-sale
+            - name: T25
+              value: t25
+            - name: Thanksgiving
+              value: thanksgiving
+            - name: 'time management'
+              value: time-management
+            - name: tips
+              value: tips
+            - name: 'Tony Horton'
+              value: tony-horton
+            - name: train
+              value: train
+            - name: transformation
+              value: transformation
+            - name: 'TurboFire'
+              value: turbofire
+            - name: 'Ultimate Reset'
+              value: ultimate-reset
+            - name: UltraFitFinances
+              value: ultrafitfinances
+            - name: UltraFitLifestyle
+              value: ultrafitlifestyle
+            - name: 'vanilla Shakeology'
+              value: vanilla-shakeology
+            - name: vitamins
+              value: vitamins
+            - name: walnuts
+              value: walnuts
+            - name: WDWhalf
+              value: wdwhalf
+            - name: 'weight loss'
+              value: weight-loss
+            - name: wellness
+              value: wellness
+            - name: win
+              value: win
+            - name: 'womens fitness'
+              value: womens-fitness
+            - name: 'work from home'
+              value: work-from-home
+            - name: workout
+              value: workout
+            - name: yoga
+              value: yoga
+          alterable: true
