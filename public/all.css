@@ -1819,6 +1819,9 @@ body {
     #golf-conditioning > .content > .right:last-child {
       margin-right: 0; } }
 
+#intake-form > .content > h2.action {
+  color: #a95493; }
+
 #thank-you > .content > ul {
   list-style: none;
   text-align: center;
