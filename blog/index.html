@@ -4,22 +4,23 @@ id: blog
 ---
 <div class="blog content">
 	<h1>Rachel's Motivation</h1>
-	{% for category in site.data.categories %}
-	{% if category.slug != 'shakeology' and category.slug != 'videos' and category.slug != 'reviews' %}
-	<div id="{{category.slug}}" class="categories">
+	{% assign cat-index = 3 %}
+	{% for category in site.prose.metadata._posts[cat-index].field.options %}
+	{% if category.value != 'shakeology' and category.value != 'videos' and category.value != 'reviews' %}
+	<div id="{{category.value}}" class="categories">
 		<div class="cat-header">
-			<a href="{{site.url}}/category/{{category.slug}}" class="category-links">{{category.name}}</a>
+			<a href="{{site.url}}/category/{{category.value}}" class="category-links">{{category.name}}</a>
 		</div>
 		<div class="cat-content">
-			{% for post in site.categories[category.slug] limit:1 %}
+			{% for post in site.categories[category.value] limit:1 %}
 				{% include post-excerpt.html %}
 			{% endfor %}
 			<hr />
 			<p class="older">Older posts in {{category.name}}...</p>
-			{% for post in site.categories[category.slug] limit:4 offset:1 %}
+			{% for post in site.categories[category.value] limit:4 offset:1 %}
 				<a class="post-links" href="{{ post.url }}">{{ post.title }}</a>
 			{% endfor %}
-			<a class="category-links" href="{{site.url}}/category/{{category.slug}}">More</a>
+			<a class="category-links" href="{{site.url}}/category/{{category.value}}">More</a>
 		</div>
 	</div>
 	{% endif %}

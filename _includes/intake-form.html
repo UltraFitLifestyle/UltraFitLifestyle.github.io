@@ -1,0 +1,363 @@
+<div class="intake content">
+	<h1>UltraFitLifestyle Intake Form</h1>
+	<form id="intake-form" action="javascript:validateForm('intake', 0 )" method="post">
+		<div class="row">
+			<label class="question" for='name'>What is your name?</label>
+			<textarea class="details" rows="3" name='name' id='name'></textarea>
+		</div>
+		<div class="row">
+			<label class="question" for='email'>What is your email address?</label>
+			<textarea class="details" rows="3" name='email' id='email'></textarea>
+		</div>
+		<div class="row">
+			<label class="question" for='address'>What is your physical address?</label>
+			<textarea class="details" rows="3" name='address' id='address'></textarea>
+		</div>
+		<div class="row">
+			<label class="question" for='phone'>What is your phone number?</label>
+			<textarea class="details" rows="3" name='phone' id='phone'></textarea>
+		</div>
+		<div class="row">
+			<label class="question" for='emergency'>Who should I contact in case of emergency?</label>
+			<textarea class="details" rows="3" name='emergency' id='emergency'></textarea>
+		</div>
+		<div class="row">
+			<label class="question" for='results'>What results do you want from THIS fitness program?</label>
+			<textarea class="details" rows="3" name='results' id='results'></textarea>
+		</div>
+		<div class="row">
+			<label class="question" for='why'>WHY is that important to you?</label>
+			<textarea class="details" rows="3" name='why' id='why'></textarea>
+		</div>
+		<div class="row">
+			<label class="question" for='how'>How does your current situation make you feel?</label>
+			<textarea class="details" rows="3" name='how' id='how'></textarea>
+		</div>
+		<div class="row">
+			<label class="question" for='work'>Does your current health situation affect your work?</label>
+			<label class="radio" for="work-yn">
+				<input type="radio" name='work-yn' id='work-yes' value="Yes" checked> Yes
+			</label>
+			<label class="radio" for="work-yn">
+				<input type="radio" name='work-yn' id='work-no' value="No"> No
+			</label>
+			<textarea class="details" rows="3" name='work' id='work'></textarea>
+		</div>
+		<div class="row">
+			<label class="question" for='relationships'>Does your current health situation affect your relationships?</label>
+			<label class="radio" for="relationships-yn">
+				<input type="radio" name='relationships-yn' id='relationships-yes' value="Yes" checked> Yes
+			</label>
+			<label class="radio" for="relationships-yn">
+				<input type="radio" name='relationships-yn' id='relationships-no' value="No"> No
+			</label>			
+			<textarea class="details" rows="3" name='relationships' id='relationships'></textarea>
+		</div>
+		<div class="row">
+			<label class="question" for='scale'>On a scale of 1-10, how important is this to you right now?</label>
+			<textarea class="details" rows="3" name='scale' id='scale'></textarea>
+		</div>
+		<div class="row">
+			<label class="question" for='different'>What would be <span class="bold">different</span> about you if you achieved your desired fitness results?</label>
+			<textarea class="details" rows="3" name='different' id='different'></textarea>
+		</div>
+		<div class="row">
+			<label class="question" for='past'>Is there a time in your past when you felt the way you want to feel again?</label>
+			<label class="radio" for="past-yn">
+				<input type="radio" name='past-yn' id='past-yes' value="Yes" checked> Yes
+			</label>
+			<label class="radio" for="past-yn">
+				<input type="radio" name='past-yn' id='past-no' value="No"> No
+			</label>			
+			<textarea class="details" rows="3" name='past' id='past'></textarea>
+		</div>
+		<div class="row">
+			<label class="question" for='goal'>If you had to pick ONE goal to achieve in fitness, what would it be?</label>
+			<textarea class="details" rows="3" name='goal' id='goal'></textarea>
+		</div>
+		<div class="row">
+			<label class="question" for='family'>Tell me about your family (partner, kids, fur babies, etc)</label>
+			<textarea class="details" rows="3" name='family' id='family'></textarea>
+		</div>
+		<div class="row">
+			<label class="question" for='time'>What time of day do you prefer to exercise?</label>
+			<textarea class="details" rows="3" name='time' id='time'></textarea>
+		</div>
+		<div class="row">
+			<label class="question" for='hobbies'>What hobbies or activities do you enjoy?</label>
+			<textarea class="details" rows="3" name='hobbies' id='hobbies'></textarea>
+		</div>
+		<div class="special">
+			<p>Do you or have you ever suffered from any of the following:</p>
+		</div>
+		<div class="row">
+ 			<label class="question" for='heart'>Heart condition</label>
+			<label class="radio" for="heart-yn">
+				<input type="radio" name='heart-yn' id='heart-yes' value="Yes" checked> Yes
+			</label>
+			<label class="radio" for="heart-yn">
+				<input type="radio" name='heart-yn' id='heart-no' value="No"> No
+			</label>			
+			<textarea class="details" rows="3" name='heart' id='heart'></textarea>
+		</div>
+		<div class="row">
+ 			<label class="question" for='pain'>Experience chest pains while exercising</label>
+			<label class="radio" for="pain-yn">
+				<input type="radio" name='pain-yn' id='pain-yes' value="Yes" checked> Yes
+			</label>
+			<label class="radio" for="pain-yn">
+				<input type="radio" name='pain-yn' id='pain-no' value="No"> No
+			</label>			
+			<textarea class="details" rows="3" name='pain' id='pain'></textarea> 
+		</div>
+		<div class="row">
+  			<label class="question" for='diebetes'>Diabetes</label>
+			<label class="radio" for="diebetes-yn">
+				<input type="radio" name='diebetes-yn' id='diebetes-yes' value="Yes" checked> Yes
+			</label>
+			<label class="radio" for="diebetes-yn">
+				<input type="radio" name='diebetes-yn' id='diebetes-no' value="No"> No
+			</label>			
+			<textarea class="details" rows="3" name='diebetes' id='diebetes'></textarea>
+		</div>
+		<div class="row">
+  			<label class="question" for='epilepsy'>Epilepsy</label>
+			<label class="radio" for="epilepsy-yn">
+				<input type="radio" name='epilepsy-yn' id='epilepsy-yes' value="Yes" checked> Yes
+			</label>
+			<label class="radio" for="epilepsy-yn">
+				<input type="radio" name='epilepsy-yn' id='epilepsy-no' value="No"> No
+			</label>			
+			<textarea class="details" rows="3" name='epilepsy' id='epilepsy'></textarea>
+		</div>
+		<div class="row">
+  			<label class="question" for='injury'>Muscle or joint condition or injury</label>
+			<label class="radio" for="injury-yn">
+				<input type="radio" name='injury-yn' id='injury-yes' value="Yes" checked> Yes
+			</label>
+			<label class="radio" for="injury-yn">
+				<input type="radio" name='injury-yn' id='injury-no' value="No"> No
+			</label>			
+			<textarea class="details" rows="3" name='injury' id='injury'></textarea>
+		</div>
+		<div class="row">
+  			<label class="question" for='neck'>Neck or back condition or injury</label>
+			<label class="radio" for="neck-yn">
+				<input type="radio" name='neck-yn' id='neck-yes' value="Yes" checked> Yes
+			</label>
+			<label class="radio" for="neck-yn">
+				<input type="radio" name='neck-yn' id='neck-no' value="No"> No
+			</label>			
+			<textarea class="details" rows="3" name='neck' id='neck'></textarea>
+		</div>
+		<div class="row">
+  			<label class="question" for='blood'>High/low blood pressure</label>
+			<label class="radio" for="blood-yn">
+				<input type="radio" name='blood-yn' id='blood-yes' value="Yes" checked> Yes
+			</label>
+			<label class="radio" for="blood-yn">
+				<input type="radio" name='blood-yn' id='blood-no' value="No"> No
+			</label>			
+			<textarea class="details" rows="3" name='blood' id='blood'></textarea>
+		</div>
+		<div class="row">
+  			<label class="question" for='respiratory'>Respiratory condition</label>
+			<label class="radio" for="respiratory-yn">
+				<input type="radio" name='respiratory-yn' id='respiratory-yes' value="Yes" checked> Yes
+			</label>
+			<label class="radio" for="respiratory-yn">
+				<input type="radio" name='respiratory-yn' id='respiratory-no' value="No"> No
+			</label>			
+			<textarea class="details" rows="3" name='respiratory' id='respiratory'></textarea>
+		</div>
+		<div class="row">
+  			<label class="question" for='dizziness'>Dizziness or loss of consciousness while at rest or exercising</label>
+			<label class="radio" for="dizziness-yn">
+				<input type="radio" name='dizziness-yn' id='dizziness-yes' value="Yes" checked> Yes
+			</label>
+			<label class="radio" for="dizziness-yn">
+				<input type="radio" name='dizziness-yn' id='dizziness-no' value="No"> No
+			</label>			
+			<textarea class="details" rows="3" name='dizziness' id='dizziness'></textarea>
+		</div>
+		<div class="row">
+  			<label class="question" for='birth'>Pregnancy or recently given birth</label>
+			<label class="radio" for="birth-yn">
+				<input type="radio" name='birth-yn' id='birth-yes' value="Yes" checked> Yes
+			</label>
+			<label class="radio" for="birth-yn">
+				<input type="radio" name='birth-yn' id='birth-no' value="No"> No
+			</label>			
+			<textarea class="details" rows="3" name='birth' id='birth'></textarea>
+		</div>
+		<div class="row">
+  			<label class="question" for='operation'>Recently had a major operation</label>
+			<label class="radio" for="operation-yn">
+				<input type="radio" name='operation-yn' id='operation-yes' value="Yes" checked> Yes
+			</label>
+			<label class="radio" for="operation-yn">
+				<input type="radio" name='operation-yn' id='operation-no' value="No"> No
+			</label>			
+			<textarea class="details" rows="3" name='operation' id='operation'></textarea>
+		</div>
+		<div class="row">
+  			<label class="question" for='medications'>Currently take any regular medications</label>
+			<label class="radio" for="medications-yn">
+				<input type="radio" name='medications-yn' id='medications-yes' value="Yes" checked> Yes
+			</label>
+			<label class="radio" for="medications-yn">
+				<input type="radio" name='medications-yn' id='medications-no' value="No"> No
+			</label>			
+			<textarea class="details" rows="3" name='medications' id='medications'></textarea>
+		</div>
+		<div class="row">
+  			<label class="question" for='other'>Any other reason which might affect your ability to exercise safely</label>
+			<label class="radio" for="other-yn">
+				<input type="radio" name='other-yn' id='other-yes' value="Yes" checked> Yes
+			</label>
+			<label class="radio" for="other-yn">
+				<input type="radio" name='other-yn' id='other-no' value="No"> No
+			</label>			
+			<textarea class="details" rows="3" name='other' id='other'></textarea>
+		</div>
+		<div class="row">
+  			<label class="question" for='weak'>Do you ever feel weak or sluggish?</label>
+			<label class="radio" for="weak-yn">
+				<input type="radio" name='weak-yn' id='weak-yes' value="Yes" checked> Yes
+			</label>
+			<label class="radio" for="weak-yn">
+				<input type="radio" name='weak-yn' id='weak-no' value="No"> No
+			</label>			
+			<textarea class="details" rows="3" name='weak' id='weak'></textarea>
+		</div>
+		<div class="row">
+ 			<label class="question" for='water'>How much water do you drink per day?</label>
+			<textarea class="details" rows="3" name='water' id='water'></textarea>
+		</div>
+		<div class="row">
+ 			<label class="question" for='meals'>How many meals do you eat each day?</label>
+			<textarea class="details" rows="3" name='meals' id='meals'></textarea>
+		</div>
+		<div class="row">
+   			<label class="question" for='breakfast'>Do you eat breakfast?</label>
+			<label class="radio" for="breakfast-yn">
+				<input type="radio" name='breakfast-yn' id='breakfast-yes' value="Yes" checked> Yes
+			</label>
+			<label class="radio" for="breakfast-yn">
+				<input type="radio" name='breakfast-yn' id='breakfast-no' value="No"> No
+			</label>			
+			<textarea class="details" rows="3" name='breakfast' id='breakfast'></textarea>
+		</div>
+		<div class="row">
+   			<label class="question" for='supplements'>Are you taking any supplements? (i.e. vitamins, amino acids, protein shakes)</label>
+			<label class="radio" for="supplements-yn">
+				<input type="radio" name='supplements-yn' id='supplements-yes' value="Yes" checked> Yes
+			</label>
+			<label class="radio" for="supplements-yn">
+				<input type="radio" name='supplements-yn' id='supplements-no' value="No"> No
+			</label>			
+			<textarea class="details" rows="3" name='supplements' id='supplements'></textarea>
+		</div>
+		<div class="row">
+    		<label class="question" for='crave'>Do you crave sugary foods?</label>
+			<label class="radio" for="crave-yn">
+				<input type="radio" name='crave-yn' id='crave-yes' value="Yes" checked> Yes
+			</label>
+			<label class="radio" for="crave-yn">
+				<input type="radio" name='crave-yn' id='crave-no' value="No"> No
+			</label>			
+			<textarea class="details" rows="3" name='crave' id='crave'></textarea>
+		</div>
+		<div class="row">
+ 			<label class="question" for='coffee'>How many cups of coffee do you drink per day?</label>
+			<textarea class="details" rows="3" name='coffee' id='coffee'></textarea>
+		</div>
+		<div class="row">
+    		<label class="question" for='digestive'>Do you suffer from any digestive issues?</label>
+			<label class="radio" for="digestive-yn">
+				<input type="radio" name='digestive-yn' id='digestive-yes' value="Yes" checked> Yes
+			</label>
+			<label class="radio" for="digestive-yn">
+				<input type="radio" name='digestive-yn' id='digestive-no' value="No"> No
+			</label>			
+			<textarea class="details" rows="3" name='digestive' id='digestive'></textarea>
+		</div>
+		<div class="row">
+    		<label class="question" for='sleep'>How much sleep do you get per night on average? Do you sleep soundly?</label>
+			<label class="radio" for="sleep-yn">
+				<input type="radio" name='sleep-yn' id='sleep-yes' value="Yes" checked> Yes
+			</label>
+			<label class="radio" for="sleep-yn">
+				<input type="radio" name='sleep-yn' id='sleep-no' value="No"> No
+			</label>			
+			<textarea class="details" rows="3" name='sleep' id='sleep'></textarea>
+		</div>
+		<div class="row">
+    		<label class="question" for='nutrition'>Do you feel that a properly structured nutrition program would benefit you?</label>
+			<label class="radio" for="nutrition-yn">
+				<input type="radio" name='nutrition-yn' id='nutrition-yes' value="Yes" checked> Yes
+			</label>
+			<label class="radio" for="nutrition-yn">
+				<input type="radio" name='nutrition-yn' id='nutrition-no' value="No"> No
+			</label>			
+			<textarea class="details" rows="3" name='nutrition' id='nutrition'></textarea>
+		</div>
+		<div class="row">
+     		<label class="question" for='scale'>Is the number on the scale important to you?</label>
+			<label class="radio" for="scale-yn">
+				<input type="radio" name='scale-yn' id='scale-yes' value="Yes" checked> Yes
+			</label>
+			<label class="radio" for="scale-yn">
+				<input type="radio" name='scale-yn' id='scale-no' value="No"> No
+			</label>			
+			<textarea class="details" rows="3" name='scale' id='scale'></textarea>
+		</div>
+		<div class="row">
+  			<label class="question" for='long'>How long have you been exercising?</label>
+			<textarea class="details" rows="3" name='long' id='long'></textarea>
+		</div>
+		<div class="row">
+  			<label class="question" for='type'>What type of program got you your desired fitness results in the past?</label>
+			<textarea class="details" rows="3" name='type' id='type'></textarea>
+		</div>
+		<div class="row">
+ 			<label class="question" for='stopped'>What has STOPPED you from achieving your desired results in the past?</label>
+			<textarea class="details" rows="3" name='stopped' id='stopped'></textarea>
+		</div>
+		<div class="row">
+ 			<label class="question" for='happy'>Are you happy with the way you look and your general health?</label>
+			<textarea class="details" rows="3" name='happy' id='happy'></textarea>
+		</div>
+		<div class="row">
+ 			<label class="question" for='breakfast2'>What does a typical breakfast look like for you?</label>
+			<textarea class="details" rows="3" name='breakfast2' id='breakfast2'></textarea>
+		</div>
+		<div class="row">
+ 			<label class="question" for='lunch'>What does a typical lunch look like for you?</label>
+			<textarea class="details" rows="3" name='lunch' id='lunch'></textarea>
+		</div>
+		<div class="row">
+ 			<label class="question" for='dinner'>What does a typical dinner look like for you?</label>
+			<textarea class="details" rows="3" name='dinner' id='dinner'></textarea>
+		</div>
+		<div class="row">
+ 			<label class="question" for='snacks'>What snacks do you enjoy?</label>
+			<textarea class="details" rows="3" name='snacks' id='snacks'></textarea>
+		</div>
+		<div class="row">
+ 			<label class="question" for='alcohol'>How many alcoholic drinks per day or per week?</label>
+			<textarea class="details" rows="3" name='alcohol' id='alcohol'></textarea>
+		</div>
+		<div class="row">
+ 			<label class="question" for='smoke'>Do you smoke?</label>
+			<label class="radio" for="smoke-yn">
+				<input type="radio" name='smoke-yn' id='smoke-yes' value="Yes" checked> Yes
+			</label>
+			<label class="radio" for="smoke-yn">
+				<input type="radio" name='smoke-yn' id='smoke-no' value="No"> No
+			</label> 			
+			<textarea class="details" rows="3" name='smoke' id='smoke'></textarea>
+		</div>
+		<input id='submit' type='submit' value='Submit' />
+	</form>
+</div>

@@ -1,9 +1,13 @@
 ---
 layout: blog
 ---
-{% assign cat-data = site.data.categories | where: "slug", page.id %}
-{% assign name = cat-data[0].name %}
-{% assign slug = cat-data[0].slug %}
+{% assign cat-index = 3 %}
+{% assign category = site.prose.metadata._posts[cat-index].field.options | where: "value", page.id %}
+	{% assign name = category[0].name %}
+	{% assign slug = category[0].value %}
+{% assign cat-index = null %}
+{% assign category = null %}
+
 <div class="{{slug}} blog content">
 	<span><a href="{{ site.url }}/blog">Rachel's Motivation</a> > </span><h1>{{name}}</h1>
 	<div id="{{slug}}" class="categories">

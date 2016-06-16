@@ -321,7 +321,11 @@ body {
 		}			
 	}
 }
-
+#intake-form > .content {
+	> h2.action {
+		color: $secondary-color;
+	}
+}
 #thank-you > .content {
 	> ul {
 		list-style: none;

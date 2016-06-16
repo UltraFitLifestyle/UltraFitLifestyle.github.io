@@ -802,6 +802,89 @@ footer {
         .accountability-form > input#submit:last-child {
           margin-right: 0; } }
 
+#intake-form > .row {
+  display: block;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  margin-left: 8.5298%;
+  margin-bottom: 15px; }
+  #intake-form > .row::after {
+    clear: both;
+    content: "";
+    display: table; }
+  #intake-form > .row:last-child {
+    margin-right: 0; }
+  #intake-form > .row > .question {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin-right: 0; }
+    #intake-form > .row > .question:last-child {
+      margin-right: 0; }
+  #intake-form > .row > .radio {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+    margin: 15px 0; }
+    #intake-form > .row > .radio:last-child {
+      margin-right: 0; }
+  #intake-form > .row > .details {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    clear: left; }
+    #intake-form > .row > .details:last-child {
+      margin-right: 0; }
+
+@media screen and (max-width: 768px) {
+  #intake-form > .row {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin-left: 0%; }
+    #intake-form > .row:last-child {
+      margin-right: 0; }
+    #intake-form > .row > .radio {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%; }
+      #intake-form > .row > .radio:last-child {
+        margin-right: 0; } }
+
+#intake-form > .special {
+  float: left; }
+
+#intake-form #submit {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+  margin-left: 8.5298%;
+  text-shadow: 1px 1px #1C1621;
+  color: #f2f2f2;
+  background-color: #7A46A2;
+  background-image: -webkit-linear-gradient(#7A46A2, #662d91);
+  background-image: linear-gradient(#7A46A2, #662d91);
+  border-radius: 3px;
+  font-size: 1em;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  -webkit-appearance: none; }
+  #intake-form #submit:last-child {
+    margin-right: 0; }
+  #intake-form #submit:hover {
+    color: #fff;
+    background-color: #9C70BF;
+    background-image: -webkit-linear-gradient(#9C70BF, #7A46A2);
+    background-image: linear-gradient(#9C70BF, #7A46A2); }
+
 .modal-inner > .mc_embed_signup {
   margin-top: 15px;
   margin-bottom: 15px; }
@@ -1735,6 +1818,9 @@ body {
     margin-left: 0%; }
     #golf-conditioning > .content > .right:last-child {
       margin-right: 0; } }
+
+#intake-form > .content > h2.action {
+  color: #a95493; }
 
 #thank-you > .content > ul {
   list-style: none;

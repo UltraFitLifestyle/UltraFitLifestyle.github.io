@@ -2,12 +2,16 @@
 layout: blog
 ---
 
-{% assign tag-data = site.data.tags | where: "slug", page.id %}
-{% assign prettyTag = tag-data[0].name %}
+{% assign tag-index = 4 %}
+{% assign tag = site.prose.metadata._posts[tag-index].field.options | where: "value", page.id %}
+	{% assign name = tag[0].name %}
+	{% assign slug = tag[0].value %}
+{% assign tag-index = null %}
+{% assign tag = null %}
 
-{% assign tags = site.tags[prettyTag] %}
+{% assign tags = site.tags[name] %}
 <div class="{{ page.id }} blog content">
-	<span><a href="{{ site.url }}/blog">Rachel's Motivation</a> > </span><h1>Posts tagged with "{{prettyTag}}"</h1>
+	<span><a href="{{ site.url }}/blog">Rachel's Motivation</a> > </span><h1>Posts tagged with "{{name}}"</h1>
 	<div id="{{page.id}}" class="tags">
 		{% for post in tags limit:5 %}
 			{% include post-excerpt.html %}
