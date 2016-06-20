@@ -240,7 +240,7 @@ body {
 		}
 	}	
 }
-#kickstart-program, #acceleration-program > .content {
+#kickstart-program > .content, #acceleration-program > .content {
 	>h1 {
 		text-align: center;
 	}
@@ -260,7 +260,7 @@ body {
 		}
 	}
 	@include media(max-width $medium-screen){
-		#fitness-kickstart {
+		#fitness-kickstart, #fitness-acceleration {
 			margin-top: 0;
 		}
 		> .row > .half {

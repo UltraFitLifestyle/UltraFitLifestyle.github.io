@@ -1698,40 +1698,40 @@ body {
         width: 304px;
         height: 171px; } }
 
-#kickstart-program > h1, #acceleration-program > .content > h1 {
+#kickstart-program > .content > h1, #acceleration-program > .content > h1 {
   text-align: center; }
 
-#kickstart-program > .row, #acceleration-program > .content > .row {
+#kickstart-program > .content > .row, #acceleration-program > .content > .row {
   display: block;
   margin-top: 15px; }
-  #kickstart-program > .row::after, #acceleration-program > .content > .row::after {
+  #kickstart-program > .content > .row::after, #acceleration-program > .content > .row::after {
     clear: both;
     content: "";
     display: table; }
-  #kickstart-program > .row > .half, #acceleration-program > .content > .row > .half {
+  #kickstart-program > .content > .row > .half, #acceleration-program > .content > .row > .half {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 48.82117%; }
-    #kickstart-program > .row > .half:last-child, #acceleration-program > .content > .row > .half:last-child {
+    #kickstart-program > .content > .row > .half:last-child, #acceleration-program > .content > .row > .half:last-child {
       margin-right: 0; }
 
-#kickstart-program > hr, #acceleration-program > .content > hr {
+#kickstart-program > .content > hr, #acceleration-program > .content > hr {
   margin-bottom: 15px; }
 
 @media screen and (max-width: 1024px) {
-  #kickstart-program #fitness-kickstart, #acceleration-program > .content #fitness-kickstart {
+  #kickstart-program > .content #fitness-kickstart, #acceleration-program > .content #fitness-kickstart {
     margin-top: 15%; } }
 
 @media screen and (max-width: 768px) {
-  #kickstart-program #fitness-kickstart, #acceleration-program > .content #fitness-kickstart {
+  #kickstart-program > .content #fitness-kickstart, #kickstart-program > .content #fitness-acceleration, #acceleration-program > .content #fitness-kickstart, #acceleration-program > .content #fitness-acceleration {
     margin-top: 0; }
-  #kickstart-program > .row > .half, #acceleration-program > .content > .row > .half {
+  #kickstart-program > .content > .row > .half, #acceleration-program > .content > .row > .half {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 100%; }
-    #kickstart-program > .row > .half:last-child, #acceleration-program > .content > .row > .half:last-child {
+    #kickstart-program > .content > .row > .half:last-child, #acceleration-program > .content > .row > .half:last-child {
       margin-right: 0; } }
 
 #golf-conditioning > .content > h1 {
