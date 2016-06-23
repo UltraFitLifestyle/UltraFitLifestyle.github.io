@@ -55,6 +55,10 @@ prose:
         field:
           element: "hidden"
           value: "Rachel-Tipton"
+      - name: "comments"
+        field:
+          element: "hidden"
+          value: "true"
       - name: "category"
         field:
           element: "multiselect"
