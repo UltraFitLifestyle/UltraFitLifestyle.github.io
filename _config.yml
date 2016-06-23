@@ -60,6 +60,10 @@ prose:
     - /terms-of-use
     - /testimonials
     - /thank-you-for-subscribing
+    - /downloads
+    - .gitignore
+    - index.html
+    - links.jsonp
   metadata:
     _posts:
       - name: "layout"
