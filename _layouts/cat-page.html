@@ -1,7 +1,7 @@
 ---
 layout: blog
 ---
-{% assign cat-index = 3 %}
+{% assign cat-index = 4 %}
 {% assign category = site.prose.metadata._posts[cat-index].field.options | where: "value", page.id %}
 	{% assign name = category[0].name %}
 	{% assign slug = category[0].value %}
