@@ -32,7 +32,7 @@ prose:
   relativeLinks: 'http://UltraFitLifestyle.github.io/links.jsonp'
   media: 'images'
   ignore:
-    - _config.yml
+    - _config.yml*
     - /_css
     - /_data
     - /_layouts
@@ -41,6 +41,25 @@ prose:
     - feed.xml
     - gulpfile.js
     - package.json
+    - /10-day-accelerator-accountability-form-day-*
+    - /about-rachel
+    - /aerial-fitness-in-south-carolina
+    - /blog
+    - /category
+    - /classes
+    - CNAME
+    - /contact-rachel
+    - /day-*-accountability-form
+    - /golf-conditioning
+    - /intake-form
+    - /make-an-appointment
+    - /personal-training
+    - /privacy-policy
+    - /product
+    - /tag
+    - /terms-of-use
+    - /testimonials
+    - /thank-you-for-subscribing
   metadata:
     _posts:
       - name: "layout"
