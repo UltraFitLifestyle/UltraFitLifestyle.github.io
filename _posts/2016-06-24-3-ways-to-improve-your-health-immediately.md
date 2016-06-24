@@ -2,7 +2,7 @@
 comments: 'true'
 author: Rachel-Tipton
 layout: post
-published: false
+published: true
 title: 3 Ways to Improve Your Health Immediately
 category:
   - fitness-journey
@@ -32,4 +32,3 @@ In today’s fast paced world, we are always looking for a quick fix and instant
 
 
 3)	 **Find a way to meditate.** Imagine that you woke up this morning, and immediately began doing bicep curls continuing that exercise all day long without a break. Your biceps would be fatigued to the point of screaming, right? Well, that’s what we do to our minds. Now, imagine your mind is a muscle. It gets worked harder than any other muscle all day long: planning, figuring out things, worrying, calculating, etc. Meditation scares most people, because they find it difficult to quiet the mind. The point is, that we _ALL_ have trouble with that. Meditation is a practice that takes practice. Simply put, you can start meditating by taking 5 minutes to focus on your breathing. Set a timer, sit quietly with eyes closed, and focus completely on the breath moving in and out of your body. Choose a word or simple phrase to repeat. When your mind starts to wander (and it will), gently bring your focus back to your breath and your mantra. When you make this a regular practice in your life, you will notice that you become calmer and more clear-headed. You are finally giving your mind a break for a few minutes, which is exactly what it needs so that you can function at peak performance.
-
