@@ -19,7 +19,7 @@ tags:
 
 <div class="featured">
 <a href="{{page.url}}">
-<img src="{{site.baseurl}}/images/glassofwater.jpg"/>
+<img src="{{site.baseurl}}/images/glassofwater2.jpg"/>
 </a>
 </div>
 
