@@ -15,6 +15,7 @@ tags:
   - motivation
   - ultrafitlifestyle
   - workout
+excerpt_separator: <!--more-->
 ---
 
 <div class="featured">
@@ -24,6 +25,8 @@ tags:
 </div>
 
 In today’s fast paced world, we are always looking for a quick fix and instant results. While fitness and weight loss are two things that do not happen overnight, here are 3 ways you _CAN_ instantly improve your well being starting today:
+
+<!--more-->
 
 1)	 **Stretch first thing in the morning**. Most people, even the UltraFit, generally place flexibility at the bottom of the priority when it comes to fitness. After a crushing our workout, drenched in sweat, we want to get to the shower and seek some calories, right? I know for myself, even though I am a dancer and know I need to stretch (especially when I am hot and sweaty, _BEST_
  time to stretch), I neglect it sometimes, too. If you really want to feel 100% better than you did yesterday, start your day off with a stretching session. It does not have to be something super intricate. Start by pulling your knees to your chest before you get out of bed in the morning. Once you get out of bed, reach up, touch your toes, and roll up slowly through your spine. Repeat that a few times while your coffee brews. You will find that a good morning stretch will wake you up and get your blood flowing. You will find that you feel better all day long. When you do, start adding a few more stretches, and before you know it, you will have an entire morning yoga routine!
