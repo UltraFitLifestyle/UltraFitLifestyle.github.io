@@ -4,7 +4,7 @@ id: blog
 ---
 <div class="blog content">
 	<h1>Rachel's Motivation</h1>
-	{% assign cat-index = 4 %}
+	{% assign cat-index = 5 %}
 	{% for category in site.prose.metadata._posts[cat-index].field.options %}
 	{% if category.value != 'shakeology' and category.value != 'videos' and category.value != 'reviews' %}
 	<div id="{{category.value}}" class="categories">
