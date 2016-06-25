@@ -82,6 +82,10 @@ prose:
         field:
           element: "hidden"
           value: "true"
+      - name: "excerpt_seperator"
+        field:
+          element: "hidden"
+          value: "<!--more-->"
       - name: "category"
         field:
           element: "multiselect"
