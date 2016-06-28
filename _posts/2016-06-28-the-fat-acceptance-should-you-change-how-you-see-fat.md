@@ -4,7 +4,7 @@ comments: 'true'
 author: Rachel-Tipton
 layout: post
 published: true
-title: 'The Fat Acceptance: Should You Change How You See Fat?'
+title: 'The Fat Acceptance Movement: Should You Change How You See Fat?'
 ---
 
 ![FullSizeRender.jpg]({{site.baseurl}}/images/FullSizeRender.jpg)
