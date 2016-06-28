@@ -35,8 +35,14 @@ layout: blog
 		<ul>
 		{% for tag in page.tags %}
 			{% assign tag-data = site.prose.metadata._posts[tag-index].field.options | where: "value", tag %}
-			{% assign slugTag = tag-data[0].value %}
-			<li><a href="{{site.url}}/tag/{{slugTag}}">{{tag-data[0].name}}</a></li>
+			{% if tag-data[0].name == nil %}
+				{% assign tag-data = site.prose.metadata._posts[tag-index].field.options | where: "name", tag %}
+				{% assign slugTag = tag-data[0].value %}
+				<li><a href="{{site.url}}/tag/{{slugTag}}">{{tag-data[0].name}}</a></li>
+			{% else %}
+				{% assign slugTag = tag-data[0].value %}
+				<li><a href="{{site.url}}/tag/{{slugTag}}">{{tag-data[0].name}}</a></li>
+			{% endif %}
 		{% endfor %}
 		</ul>
 	</div>
