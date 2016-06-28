@@ -3,7 +3,7 @@ excerpt_seperator: <!--more-->
 comments: 'true'
 author: Rachel-Tipton
 layout: post
-published: false
+published: true
 title: 'The Fat Acceptance: Should You Change How You See Fat?'
 ---
 
