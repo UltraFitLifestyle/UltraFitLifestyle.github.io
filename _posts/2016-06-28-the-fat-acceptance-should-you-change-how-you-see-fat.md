@@ -7,7 +7,11 @@ published: true
 title: 'The Fat Acceptance Movement: Should You Change How You See Fat?'
 ---
 
-![FullSizeRender.jpg]({{site.baseurl}}/images/FullSizeRender.jpg)
+<div class="featured">
+<a href="{{ page.url }}">
+<img src="{{site.baseurl}}/images/FullSizeRender.jpg"/>
+</a>
+</div>
 
 Have you ever sat next to someone on a plane who was morbidly obese? Did you shift over a little bit so you would not have to touch them?
 
