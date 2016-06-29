@@ -435,6 +435,6 @@ prose:
       - name: "featured-image"
         field:
           element: "text"
-          value: "images/********.jpg"
+          value: "/images/********.jpg"
           label: "Featured Image - For post excerpts and Facebook sharing"
           help: "Replace ******** with the name of the image file you uploaded"
