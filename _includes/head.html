@@ -17,6 +17,9 @@
 	<meta property="og:title" content="{{page.title}}" />
 	<meta property="og:url" content="{{page.url | prepend: site.url }}" />
 	<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines}}{% else %}{{ site.description }}{% endif %}" />
+	{% if page.featured-image %}
+	<meta property="og:image" content="{{page.featured-image | prepend: site.url}}" />
+	{% endif %}
 	
 	<link href='//fonts.googleapis.com/css?family=Radley:400,400italic' rel='stylesheet' type='text/css'>
 	<link href='//fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
