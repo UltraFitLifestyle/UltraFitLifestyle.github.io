@@ -9,6 +9,7 @@ category:
   - fitness-journey
 tags:
   - motivation
+featured-image: images/FullSizeRender.jpg
 ---
 
 <div class="featured">
