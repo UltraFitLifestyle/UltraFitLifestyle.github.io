@@ -82,7 +82,7 @@ prose:
         field:
           element: "hidden"
           value: "true"
-      - name: "excerpt_seperator"
+      - name: "excerpt_separator"
         field:
           element: "hidden"
           value: "<!--more-->"
