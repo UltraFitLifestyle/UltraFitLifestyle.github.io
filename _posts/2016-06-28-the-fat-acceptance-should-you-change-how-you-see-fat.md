@@ -5,6 +5,10 @@ author: Rachel-Tipton
 layout: post
 published: true
 title: 'The Fat Acceptance Movement: Should You Change How You See Fat?'
+category:
+  - fitness-journey
+tags:
+  - motivation
 ---
 
 <div class="featured">
@@ -18,6 +22,8 @@ Have you ever sat next to someone on a plane who was morbidly obese? Did you shi
 Have you ever looked at a fat person and wondered: why don’t you _DO_ something to _fix_ yourself? 
 
 Now stop for a moment and change the perspective: if you shifted away from a person of color sitting next to you, you could be considered a racist. If you expect a homosexual to stop loving their partner, you could be considered a bigot. So, why do we have so much trouble accepting someone for being fat?
+
+<!--more-->
 
 In the last few days, I have listened and re-listened to a fascinating episode of [This American Life](http://m.thisamericanlife.org/radio-archives/episode/589/tell-me-im-fat), which delves into how we, as a society, view fat people. There were several different guests on the show. The first was a writer who decided to “come out” as fat. It was an interesting way to put it, because everyone can actually _SEE_ that a person is fat. What she meant was that she was admitting she was fat and announcing that she was perfectly happy that way. I venture to say that many of us look at a very fat person and unconsciously judge them that they should control themselves and try to lose some weight. If you really think about it: that thought process is just as unfair as thinking that someone who is gay should “fix” that part of themselves. 
 
