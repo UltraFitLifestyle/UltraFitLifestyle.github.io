@@ -432,3 +432,9 @@ prose:
             - name: yoga
               value: yoga
           alterable: true
+      - name: "featured-image"
+        field:
+          element: "text"
+          value: "images/********.jpg"
+          label: "Image that should be in post excerpt and when sharing on Facebook"
+          help: "Be sure to include images/ before the file name"
