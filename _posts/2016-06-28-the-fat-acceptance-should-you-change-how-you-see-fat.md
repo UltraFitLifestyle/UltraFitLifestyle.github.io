@@ -1,5 +1,5 @@
 ---
-excerpt_seperator: <!--more-->
+excerpt_separator: <!--more-->
 comments: 'true'
 author: Rachel-Tipton
 layout: post
