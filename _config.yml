@@ -436,5 +436,5 @@ prose:
         field:
           element: "text"
           value: "images/********.jpg"
-          label: "Image that should be in post excerpt and when sharing on Facebook"
-          help: "Be sure to include images/ before the file name"
+          label: "Featured Image - For post excerpts and Facebook sharing"
+          help: "Replace ******** with the name of the image file you uploaded"
