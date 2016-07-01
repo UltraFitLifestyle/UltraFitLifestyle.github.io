@@ -45,31 +45,32 @@ So, check out the following stretches that are specific to priming you for your 
 
 1)	**Getting arrested stretch**– Hold on to the top of your club handle. Step back and lean forward with a flat back until your feel a stretch through the armpits into the back muscles. 
 
-
+<div class="clearfloat"></div>
 <img class="right" width="" height="" src="{{site.baseurl}}/images/backswing.jpeg" />
 
 2)	**Backswing stretch** - Place the club (I put the handle side down.) directly in front of you. Left hand holds low and right hand high. Move arms to the right, keeping left hip pulling back. You’ll feel a stretch in the left shoulder.
 
-
+<div class="clearfloat"></div>
 <img class="left" width="" height="" src="{{site.baseurl}}/images/followthrough.jpeg" />
 
 3)	**Follow through stretch** – This time place right hand low and left high. Move arms to the left and feel the stretch in your right shoulder.
 
+<div class="clearfloat"></div>
 <img class="left" width="" height="" src="{{site.baseurl}}/images/squat2.jpeg" />
-
 <img class="left" width="" height="" src="{{site.baseurl}}/images/squat1.jpeg" />
 
 4)	**Chest expansion squat** - Hold your club with hands wide and puls arms up and back over your head. Keeping the arms above the head, squat low and then straighten legs. Repeat several times.
 
-
+<div class="clearfloat"></div>
 <img class="right" width="" height="" src="{{site.baseurl}}/images/hamstringshoulder.jpeg" />
 
 5)	**Hamstring and shoulder stretch** – Hold club behind your hips with hands wide. Keep the legs as straight as possible as you bend forward and let the arms go fall over your head.  Gently twist side to side for a further stretch.
 
+<div class="clearfloat"></div>
 <img class="left" width="" height="" src="{{site.baseurl}}/images/lunge1.jpeg" />
-
 <img class="left" width="" height="" src="{{site.baseurl}}/images/lunge2.jpeg" />
 
 6)	**Lunge Rotator** – Step into a deep lunge. Keeping your hips square, twist the upper body towards the front leg. You can make this a dynamic movement by adding a small moving twist back and forth. Just keep those knees in line with the feet and don’t let the hips move.
 
-_**Have a great round!**_
+<div class="clearfloat"></div>
+<p class="centered-text bold italic">Have a great round!</p>
