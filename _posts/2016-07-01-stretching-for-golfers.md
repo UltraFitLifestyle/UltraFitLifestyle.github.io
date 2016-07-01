@@ -4,7 +4,7 @@ comments: 'true'
 author: Rachel-Tipton
 layout: post
 featured-image: /images/lungerotator1.jpeg
-published: false
+published: true
 title: Stretching for Golfers
 category:
   - fitness-journey
@@ -73,5 +73,3 @@ So, check out the following stretches that are specific to priming you for your 
 6)	**Lunge Rotator** – Step into a deep lunge. Keeping your hips square, twist the upper body towards the front leg. You can make this a dynamic movement by adding a small moving twist back and forth. Just keep those knees in line with the feet and don’t let the hips move.
 
 _**Have a great round!**_
-
-     
