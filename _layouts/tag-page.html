@@ -6,24 +6,40 @@ layout: blog
 {% assign tag = site.prose.metadata._posts[tag-index].field.options | where: "value", page.id %}
 	{% assign name = tag[0].name %}
 	{% assign slug = tag[0].value %}
+	{% if tag[0].name != tag[0].value %}
+		{% assign nameAndValue = null %}
+	{% else %}
+		{% assign nameAndValue = tag[0].name %}
+	{% endif %}
 {% assign tag-index = null %}
 {% assign tag = null %}
 
-{% assign oldTags = site.tags[name] %}
-{% assign newTags = site.tags[slug] %}
-{% assign newCount = newTags.size %}
+{% if nameAndValue == null %}
+	{% assign oldTags = site.tags[name] %}
+	{% assign newTags = site.tags[slug] %}
+	{% assign newCount = newTags.size %}
+{% else %}
+	{% assign tags = site.tags[nameAndValue] %}
+{% endif %}
 <div class="{{ page.id }} blog content">
 	<span><a href="{{ site.url }}/blog">Rachel's Motivation</a> > </span><h1>Posts tagged with "{{name}}"</h1>
 	<div id="{{page.id}}" class="tags">
-		{% assign count = 0 %}
-		{% for post in newTags limit:5 %}
-			{% assign count = count | plus: 1 %}
-			{% include post-excerpt.html %}
-			<hr />
-		{% endfor %}
-		{% assign excerpts = 5 | minus: count %}
-		{% if excerpts > 0 %}
-			{% for post in oldTags limit:excerpts %}
+		{% if nameAndValue == null %}
+			{% assign count = 0 %}
+			{% for post in newTags limit:5 %}
+				{% assign count = count | plus: 1 %}
+				{% include post-excerpt.html %}
+				<hr />
+			{% endfor %}
+			{% assign excerpts = 5 | minus: count %}
+			{% if excerpts > 0 %}
+				{% for post in oldTags limit:excerpts %}
+					{% include post-excerpt.html %}
+					<hr />
+				{% endfor %}
+			{% endif %}
+		{% else %}
+			{% for post in tags limit:5%}
 				{% include post-excerpt.html %}
 				<hr />
 			{% endfor %}
@@ -31,37 +47,54 @@ layout: blog
 		<div class="old-posts">
 			<p class="older">Older posts with this tag...</p>
 			<div class="hidden"><div class="hidden"><ul>
-			{% if newCount >= 5 %}
-				{% for post in newTags offset:5 %}
-					{% assign postYear = (post.date | date: "%Y") %}
-					{% if postYear != prevPostYear %}
-						</ul>
-						</div>
-						</div>
-						<div class="years">
-						<h3>{{postYear}}</h3>
-						<div class="post-list">
-						<ul>
-					{% endif %}
-					<li><a class="post-links" href="{{ post.url }}">{{ post.title }}</a></li>
-					{% assign prevPostYear = postYear %} 
-				{% endfor %}
-				{% for post in oldTags %}
-					{% assign postYear = (post.date | date: "%Y") %}
-					{% if postYear != prevPostYear %}
-						</ul>
-						</div>
-						</div>
-						<div class="years">
-						<h3>{{postYear}}</h3>
-						<div class="post-list">
-						<ul>
-					{% endif %}
-					<li><a class="post-links" href="{{ post.url }}">{{ post.title }}</a></li>
-					{% assign prevPostYear = postYear %} 
-				{% endfor %}
+			{% if nameAndValue == null %}
+				{% if newCount >= 5 %}
+					{% for post in newTags offset:5 %}
+						{% assign postYear = (post.date | date: "%Y") %}
+						{% if postYear != prevPostYear %}
+							</ul>
+							</div>
+							</div>
+							<div class="years">
+							<h3>{{postYear}}</h3>
+							<div class="post-list">
+							<ul>
+						{% endif %}
+						<li><a class="post-links" href="{{ post.url }}">{{ post.title }}</a></li>
+						{% assign prevPostYear = postYear %} 
+					{% endfor %}
+					{% for post in oldTags %}
+						{% assign postYear = (post.date | date: "%Y") %}
+						{% if postYear != prevPostYear %}
+							</ul>
+							</div>
+							</div>
+							<div class="years">
+							<h3>{{postYear}}</h3>
+							<div class="post-list">
+							<ul>
+						{% endif %}
+						<li><a class="post-links" href="{{ post.url }}">{{ post.title }}</a></li>
+						{% assign prevPostYear = postYear %} 
+					{% endfor %}
+				{% else %}
+					{% for post in oldTags offset:excerpts %}
+						{% assign postYear = (post.date | date: "%Y") %}
+						{% if postYear != prevPostYear %}
+							</ul>
+							</div>
+							</div>
+							<div class="years">
+							<h3>{{postYear}}</h3>
+							<div class="post-list">
+							<ul>
+						{% endif %}
+						<li><a class="post-links" href="{{ post.url }}">{{ post.title }}</a></li>
+						{% assign prevPostYear = postYear %} 
+					{% endfor %}
+				{% endif %}
 			{% else %}
-				{% for post in oldTags offset:excerpts %}
+				{% for post in tags offset:5 %}
 					{% assign postYear = (post.date | date: "%Y") %}
 					{% if postYear != prevPostYear %}
 						</ul>
