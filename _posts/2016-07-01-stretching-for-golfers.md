@@ -25,6 +25,8 @@ tags:
      
 I am a fitness coach and trainer with a background in dance. Stretching has always been a huge part of my fitness routine. Yet, sometimes, I slack on stretching just like everyone else. I have observed that flexibility is the most neglected aspect of fitness. Generally speaking, once we have crushed a workout, we just want to hit the shower or seek calories. The last thing on our minds is to put in a nice, long stretching session, even though our muscles are nice and warm, perfectly primed to improve flexibility. We forget that stretching and flexibility could quite possibly be the fountain of youth and the key to success.
 
+<!--more-->
+
 I was doing a bit of research on stretching for golfers, since that has been a huge focus for me with my client base lately. One of the first things I found was a spot on The Golf Channel about flexibility. Dustin Johnson, who just won the 2016 U.S. Open, was quoted as saying this: 
 
 <p class="centered-text">
