@@ -29,9 +29,9 @@ I am a fitness coach and trainer with a background in dance. Stretching has alwa
 
 I was doing a bit of research on stretching for golfers, since that has been a huge focus for me with my client base lately. One of the first things I found was a spot on The Golf Channel about flexibility. Dustin Johnson, who just won the 2016 U.S. Open, was quoted as saying this: 
 
-<p class="centered-text">
+<p class="centered-text bold italic">
 
-_**“Most people probably think my height and strength are the whole thing; but a lot of my distance actually comes from my flexibility.”**_
+“Most people probably think my height and strength are the whole thing; but a lot of my distance actually comes from my flexibility.”
 
 </p>
 
