@@ -27,7 +27,11 @@ I am a fitness coach and trainer with a background in dance. Stretching has alwa
 
 I was doing a bit of research on stretching for golfers, since that has been a huge focus for me with my client base lately. One of the first things I found was a spot on The Golf Channel about flexibility. Dustin Johnson, who just won the 2016 U.S. Open, was quoted as saying this: 
 
+<p class="centered-text">
+
 _**“Most people probably think my height and strength are the whole thing; but a lot of my distance actually comes from my flexibility.”**_
+
+</p>
 
 A little more research revealed several different stretching routines that Dustin Johnson uses pre-game, as well as in general conditioning for his game. I was thrilled to find all of this, because it validated the work I have been doing with my clients who are avid golfers. I introduced simple yoga patterns, posture exercises, and breathing techniques to one self proclaimed “recovering gym rat.” He felt improvement almost immediately. I remember him texting me after his very first session to tell me he had slept through the night for the first time in years without the familiar, nagging shoulder pain that used to keep him tossing and turning. 
 
