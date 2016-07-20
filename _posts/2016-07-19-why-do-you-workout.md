@@ -19,28 +19,51 @@ I posted this question on Facebook the other day: _WHY_ do you workout?
 I was amazed at how many people responded. I assumed people would say that they workout to lose weight, get skinny, or look good. I was way wrong! The majority of comments were about how exercise makes you _FEEL_. Check out some of what my friends and followers had to say about **WHY** they workout:
 
 •	To feel alive
+
 •	To feel more energized
+
 •	To challenge myself
+
 •	Stress relief
+
 •	Weight control
+
 •	_“Physically moving my body helps me stay mentally focused.”_
+
 •	To try to stay young
+
 •	To prevent a heart attack and disease
+
 •	_“It’s my therapy.”_
+
 •	For mental decompression
+
 •	For mood enhancement
+
 •	For _“me time”_
+
 •	To stay limber and youthful
+
 •	To be around nice people at the gym
+
 •	To control anxiety
+
 •	To feel less guilty about eating what I want
+
 •	To feel stronger
+
 •	To boost endorphins
+
 •	To improve sleep
+
 •	To sustain a higher energy lifestyle for work AND play
+
 •	To make the outside world disappear for a while
+
 •	To have the endurance and stamina necessary for me to fulfill my PURPOSE in life each day
+
 •	_“Because it is something I get to do today and knowing that one day I will wish I still could.”_
+
 
 All of the above are awesome reasons to workout! I encourage you to take the time to figure out exactly why **YOU** want to get focused on your fitness goals. You know **WHAT** you want: you want to get into better shape than you are right now. You know **HOW**: start and exercise program and improve your nutrition. But, **WHY** do you want these things?
 
