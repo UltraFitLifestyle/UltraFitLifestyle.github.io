@@ -6,6 +6,17 @@ layout: post
 featured-image: /images/********.jpg
 published: true
 title: WHY Do You Workout?
+category:
+  - fitness-journey
+tags:
+  - exercise
+  - fitness
+  - fitness-results
+  - get-fit
+  - get-started
+  - wellness
+  - womens-fitness
+  - why
 ---
 
  <div class="featured">
