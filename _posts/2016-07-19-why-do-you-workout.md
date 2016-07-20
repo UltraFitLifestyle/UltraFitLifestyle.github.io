@@ -4,7 +4,7 @@ comments: 'true'
 author: Rachel-Tipton
 layout: post
 featured-image: /images/********.jpg
-published: false
+published: true
 title: WHY Do You Workout?
 ---
 
@@ -55,6 +55,3 @@ This is where it gets good. Perhaps the real reason you want to get into shape i
 You can achieve ANY goal. You can make any dream come true. It might not be easy, and you will encounter obstacles. Once you have your WHY down on paper, you can post it everywhere: on your bathroom mirror, on the fridge, on the back of the front door, on the dashboard of your car. Place reminders of your WHY around your home where you will see them. Put a note on your phone. Enlist a friend or a trainer or a mentor to help encourage you.  Your WHY is unique to you. Let it drive you to success!
 
 Need a little help? Contact me [HERE](http://www.racheltipton.com/contact-rachel/). Let’s get you on track.
-
-     
-     
