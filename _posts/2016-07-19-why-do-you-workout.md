@@ -21,7 +21,7 @@ tags:
 
  <div class="featured">
      <a href="{{ page.url }}">
-     <img src="{{site.url}}/images/sneakers.jpg" />
+     <img src="{{site.url}}/images/sneakers2.jpg" />
      </a>
      </div>
      
