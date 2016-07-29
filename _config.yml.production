@@ -60,6 +60,10 @@ prose:
     - /terms-of-use
     - /testimonials
     - /thank-you-for-subscribing
+    - /downloads
+    - .gitignore
+    - index.html
+    - links.jsonp
   metadata:
     _posts:
       - name: "layout"
@@ -78,6 +82,10 @@ prose:
         field:
           element: "hidden"
           value: "true"
+      - name: "excerpt_separator"
+        field:
+          element: "hidden"
+          value: "<!--more-->"
       - name: "category"
         field:
           element: "multiselect"
@@ -211,6 +219,8 @@ prose:
               value: fitness
             - name: 'fitness results'
               value: fitness-results
+            - name: flexibility
+              value: flexibility
             - name: flu
               value: flu
             - name: food
@@ -229,6 +239,8 @@ prose:
               value: goal-setting
             - name: goals
               value: goals
+            - name: golf
+              value: golf
             - name: 'half marathon'
               value: half-marathon
             - name: health
@@ -413,6 +425,8 @@ prose:
               value: weight-loss
             - name: wellness
               value: wellness
+            - name: why
+              value: why
             - name: win
               value: win
             - name: 'womens fitness'
@@ -427,6 +441,6 @@ prose:
       - name: "featured-image"
         field:
           element: "text"
-          value: "images/********.jpg"
-          label: "Image that should be in post excerpt and when sharing on Facebook"
-          help: "Be sure to include images/ before the file name"
+          value: "/images/********.jpg"
+          label: "Featured Image - For post excerpts and Facebook sharing"
+          help: "Replace ******** with the name of the image file you uploaded"
