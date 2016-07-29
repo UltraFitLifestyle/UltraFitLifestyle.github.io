@@ -3,7 +3,7 @@ excerpt_separator: <!--more-->
 comments: 'true'
 author: Rachel-Tipton
 layout: post
-featured-image: /images/********.jpg
+featured-image: /images/sneakers2.jpg
 published: true
 title: WHY Do You Workout?
 category:
@@ -28,6 +28,8 @@ tags:
 I posted this question on Facebook the other day: _WHY_ do you workout?
 
 I was amazed at how many people responded. I assumed people would say that they workout to lose weight, get skinny, or look good. I was way wrong! The majority of comments were about how exercise makes you _FEEL_. Check out some of what my friends and followers had to say about **WHY** they workout:
+
+<!--more-->
 
 •	To feel alive
 
