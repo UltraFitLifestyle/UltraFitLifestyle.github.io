@@ -25,11 +25,13 @@ layout: blog
 		{% endfor %}
 	{% endfor %}
     </p>
+    {% include share-buttons.html %}
   </header>
 
   <div class="post-content" itemprop="articleBody">
     {{ content }}
   </div>
+  	{% include share-buttons.html %}
 	<div class="tags">
 		<h2>Tags for this post</h2>
 		<ul>
