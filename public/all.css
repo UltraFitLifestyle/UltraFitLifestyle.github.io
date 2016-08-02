@@ -1165,6 +1165,9 @@ footer {
   margin-left: auto;
   margin-right: auto; }
 
+.share-buttons {
+  float: right; }
+
 .modal-state {
   display: none; }
 
